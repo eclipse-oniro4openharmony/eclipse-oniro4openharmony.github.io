@@ -7,3 +7,13 @@ url: https://eclipse-oniro4openharmony.github.io
 
 aux_links:
   Template Repository: https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: false
+
+# External navigation links
+nav_external_links:
+  - title: Oniro Legacy Documentation
+    url: https://oniroproject.readthedocs.io/
+    hide_icon: false
+    opens_in_new_tab: false
