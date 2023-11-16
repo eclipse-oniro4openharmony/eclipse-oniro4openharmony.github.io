@@ -1,6 +1,7 @@
 title: Oniro
-description: A starter template for a Jeykll site using the Just the Docs theme!
+description:
 theme: just-the-docs
+logo: "/assets/images/oniro-logo.png"
 
 url: https://eclipse-oniro4openharmony.github.io
 
