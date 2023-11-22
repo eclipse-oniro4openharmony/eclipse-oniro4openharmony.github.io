@@ -3,7 +3,6 @@ description:
 theme: just-the-docs
 logo: "/assets/images/oniro-logo.png"
 
-<<<<<<< HEAD
 url: https://eclipse-oniro4openharmony.github.io
 
 aux_links:
@@ -18,9 +17,3 @@ nav_external_links:
     url: https://oniroproject.readthedocs.io/
     hide_icon: false
     opens_in_new_tab: false
-=======
-url: https://github.com/Yueqi777/eclipse-oniro4openharmony.github.io.git
-
-aux_links:
-  Template Repository: https://github.com/Yueqi777/eclipse-oniro4openharmony.github.io.git
->>>>>>> b3a4914 (Update _config.yml)
