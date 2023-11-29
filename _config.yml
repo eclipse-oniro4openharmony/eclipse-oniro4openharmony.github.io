@@ -1,4 +1,5 @@
 title: Oniro
+<<<<<<< HEAD
 description:
 theme: just-the-docs
 logo: "/assets/images/oniro-logo.png"
@@ -17,3 +18,12 @@ nav_external_links:
     url: https://oniroproject.readthedocs.io/
     hide_icon: false
     opens_in_new_tab: false
+=======
+description: A starter template for a Jeykll site using the Just the Docs theme!
+theme: just-the-docs
+
+url: https://Yueqi77-amazing/eclipse-oniro4openharmony.github.io
+
+aux_links:
+  Template Repository: https://github.com/Yueqi77-amazing/eclipse-oniro4openharmony.github.io
+>>>>>>> 980da90 (pages)
