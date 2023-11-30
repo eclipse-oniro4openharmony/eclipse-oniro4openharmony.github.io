@@ -5,8 +5,6 @@ nav_order: 3
 parent: Contributing
 ---
 
-# Overview
-
 Commits **MUST** be submitted only with a sign-off by the submitter. A
 commit without a sign-off will be automatically rejected. You don\'t
 need be the author or the copyright holder of the contribution, but you
