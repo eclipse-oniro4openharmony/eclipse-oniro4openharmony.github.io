@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Eclipse Oniro Project
+nav_order: 1
 has_children: true
 ---
 
