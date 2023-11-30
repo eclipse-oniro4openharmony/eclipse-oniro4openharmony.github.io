@@ -1,6 +1,7 @@
 ---
 title: Eclipse Contributor Agreement
-parent: Contribution
+parent: Contributing
+nav_order: 2
 layout: default
 ---
 

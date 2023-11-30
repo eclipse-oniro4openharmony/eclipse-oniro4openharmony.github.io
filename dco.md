@@ -1,7 +1,8 @@
 ---
 layout: default
 title: DCO-signoff
-parent: Contribution
+nav_order: 3
+parent: Contributing
 ---
 
 # Overview

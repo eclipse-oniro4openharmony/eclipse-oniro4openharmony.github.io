@@ -1,6 +1,7 @@
 ---
 title: REUSE Compliance
-parent: Contribution
+parent: Contributing
+nav_order: 6
 layout: default
 ---
 

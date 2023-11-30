@@ -1,6 +1,7 @@
 ---
 title: Quick start contribution guide for new developers
-parent: Contribution
+parent: Contributing
+nav_order: 1
 layout: default
 ---
 

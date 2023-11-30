@@ -1,6 +1,7 @@
 ---
 title: Contributing to Projects not Maintained by Team
-parent: Contribution
+parent: Contributing
+nav_order: 7
 layout: default
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Bug Handling Process
-parent: Contribution
+parent: Contributing
+nav_order: 5
 layout: default
 ---
 

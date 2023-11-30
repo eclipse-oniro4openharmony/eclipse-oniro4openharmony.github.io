@@ -1,6 +1,7 @@
 ---
 title: Gitlab Contributions
-parent: Contribution
+parent: Contributing
+nav_order: 4
 layout: default
 ---
 
