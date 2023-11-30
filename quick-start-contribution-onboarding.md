@@ -1,12 +1,12 @@
 ---
-title: Quick start contribution guide for new developers
+title: Quick start guide for new developers
 parent: Contributing
 nav_order: 1
 layout: default
 ---
 
-This page describes Quick start contribution guide for new developers
-who would like to join the
+This page describes a Quick start contribution guide for new developers
+who would like to join the Oniro project.
 
 # Setting up
 
@@ -37,11 +37,7 @@ If you sign this ECA, you confirm your legal rights to submit the code
 to the project. You also provide license to your contributions to
 Eclipse and specified users, however you still own your contributions.
 
-## EF Gitlab Account Setup
+## GitHub Account
 
-Now you can go to [the Oniro
-Gitlab](https://gitlab.eclipse.org/eclipse/oniro-core/oniro) . You
-should use the account that was created in the previous step to log in.
-
-For further information, go to the
-`Gitlab section <gitlab>`{.interpreted-text role="doc"}.
+To contribute to Oniro your regular GitHub account can be used. If you do not
+have one already, head to [GitHub](https://github.com/) and create one.
