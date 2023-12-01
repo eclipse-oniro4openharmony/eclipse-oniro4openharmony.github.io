@@ -1,5 +1,5 @@
 ---
-title: Gitlab Contributions
+title: GitHub Contributions
 parent: Contributing
 nav_order: 4
 layout: default
@@ -7,16 +7,14 @@ layout: default
 
 # Overview
 
-handles contributions as [merge
-requests](https://docs.gitlab.com/ee/user/project/merge_requests/) to
-relevant repositories part of the [GitLab
-instance](https://gitlab.eclipse.org/eclipse/oniro-core). The flow for
-handling that is classic: fork-based merge requests. This means that
+GitHub handles contributions as [pull
+requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to
+relevant repositories part of the [Eclipse Oniro for OpenHarmony organization](https://github.com/eclipse-oniro4openharmony).
+The flow for handling that is classic: fork-based pull requests. This means that
 once you have an account, you can fork any repository, create a branch
-with proposed changes and raise a merge request against the forked
-repository. More generic information you can find on the Gitlab\'s
-documentation as part of [\"Merge requests
-workflow\"](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html).
+with proposed changes and raise a pull request against the forked
+repository. More generic information you can find on the GitHub\'s
+documentation as part of [\"Working with forks\"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
 
 # Git setup
 
@@ -27,13 +25,8 @@ $ git config --local user.email <your_eclipse_account_email>
 $ git config --local user.name <your_eclipse_full_name>
 ```
 
-To push and pull over HTTPS with Git using your account, you must set a
-password or [a Personal Access
-Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
-.
-
 If you want to push or pull repositories using SSH, you have to [add a
-SSH key](https://docs.gitlab.com/ee/user/ssh.html) to your profile.
+SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to your profile.
 
 # Commit Guidelines
 
@@ -47,23 +40,23 @@ documentation through its logs.
 To achieve this, we maintain the following commit guidelines:
 
 - Each commit should be able to stand by itself providing a building
-  block as part of the MR.
+  block as part of the pull request (PR).
   - A good balance of granularity with scoped commits helps to
     handle backports (e.g. cherry-picks) and also improves the
     ability to review smaller chunks of code taking commit by
     commit.
-- Changes that were added on top of changes introduced in the MR,
+- Changes that were added on top of changes introduced in the PR,
   should be squashed into the initial commit.
-  - For example, a MR that introduced a new build system recipe and,
-    as a separate commit, fixed a build error in the initial recipe.
+  - For example, a PR that introduced a new feature and, as a separate
+    commit, fixed a build error.
     The latter commit should be squashed into the initial commit.
-  - For example, a MR introducing a new docs chapter and also
+  - For example, a PR introducing a new docs chapter and also
     adding, as a separate commit, some typo fixes. The latter
     commits should be squashed into the initial commit.
   - There is a small set of exceptions to this rule. All these
-    exceptions gravitate around the case where an MR, even if it
+    exceptions gravitate around the case where an PR, even if it
     provides multiple commits in the same scope (for example, to the
-    same build recipe), each of the commits has a very specific
+    same new feature), each of the commits has a very specific
     purpose.
     - For example, a line formating change followed by a chapter
       addition change in the same documentation file.
@@ -74,7 +67,7 @@ To achieve this, we maintain the following commit guidelines:
       code in the new location.
 - Make sure you clean your code of trailing white spaces/tabs and that
   each file ends with a new line.
-- Avoid _merge_ commits as part of your MR. Your commits should be
+- Avoid _merge_ commits as part of your PR. Your commits should be
   rebased on top of the _HEAD_ of the destination branch.
 
 As mentioned above, _git log_ becomes informally part of the
@@ -87,8 +80,8 @@ achieve this, we also require the following commit message guidelines:
   - Use the imperative mood in the _subject_ line for the _title_.
   - The _scope_ prefix (including the colon and the following
     whitespace) is optional but most of the time highly recommended.
-    For example, fixing an issue for a specific build recipe, would
-    use the recipe name as the _scope_.
+    For example, fixing an issue for a specific part of the code, would
+    use the part name as the _scope_.
   - The _title_ (the part after the _scope_) starts with a capital
     letter.
   - The entire _subject_ line shouldn\'t exceed 80 characters (same
@@ -130,49 +123,23 @@ to DEPENDS to make sure the build dependency is satisfied.
 Signed-off-by: Joe Developer <joe.developer@example.com>
 ```
 
-# Contributions to Documentation
-
-In , the documentation usually stays with the respective code
-repositories. This means that contributing to documentation is not in
-any way different than contributing to code. The processes, contribution
-guidelines are to remain the same. The only difference is that
-documentation files are to be released under
-`Creative Commons License version 4.0`.
-
-Documentation that doesn\'t link directly to one specific repository, is
-available in the [docs
-repository](https://gitlab.eclipse.org/eclipse/oniro-core/docs).
-
-In terms of file format, the project unifies its documentation as
-`ReStructuredText` files. A RestructuredText primer is available as part
-of the Sphinx
-[documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
-
-As a rule of thumb, anything that ends up compiled in the project
-documentation is to maintain the RestructuredText file format. Text
-files that are not meant to be compiled as part of the project\'s
-documentation can be written in
-[Markdown](https://daringfireball.net/projects/markdown/). For example,
-a repository `README` file can be written in Markdown as it doesn\'t end
-up compiled in the project-wide documentation.
-
-## Creating merge requests
+## Creating pull requests
 
 Once your changes have been pushed to your fork, you are ready to
-prepare a merge request.
+prepare a pull request.
 
 1.  Go to your repository in an internet browser.
-2.  Create a merge request by clicking `Merge Requests` on left toolbar
-    and press `New merge request`. Add an explainable description and
-    create a merge request. Alternatively, you can enter the website of
+2.  Create a pull request by clicking `Contribute` and press `Open pull request`.
+    Add an explainable description and
+    create a pull request. Alternatively, you can enter the website of
     your fork. You should see a message that you pushed your branch to
     the repository. In the same section you can press
-    `Create merge request`.
+    `Open pull request`.
 3.  Before merging, it has to be reviewed and approved by repository
     maintainers. Read their review and add any required changes to your
-    merge request.
-4.  After you polish your merge request, the maintainers will run the
+    pull request.
+4.  After you polish your pull request, the maintainers will run the
     pipelines which check if your changes do not break the project and
     approve them. If everything is correct, your work is merged to the
-    main project. Remember that each commit of the merge request should
+    main project. Remember that each commit of the pull request should
     be a minimum, self-contained building block.
