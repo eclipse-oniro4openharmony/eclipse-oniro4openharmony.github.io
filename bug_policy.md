@@ -7,7 +7,7 @@ layout: default
 
 # Overview
 
-is aiming to build a secure system from the foundation, applying the
+Eclipse Oniro is aiming to build a secure system from the foundation, applying the
 best industry practices in terms of development quality. However, as in
 every software projects, bugs do happen. This process explains how we
 handle bugs.
@@ -15,7 +15,8 @@ handle bugs.
 # How to Report a Bug?
 
 If you think you have found a bug in our distribution, please file a bug
-report in our bug tracker and in the project that you think is the
+report in our [bug
+tracker](https://github.com/eclipse-oniro4openharmony/manifest/issues) and in the project that you think is the
 source of the issue. Use the provided template:
 
 - The module affected
@@ -32,13 +33,6 @@ Developers review the reported issues and perform triage (see below).
 When a fix is available, the ticket is updated with the details of the
 solution.
 
-# Which Modules do We Support?
-
-We do support all layers included in our reference images and
-blueprints. It means we accept bug reports in those layers. If the issue
-affects the upstream part of the layer, we are going to redirect the
-report to the upstream project and work with upstream on a solution.
-
 # Bug Triage
 
 The bug triage is a process where developers asses the bug and set its
@@ -49,9 +43,7 @@ severity and domain. At the end of this process the bug will:
   reproduced.
 - Have its severity set. Please refer to the documentation of severity
   levels below.
-- Have its domain set. The domains include categories like: toolchain,
-  kernel, Over-the-Air Update (OTA); they can change over time. The
-  bug tracker will include the latest list.
+- Have its domain set. The bug tracker will include the latest list.
 
 If the bug is classified as a security vulnerability, the engineer
 assesing the issue will create a new ticket in the private security bug
@@ -101,7 +93,7 @@ is to update to the latest stable version of the package.
 Bugs might be reported by different sources, including Project\'s own
 findings (like QA), partner findings, community, or security
 researchers. There might be also different ways the Project team learns
-about the issue, including Mattermost channels, discussion forums etc.
+about the issue, including Matrix channels, discussion forums etc.
 Issues coming from different sources are centralized in the bug tracker,
 which also provides an unified identification of all issues.
 
@@ -141,7 +133,7 @@ branch.
 
 ## Releasing
 
-When a bug fix is available in a branch, the developer creates a merge
+When a bug fix is available in a branch, the developer creates a pull
 request. When the change is accepted, it is merged in the main branch.
 The developer in charge of the bug verifies with the release manager to
 which branches the change should be backported.
