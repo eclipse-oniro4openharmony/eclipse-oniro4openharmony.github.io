@@ -84,8 +84,8 @@ maskrom
 To enable *programming mode* on the device, perform the following steps:
 
  1. Press nad hold `VOL/RECOVERY` then `RESET` buttons.
- 2. Release `RESET` button. 
-  
+ 2. Release `RESET` button.
+
 Confirm the mode by running `lsusb`, which should show:
 
 ```bash
