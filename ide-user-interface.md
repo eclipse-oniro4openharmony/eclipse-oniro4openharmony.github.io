@@ -1,12 +1,12 @@
 ---
 title: User Interface
 layout: home
-nav_order: 1
-parent: Oniro IDE Documentation
+nav_order: 2
+parent: Oniro IDE
 ---
 # User Interface
 
-At its heart, Oniro IDE is a code editor. Like many other code editors, Oniro IDE adopts a common user interface and layout of an explorer on the left, showing all of the files and folders you have access to, and an editor on the right, showing the content of the files you have opened.
+At its heart, Oniro IDE is a code editor. Like many other code editors, Oniro IDE adopts a common user interface and layout of an explorer on the left, showing all of the files and folders you can access, and an editor on the right, showing the content of the files you have opened.
 
 ![](assets/images/Main%20Layout.png)
 
@@ -22,8 +22,8 @@ The basic layout consists of 8 main areas:
 1. **Secondary Side Bar**: hosts an extra view on the right hand side such as a `Debugging` side bar.
 
 
-## Explorer
-The explorer is used to browse, open, and manage all the files and folders in your project. You can create a new file or folder at any time in your project. You can also switch to a different project previously opened in the IDE by selecting it from the active project menu.
+## Explorer 
+The explorer is used to browse, open, and manage all the files and folders in your project. You can create a new file or folder at any time in your project.
 
 You can do many things to files and folders in the explorer:
 

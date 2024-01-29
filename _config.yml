@@ -18,3 +18,16 @@ nav_external_links:
     url: https://oniroproject.readthedocs.io/
     hide_icon: false
     opens_in_new_tab: false
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+
+  note:
+    title: Note
+    color: purple
+
+  tip:
+    title: Tip
+    color: yellow
