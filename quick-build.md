@@ -77,3 +77,19 @@ To read hilog output:
 ```bash
 hdc hilog
 ```
+
+### Speeding Up Build Times
+
+You can significantly reduce build times for subsequent builds by mounting directories for prebuilts and ccache when initiating the Docker container. This approach ensures that once the prebuilts are downloaded, they don't need to be fetched again, and the compilation cache is maintained across builds.
+
+To apply this optimization, use the following command to start your Docker container:
+
+```bash
+docker run -it -v $(pwd):/home/openharmony/workdir -v ~/openharmony_prebuilts:/home/openharmony/openharmony_prebuilts -v ~/.ccache:/root/.ccache swr.cn-south-1.myhuaweicloud.com/openharmony-docker/docker_oh_standard:3.2
+```
+
+After starting the container with the above command, navigate to the `workdir` directory before initiating the build process:
+
+```bash
+cd workdir
+```
