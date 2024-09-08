@@ -13,7 +13,7 @@ Before beginning, ensure that [`git-lfs`](https://docs.github.com/en/repositorie
 To download the source code, execute the following commands in your terminal:
 
 ```bash
-repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-4.0-Release --no-repo-verify
+repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-4.1-Release -m oniro.xml --no-repo-verify
 repo sync -c
 repo forall -c 'git lfs pull'
 ```
