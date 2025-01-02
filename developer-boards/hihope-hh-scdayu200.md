@@ -23,7 +23,7 @@ interface requirements.
 It is also equipped with dual Gigabit adaptive RJ45 Ethernet ports, which can
 meet the needs of NVR, industrial gateway and other multi-network port products.
 
-![HiHope HH-SCDAYU200 Development Kit](/assets/images/hh-scdayu200.png)
+![HiHope HH-SCDAYU200 Development Kit](/developer-boards/images/hihope-hh-scdayu200/hh-scdayu200.png)
 
 ## Specification
 
