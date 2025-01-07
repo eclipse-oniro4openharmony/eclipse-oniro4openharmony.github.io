@@ -70,7 +70,7 @@ meet the needs of NVR, industrial gateway and other multi-network port products.
 
 ## Building
 
-To build Eclipse Oniro for this board the normal [quick build](/quick-build.html)
+To build Eclipse Oniro for this board the normal [quick build](../eclipse-oniro-project/building-oniro.html)
 procedure has to be used to fetch the needed source code and environment.
 
 During the build step, inside the Docker instance, the target device for the
