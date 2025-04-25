@@ -61,7 +61,7 @@ To create a new project navigate to `Project` from the menu tab and click `New P
 
 To open your project, navigate to `File -> Open...` from the menu tab, navigate to your project's location, and click `Open`. This will open your project as you can see down in the `Explorer`.
 
-From here on out you can [add files/folders using the `Explorer` pane](user-interface/#explorer) or use tools such as [npm](https://www.npmjs.com/) package manager to help you create projects.
+From here on out you can [add files/folders using the `Explorer` pane](user-interface.html/#explorer) or use tools such as [npm](https://www.npmjs.com/) package manager to help you create projects.
 
 {: .note }
 > So far you can develop projects in the IDE in a plethora of languages. However, building and running project is still under construction.
