@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Oniro IDE
-nav_order: 4
+parent: Device Development
+nav_order: 3
 has_children: true
 ---
 

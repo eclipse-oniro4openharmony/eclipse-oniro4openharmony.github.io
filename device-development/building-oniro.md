@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Building Oniro
-parent: Eclipse Oniro Project
+parent: Device Development
+nav_order: 1
 ---
 
 # Building Oniro
