@@ -19,7 +19,7 @@ The Oniro Project supports the Raspberry Pi 4B, and the following features have 
 - Touch input
 - Mouse input
 
-![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](/developer-boards/images/raspberry-po-4-model-b/rpi4b-waveshare-oniro.png)\
+![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](images/raspberry-po-4-model-b/rpi4b-waveshare-oniro.png)\
 *Oniro on Raspberry Pi 4b and waveshare 7inch touch screen*
 
 ## Specification
@@ -53,7 +53,7 @@ The Oniro Project supports the Raspberry Pi 4B, and the following features have 
 
 ## Building
 
-After completing the steps in the [quick build documentation](../eclipse-oniro-project/building-oniro.html) to set up your build environment, proceed with the following steps to compile and build the system image for the Raspberry Pi 4B.
+After completing the steps in the [quick build documentation](/device-development/building-oniro.html) to set up your build environment, proceed with the following steps to compile and build the system image for the Raspberry Pi 4B.
 
 ### Step 1: Prepare the Build Environment
 
@@ -138,7 +138,7 @@ You can now insert the SD card into your Raspberry Pi 4B for use.
 
 To debug via serial, use the following pin configuration:
 
-![Serial Pin Configuration](/developer-boards/images/raspberry-po-4-model-b/rpi4b-gpio.png)
+![Serial Pin Configuration](images/raspberry-po-4-model-b/rpi4b-gpio.png)
 
 Connect the pins as shown in the diagram (Pins 6, 8, and 10). Then, use the following Minicom command to establish the serial connection:
 
