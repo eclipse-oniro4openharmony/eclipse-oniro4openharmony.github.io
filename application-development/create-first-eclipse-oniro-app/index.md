@@ -6,38 +6,37 @@ layout: default
 has_children: true
 ---
 
-## Before you begin  
+## Before You Begin  
 
-Make sure you have gone through the [environment setup guide](/application-development/environment-setup-config/).  
+Make sure you have gone through the [Environment Setup Guide](/application-development/environment-setup-config/).  
 
 <!--  -->
-In this tutorial, you will create your first Eclipse Oniro application with `OpenHarmony` template provided by `DevEco Studio`. 
+In this tutorial, you will create your first Eclipse Oniro application using the `OpenHarmony` template provided by `DevEco Studio`. 
 
 #### Prerequisites
-- Current available version of DevEco Studio installed on your system
+- The latest available version of DevEco Studio installed on your system.
 
-#### What you will learn  
-- **Set up DevEco Studio**: Installed and configured the necessary environment for application development.
+#### What You Will Learn  
+- **Set Up DevEco Studio**: Install and configure the necessary environment for application development.
 <br>
 
-- **Created a new project**: Used the `[openHarmony]Empty Ability` template to initialize a project.
+- **Create a New Project**: Use the `[OpenHarmony] Empty Ability` template to initialize a project.
 <br>
 
-- **Explored the project structure**: Navigated different views like Ohos and Project Files to locate and manage files.
+- **Explore the Project Structure**: Navigate different views, such as Ohos and Project Files, to locate and manage files.
 <br>
 
-- **Used the Previewer**: Learned how to preview UI updates in real time, switch devices, rotate screens, and inspect components.
+- **Use the Previewer**: Learn how to preview UI updates in real time, switch devices, rotate screens, and inspect components.
 <br>
 
-- **Built UI components**: Added Text and Button components to display messages and handle user interactions.
+- **Build UI Components**: Add Text and Button components to display messages and handle user interactions.
 <br>
 
-- **Implemented page navigation**: Used the router module to enable redirection between pages with transition effects.
+- **Implement Page Navigation**: Use the router module to enable redirection between pages with transition effects.
 <br>
 
-- **Deployed on a real device**: Installed HDC, configured device settings, and ran the application on a physical HiHope HH-SCDAYU200 Development Kit.
+- **Deploy on a Real Device**: Install HDC, configure device settings, and run the application on a physical HiHope HH-SCDAYU200 Development Kit.
 <br>
 
-
-#### What you will build
-- An application with two pages that support mutual navigation.  
+#### What You Will Build
+- An application with two pages that support mutual navigation.

@@ -31,42 +31,40 @@ layout: default
 [ArkTS Basics](/application-development/arkts-basics)  
 
 # Introduction
-Welcome to the tutorial for ArkTS, a TypeScript-based programming language designed specifically to build high-performance mobile applications.
+Welcome to the tutorial for ArkTS, a TypeScript-based programming language designed specifically for building high-performance mobile applications.
 
-ArkTS is optimized to provide better performance and efficiency, while still maintaining the familiar syntax of TypeScript.
+ArkTS is optimized to provide better performance and efficiency while maintaining the familiar syntax of TypeScript.
 
 # Basic Syntax Overview  
-[Text Source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)
-With a basic understanding of the ArkTS language, let's look into the composition of ArkTS through an example. As shown below, when the user clicks the button, the text content changes from Hello World to Hello ArkUI.  
+[Text Source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)  
+With a basic understanding of the ArkTS language, let's explore its composition through an example. As shown below, when the user clicks the button, the text content changes from "Hello World" to "Hello ArkUI."  
 
 **Figure 1** Example effect drawing  
     <img src='./images/image-basic/v1.gif'>
 
-In this example, the basic composition of ArkTS is as follows.
+In this example, the basic composition of ArkTS is as follows:
 
-
-  **Figure 2** Basic composition of ArkTS 
+**Figure 2** Basic composition of ArkTS  
     <img src='./images/image-basic/image3.png'>
 
 > **NOTE**
 >
 > The name of a custom variable cannot be the same as that of any universal attribute or event.
 
-
-- **Decorator**: design pattern used to decorate classes, structs, methods, and variables to assign special meanings to them. In the preceding sample code, `@Entry`, `@Component`, and `@State` are decorators. 
-  - `@Component` indicates a custom component
-  - `@Entry` indicates that the custom component is an entry component
+- **Decorator**: A design pattern used to decorate classes, structs, methods, and variables to assign special meanings to them. In the preceding sample code, `@Entry`, `@Component`, and `@State` are decorators. 
+  - `@Component` indicates a custom component.
+  - `@Entry` indicates that the custom component is an entry component.
   - `@State` indicates a state variable in the component, whose change will trigger the UI to re-render.
 
-- **UI description**: declarative description of the UI structure, such as the code block of the **build()** method.
+- **UI description**: A declarative description of the UI structure, such as the code block of the **build()** method.
 
-- **Custom component**: reusable UI unit, which can be used with other components, such as the struct **Hello** decorated by @Component.
+- **Custom component**: A reusable UI unit that can be used with other components, such as the struct **Hello** decorated by `@Component`.
 
-- **Built-in component**: default basic or container component preset in ArkTS, which can be directly invoked, such as **Column**, **Text**, **Divider**, and **Button** components in the sample code.
+- **Built-in component**: A default basic or container component preset in ArkTS, which can be directly invoked, such as **Column**, **Text**, **Divider**, and **Button** components in the sample code.
 
-- **Attribute method**: method used to configure component attributes, such as **fontSize()**, **width()**, **height()**, and **backgroundColor()**. You can configure multiple attributes of a component in method chaining mode.
+- **Attribute method**: A method used to configure component attributes, such as **fontSize()**, **width()**, **height()**, and **backgroundColor()**. You can configure multiple attributes of a component in method chaining mode.
 
-- **Event method**: method used to add the logic for a component to respond to an event. In the sample code, **onClick()** following **Button** is an event method. You can configure response logic for multiple events in method chaining mode.
+- **Event method**: A method used to add the logic for a component to respond to an event. In the sample code, **onClick()** following **Button** is an event method. You can configure response logic for multiple events in method chaining mode.
 
 # Key Features
 ## Declarative UI
@@ -1974,7 +1972,7 @@ In this example, the **Article** class is decorated by the @Observed decorator. 
 2. Because **article** in the child component **ArticleCard** uses the @ObjectLink decorator, the parent and child components share the same article data. As such, the values of **isLiked** and **likedCounts** of the first array item of **articleList** in the parent component are changed synchronously.
 3. When the parent component detects property changes of the data source array items, **ForEach** is triggered for re-rendering.
 4. Here, the **ForEach** key generation rule is the **id** property value of the array item. If **ForEach** traverses the new data source and finds no changes in the **id** values, no component is created.
-5. When the **ArticleCard** component corresponding to the first array item is rendered, the obtained values of **isLiked** and** likesCount** are the new values.
+5. When the **ArticleCard** component corresponding to the first array item is rendered, the obtained values of **isLiked** and **likedCounts** are the new values.
 
 #### Suggestions
 
