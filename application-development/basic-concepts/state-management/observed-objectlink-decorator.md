@@ -1,6 +1,6 @@
 ---
 title: Observed and ObjectLink Decorators
-parent: Introduction to ArkTS
+parent: State Management
 layout: default
 ---
 

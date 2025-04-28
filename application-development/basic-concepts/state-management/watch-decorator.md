@@ -1,6 +1,6 @@
 ---
 title: Watch Decorator
-parent: Introduction to ArkTS
+parent: State Management
 layout: default
 ---
 

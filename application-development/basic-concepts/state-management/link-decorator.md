@@ -1,6 +1,6 @@
 ---
 title: Link Decorator
-parent: Introduction to ArkTS
+parent: State Management
 layout: default
 ---
 
