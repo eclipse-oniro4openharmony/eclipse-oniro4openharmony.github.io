@@ -34,8 +34,9 @@ Welcome to the tutorial for ArkTS, a TypeScript-based programming language desig
 ArkTS is optimized to provide better performance and efficiency while maintaining the familiar syntax of TypeScript.
 
 # Basic Syntax Overview  
-[Text Source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)  
 With a basic understanding of the ArkTS language, let's explore its composition through an example. As shown below, when the user clicks the button, the text content changes from "Hello World" to "Hello ArkUI."  
+
+> Portions of this documentation are adapted from *[OpenHarmony Documentation](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 **Figure 1** Example effect drawing  
     <img src='./images/image-basic/v1.gif'>
@@ -66,8 +67,9 @@ In this example, the basic composition of ArkTS is as follows:
 
 # Key Features
 ## Declarative UI
-[Text Source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-declarative-ui-description.md)  
 ArkTS declaratively combines and extends components to describe the UI of an application. It also provides basic methods for configuring attributes, events, and child components to help you implement application interaction logic.
+
+> Portions of this documentation are adapted from *[OpenHarmony Documentation](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-declarative-ui-description.md)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ### Creating a Component
 
