@@ -1,11 +1,11 @@
 ---
-title: ArkTS Basics
-parent: Introduction to ArkTS
-nav_order: 1
+title: ArkTS Language Reference
+parent: Basic Concepts
+nav_order: 3
 layout: default
 ---
 
-## The Basics
+## ArkTS Language Reference
 
 [Declarations](#declarations)  
 - [Variable Declaration](#variable-declaration)  
