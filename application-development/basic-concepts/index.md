@@ -18,6 +18,3 @@ This section introduces the core concepts essential for application development 
 - **UIAbility:** Understand the concept of UIAbility, the fundamental unit of user interaction in applications.
 
 These basic principles will prepare you to move confidently into more complex topics and start building powerful applications.
-
----
-

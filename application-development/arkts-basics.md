@@ -13,7 +13,7 @@ layout: default
 - [Automatic Type Inference](#automatic-type-inference)  
 
 [Types](#types)  
-- [Numberic Types](#numeric-types)  
+- [Numeric Types](#numeric-types)  
 - [Boolean](#boolean)  
 - [Void](#void-type)  
 - [Object](#object-type)  
@@ -23,7 +23,7 @@ layout: default
 - [Type Aliases](#type-aliases)  
 
 [Operators](#operators)  
-- [Assignment Operrators](#assignment-operators)  
+- [Assignment Operators](#assignment-operators)  
 - [Comparison Operators](#comparison-operators)  
 - [Arithmetic Operators](#arithmetic-operators)  
 - [Bitwise Operators](#bitwise-operators)  
@@ -50,9 +50,9 @@ layout: default
 - [Function Calls](#function-calls)  
 
 [Function Types](#function-types)  
-- [Arrow Functions(Lambdas Functions)](#arrow-functions-lambdas-functions)  
+- [Arrow Functions (Lambda Functions)](#arrow-functions-lambda-functions)  
 - [Closure](#closure)  
-- [Function Overload Signature](#function-overload-signatures)  
+- [Function Overload Signatures](#function-overload-signatures)  
 
 [Classes](#classes)  
 - [Fields](#fields)  
@@ -71,13 +71,12 @@ layout: default
   - [Method Overload Signatures](#method-overload-signatures)  
 
 - [Constructors](#constructors)  
-  - [Constructors in Derived Class](#constructors-in-derived-class)  
+  - [Constructors in Derived Classes](#constructors-in-derived-classes)  
   - [Constructor Overload Signatures](#constructor-overload-signatures)  
 
 - [Visibility Modifiers](#visibility-modifiers)  
   - [Public Visibility](#public-visibility)  
-
-- [Private Visibility](#private-visibility)  
+  - [Private Visibility](#private-visibility)  
   - [Protected Visibility](#protected-visibility)  
 
 - [Object Literals](#object-literals)  
@@ -89,7 +88,7 @@ layout: default
 [Interfaces](#interfaces)  
 - [Interface Properties](#interface-properties)  
 - [Interface Inheritance](#interface-inheritance)  
-- [Abstract class and interface](#abstract-class-and-interface)  
+- [Abstract Classes and Interfaces](#abstract-classes-and-interfaces)  
 
 [Generic Types and Functions](#generic-types-and-functions)  
 - [Generic Classes and Interfaces](#generic-classes-and-interfaces)  
@@ -123,7 +122,7 @@ Declarations in ArkTS introduce:
 
 #### Variable Declaration
 
-A declaration starting with the keyword `let` introduces a variable which can have different values during program execution.
+A declaration starting with the keyword `let` introduces a variable that can have different values during program execution.
 
 ```typescript
 let hi: string = 'hello';
@@ -142,7 +141,7 @@ A compile-time error occurs if a new value is assigned to a constant.
 
 #### Automatic Type Inference
 
-As ArkTS is a statically typed language, the types of all entities, like variables and constants, have to be known at compile time.
+As ArkTS is a statically typed language, the types of all entities, like variables and constants, must be known at compile time.
 
 However, developers do not need to explicitly specify the type of a declared entity if a variable or a constant declaration contains an initial value.
 
@@ -193,26 +192,24 @@ function factorial(n: number): number {
   return n * factorial(n - 1);
 }
 
-factorial(n1)  //  7.660344000000002 
-factorial(n2)  //  7.680640444893748 
-factorial(n3)  //  1 
-factorial(n4)  //  9.33262154439441e+157 
+factorial(n1);  // 7.660344000000002 
+factorial(n2);  // 7.680640444893748 
+factorial(n3);  // 1 
+factorial(n4);  // 9.33262154439441e+157 
 ```
 
-The number type tends to lose precision when it represents very large integers. You can use BigInt to ensure the precision as required.
+The `number` type tends to lose precision when it represents very large integers. You can use `BigInt` to ensure precision as required.
 
 ```typescript
-
-let bigIntger: BigInt = BigInt('999999999999999999999999999999999999999999999999999999999999');
-console.log('bigIntger' + bigIntger.toString());
-
+let bigInteger: BigInt = BigInt('999999999999999999999999999999999999999999999999999999999999');
+console.log('bigInteger: ' + bigInteger.toString());
 ```
 
 #### `Boolean`
 
 The `boolean` type represents logical values that are either `true` or `false`.
 
-Usually variables of this type are used in conditional statements:
+Usually, variables of this type are used in conditional statements:
 
 ```typescript
 let isDone: boolean = false;
@@ -220,7 +217,7 @@ let isDone: boolean = false;
 // ...
 
 if (isDone) {
-  console.log ('Done!');
+  console.log('Done!');
 }
 ```
 
@@ -228,7 +225,7 @@ if (isDone) {
 
 A `string` is a sequence of characters; some characters can be set by using escape sequences.
 
-A `string` literal consists of zero or more characters enclosed in single (') or double quotes ("). The special form of string literals are template literals enclosed in backtick quotes (\`).
+A `string` literal consists of zero or more characters enclosed in single (') or double quotes ("). The special form of string literals is template literals enclosed in backtick quotes (\`).
 
 ```typescript
 let s1 = 'Hello, world!\n';
@@ -240,26 +237,26 @@ let s3 = `The result is ${a}`;
 #### `Void` Type
 
 The `void` type is used to specify that a function does not return a value.
-This type has the only one value which is also `void`. As `void` is
-a reference type, it can be used as type argument for generic types.
+This type has only one value, which is also `void`. As `void` is
+a reference type, it can be used as a type argument for generic types.
 
 ```typescript
 class Class<T> {
   //...
 }
-let instance: Class <void>
+let instance: Class<void>;
 ```
 
 #### `Object` Type
 
-An `Object` class type is a base type for all reference types. Any value, including values of primitive types (they will be automatically boxed), can be directly assigned to variables of the type `Object`.`The 'object' type is used to represent types other than the primitive types.
+An `Object` class type is a base type for all reference types. Any value, including values of primitive types (they will be automatically boxed), can be directly assigned to variables of the type `Object`. The `object` type is used to represent types other than the primitive types.
 
 #### `Array` Type
 
 An `array` is an object comprised of elements of data types assignable to the element type specified in the array declaration.
-A value of an `array` is set by using *array composite literal*, that is a list of zero or more expressions enclosed in square brackets ([]). Each expression represents an element of the `array`. The length of the `array` is set by the number of expressions. Index of the first array element is 0.
+A value of an `array` is set by using an *array composite literal*, which is a list of zero or more expressions enclosed in square brackets ([]). Each expression represents an element of the `array`. The length of the `array` is set by the number of expressions. The index of the first array element is 0.
 
-The following example creates the `array` with three elements:
+The following example creates an `array` with three elements:
 
 ```typescript
 let names: string[] = ['Alice', 'Bob', 'Carol'];
@@ -279,12 +276,12 @@ A constant expression can be used to explicitly set the value of an `enum` const
 
 ```typescript
 enum ColorSet { White = 0xFF, Grey = 0x7F, Black = 0x00 }
-let c: ColorSet = ColorSet.Black
+let c: ColorSet = ColorSet.Black;
 ```
 
 #### `Union` Type
 
-A `union` type is a reference type which is created as a combination of other types. Values of union types can be valid values of all types a union was created from.
+A `union` type is a reference type that is created as a combination of other types. Values of union types can be valid values of all types a union was created from.
 
 ```typescript
 class Cat {
@@ -299,7 +296,7 @@ class Frog {
   name: string = 'frog';
   // ...
 }
-type Animal = Cat | Dog | Frog | number
+type Animal = Cat | Dog | Frog | number;
 // Cat, Dog, and Frog are some types (class or interface ones)
 
 let animal: Animal = new Cat();
@@ -313,9 +310,9 @@ There are different mechanisms to get a value of a particular type from a union.
 Example:
 
 ```typescript
-class Cat { sleep () {}; meow () {} }
-class Dog { sleep () {}; bark () {} }
-class Frog { sleep () {}; leap () {} }
+class Cat { sleep() {}; meow() {} }
+class Dog { sleep() {}; bark() {} }
+class Frog { sleep() {}; leap() {} }
 
 type Animal = Cat | Dog | Frog;
 
@@ -329,12 +326,12 @@ function foo(animal: Animal) {
 
 #### Type `Aliases`
 
-Type `aliases` provides names for anonymous types (array, function, object literal or union types) or alternative names for existing types.
+Type `aliases` provide names for anonymous types (array, function, object literal, or union types) or alternative names for existing types.
 
 ```typescript
 type Matrix = number[][];
 type Handler = (s: string, no: number) => string;
-type Predicate <T> = (x: T) => boolean;
+type Predicate<T> = (x: T) => boolean;
 type NullableObject = Object | null;
 ```
 
@@ -342,7 +339,7 @@ type NullableObject = Object | null;
 
 #### Assignment Operators
 
-Simple assignment operator '=' is used as in "x = y".
+The simple assignment operator '=' is used as in "x = y".
 
 Compound assignment operators combine an assignment with an operator, where `x op = y` equals `x = x op y`.
 
@@ -352,8 +349,8 @@ Compound assignment operators are as follows: `+=`, `-=`, `*=`, `/=`, `%=`, `<<=
 
 | Operator | Description                                                  |
 | -------- | ------------------------------------------------------------ |
-| `===`    | Returns true if both operands are strict equal.              |
-| `!==`    | Returns true if both operands are nots trict equal.          |
+| `===`    | Returns true if both operands are strictly equal.            |
+| `!==`    | Returns true if both operands are not strictly equal.        |
 | `==`     | Returns true if both operands are equal.                     |
 | `!=`     | Returns true if both operands are not equal.                 |
 | `>`      | Returns true if the left operand is greater than the right.  |
@@ -637,17 +634,17 @@ try {
 }
 ```
 
-The example below shows the `throw` and `try` statements  used to handle the zero division case:
+The example below shows the `throw` and `try` statements used to handle the zero division case:
 
 ```typescript
 class ZeroDivisor extends Error {}
 
-function divide (a: number, b: number): number{
+function divide(a: number, b: number): number {
   if (b == 0) throw new ZeroDivisor();
   return a / b;
 }
 
-function process (a: number, b: number) {
+function process(a: number, b: number) {
   try {
     let res = divide(a, b);
     console.log('result: ' + res);
@@ -800,7 +797,7 @@ function do_action(f: trigFunc) {
 do_action(Math.sin); // pass the function as the parameter
 ```
 
-#### Arrow Functions (Lambdas Functions)
+#### Arrow Functions (Lambda Functions)
 
 A function can be defined as an arrow function, for example:
 
@@ -1247,7 +1244,7 @@ let p = new Point();
 
 In this case the default constructor fills the instance fields with default values for the field types.
 
-##### Constructors in Derived Class
+##### Constructors in Derived Classes
 
 The first statement of a constructor body can use the keyword `super` to explicitly call a constructor of the direct superclass.
 
@@ -1556,7 +1553,7 @@ interface ExtendedStyle extends Style {
 An extended interface contains all properties and methods of the interface it extends, and can also add its own properties and methods.
 
 
-#### Abstract class and interface
+#### Abstract Classes and Interfaces
 
 Abstract classes and interfaces cannot be instantiated. Abstract classes are abstractions of classes, used to capture the general characteristics of subclasses, and interfaces are abstractions of behavior. The difference between abstract classes and interfaces in ArkTS is as follows:
 
@@ -1942,4 +1939,4 @@ The keyword `this` used as a primary expression denotes a value that is a refere
 The value denoted by `this` in a lambda body and in the surrounding context is the same.
 
 ## Reference
-For additional information please refer to the [ArkTS Basics](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/introduction-to-arkts.md#the-basics) 
+For additional information please refer to the [ArkTS Basics](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/introduction-to-arkts.md#the-basics)

@@ -11,22 +11,20 @@ has_children: true
 
 ## Welcome to Oniro Application Development
 
-Oniro is a modern, flexible operating system designed for diverse device scenarios. This documentation is your starting point to quickly learn how to start your Oniro application development. It provides clear, concise tutorials and practical examples, so you can get started rapidly without needing to understand all underlying complexities right away.
+Oniro is a modern, flexible operating system designed for diverse device scenarios. This documentation is your starting point for Oniro application development. It provides clear, concise tutorials and practical examples, enabling you to get started quickly without needing to understand all underlying complexities immediately.
 
-By following this documentation, you'll learned:
+By following this documentation, you'll learn how to:
 
 - Set up a straightforward development environment.
-
 - Build and run your first simple Oniro application.
+- Gradually master essential concepts to advance your development journey.
 
-- Gradually learn essential concepts needed to further your development journey.
+## Development Environment
+To start developing Oniro applications, you first need to set up the development environment by installing `DevEco Studio`.
 
-## Development Environment  
-To start developing OpenHarmony applications, we first need to set up the development environment by installing `DevEco Studio`.  
-
-To set up your development environment, please refer to  [Environment Setup Guide](/application-development/environment-setup-config/index).
+For detailed instructions, please refer to the [Environment Setup Guide](/application-development/environment-setup-config/index).
 
 ## Learning Path
-To facilitate your application development, we provide development guidelines for reference.
+To support your application development, we provide comprehensive development guidelines.
 
 You can familiarize yourself with the application development process by [getting started with a simple project](./create-first-eclipse-oniro-app/index).
