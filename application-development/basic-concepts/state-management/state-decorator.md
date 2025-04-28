@@ -39,8 +39,8 @@ struct MyComponent {
 ```
 In the code above, we define a component named `MyComponent`, which contains a state variable called `count`. We declare the `count` property using the `@State` decorator, making it a reactive state. When the user clicks the button, the value of `count` is incremented by 1, and the component automatically re-renders to display the latest count.
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/image16.png' width="30%">
-    <img src='../basic-concepts/images/image-basic/image17.png' width="30%">
+    <img src='../images/image-basic/image16.png' width="30%">
+    <img src='../images/image-basic/image17.png' width="30%">
 </div>
 
 ### Decorating the Class Object Type Variables
@@ -103,7 +103,7 @@ struct MyComponent {
 }
 ```
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/v5.gif' >
+    <img src='../images/image-basic/v5.gif' >
 </div>
 
 ### Additional Information
