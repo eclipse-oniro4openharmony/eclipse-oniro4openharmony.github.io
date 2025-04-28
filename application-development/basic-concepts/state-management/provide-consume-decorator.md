@@ -96,7 +96,7 @@ struct CompA {
 }
 ```
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/image22.png'>
+    <img src='../images/image-basic/image22.png'>
 </div>
 
 ### Additional Information

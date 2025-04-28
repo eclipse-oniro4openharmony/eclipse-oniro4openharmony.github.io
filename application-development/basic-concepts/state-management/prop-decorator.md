@@ -70,7 +70,7 @@ struct ParentComponent {
 ```
 The display is previewed as the following:
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/image18.png'>
+    <img src='../images/image-basic/image18.png'>
 </div>
 
 
@@ -136,7 +136,7 @@ struct Index {
 ```
 
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/image19.png'>
+    <img src='../images/image-basic/image19.png'>
 </div>
 
 Initial render creates six instances of the **Child** component. Each `@Prop` decorated variable is initialized with a copy of an array item. The **onclick** event handler of the **Child** component changes the local variable value.
@@ -219,7 +219,7 @@ struct Library {
 ```
 The display is previewed as the following:
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/image20.png'>
+    <img src='../images/image-basic/image20.png'>
 </div>
 
 ### Additional Information

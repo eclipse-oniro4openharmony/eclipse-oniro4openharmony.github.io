@@ -111,7 +111,7 @@ struct ShufflingContainer {
 }
 ```
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/v6.gif'>
+    <img src='../images/image-basic/v6.gif'>
 </div>
 
 ### Array Type @Link
@@ -172,7 +172,7 @@ struct Parent {
 ```
 
 <div style="text-align:center">
-    <img src='../basic-concepts/images/image-basic/v7.gif'>
+    <img src='../images/image-basic/v7.gif'>
 </div>
 
 ### Additional Information
