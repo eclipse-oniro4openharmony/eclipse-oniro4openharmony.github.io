@@ -1,6 +1,8 @@
 ---
 title: PersistentStorage
 parent: State Management
+grand_parent: Basic Concepts
+nav_order: 8
 layout: default
 ---
 

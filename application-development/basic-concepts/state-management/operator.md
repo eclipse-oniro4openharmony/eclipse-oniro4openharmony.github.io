@@ -1,11 +1,12 @@
 ---
 title: $$ Syntax
 parent: State Management
+grand_parent: Basic Concepts
+nav_order: 10
 layout: default
 ---
 
 # $$ Syntax: Two-Way Synchronization of Built-in Components
-
 
 The $$ operator provides a TypeScript variable by-reference to a built-in component so that the variable value and the internal state of that component are kept in sync.
 

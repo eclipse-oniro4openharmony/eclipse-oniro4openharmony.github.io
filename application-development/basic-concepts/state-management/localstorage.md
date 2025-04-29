@@ -1,6 +1,8 @@
 ---
 title: LocalStorage
 parent: State Management
+grand_parent: Basic Concepts
+nav_order: 6
 layout: default
 ---
 
