@@ -48,7 +48,7 @@ and use ccache to speed up subsequent builds:
 ## Flashing
 
 The flashing procedure is highly hardware specific and can be found in the
-[Developer Boards](dev-boards.html) section for each individual device.
+[Developer Boards](developer-boards) section for each individual device.
 
 ## Additional Tips and Troubleshooting
 

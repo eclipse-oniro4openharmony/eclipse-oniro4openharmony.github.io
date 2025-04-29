@@ -30,7 +30,7 @@ The Oniro code is hosted in GitHub [Eclipse Oniro for OpenHarmony](https://githu
 
 ## Quick Start
 
-To quickly start working with the code and building Oniro please follow our concise [tutorial](quick-build.html). For those interested in experiencing its functionality on actual hardware, as a starting point, we recommend the HiHope HH-SCDAYU200 development kit, which is based on Rockchip's RK3568 processor. This kit is readily accessible in Europe and the USA, offering convenience for developers in these regions.
+To quickly start working with the code and building Oniro please follow our concise [tutorial](device-development/building-oniro.html). For those interested in experiencing its functionality on actual hardware, as a starting point, we recommend the HiHope HH-SCDAYU200 development kit, which is based on Rockchip's RK3568 processor. This kit is readily accessible in Europe and the USA, offering convenience for developers in these regions.
 
 ## Chat with Us
 

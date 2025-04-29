@@ -27,4 +27,4 @@ For detailed instructions, please refer to the [Environment Setup Guide](/applic
 ## Learning Path
 To support your application development, we provide comprehensive development guidelines.
 
-You can familiarize yourself with the application development process by [getting started with a simple project](./create-first-eclipse-oniro-app/index).
+You can familiarize yourself with the application development process by [getting started with a simple project](create-first-eclipse-oniro-app).
