@@ -44,8 +44,9 @@ The usage is as follows:
 ### Cross-HAP/HSP Resources
 For cross-HAP/HSP resources, we have different scenarios as following:
 - Cross-bundle access (for system applications only)
-- Inter-bundle, cross-module access
-For detailed information please check the source [here](https://docs.openharmony.cn/pages/v5.0/en/application-dev/quick-start/resource-categories-and-access.md#cross-bundle-access-for-system-applications-only)
+- Inter-bundle, cross-module access  
+
+For detailed information please reference [Inter-Bundle, Cross-Module Access](https://docs.openharmony.cn/pages/v5.0/en/application-dev/quick-start/resource-categories-and-access.md#cross-bundle-access-for-system-applications-only)
 
 ### System Resources
 
