@@ -25,7 +25,7 @@ The lifecycle of UIAbility has the following states: **Create**, **Foreground**,
 > **Note**:
 >
 > If you want to check the sample code below, because of limited functionailities of **Previewer**, you need to use real device instead. 
-Before proceeding, make sure you finished reading **[Running the Application on a real Device](../../create-first-eclipse-oniro-app/run-real-device)** tutorial.
+Before proceeding, make sure you finished reading **[Running the Application on a real Device](../../create-first-eclipse-oniro-app/run-real-device.html)** tutorial.
 
 ### Create
 

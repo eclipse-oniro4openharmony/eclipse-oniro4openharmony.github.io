@@ -8,10 +8,10 @@ layout: default
 
 ## Running the Application on a Real Device
 ### Install HDC  
-1. Find the [pipeline]((https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist)) whose name is ohos-sdk-full or ohos-sdk-public, click Download Link, and select Full Package.
+1. Find the [pipeline](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist) whose name is ohos-sdk-full or ohos-sdk-public, click Download Link, and select Full Package.
 
 >**Note:**
-You can skip this part if you followed the procedure from [Environment Setup and Configuration](/application-development/environment-setup-config/index) tutorial. 
+You can skip this part if you followed the procedure from [Environment Setup and Configuration](/application-development/environment-setup-config) tutorial. 
 
 Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-4.1-Release, selecting a date from the previous month, or manually choosing a range.  
    

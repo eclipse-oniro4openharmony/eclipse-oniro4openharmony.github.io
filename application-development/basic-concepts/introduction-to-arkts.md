@@ -428,8 +428,6 @@ struct ColumnExample {
 
 <img src='./images/image-basic/image5.png'>
 
-You can learn more about basic components [here](/application-development/basic-components/component-overview.md).
-
 ### Custom Component
 In ArkUI, components are the visual elements of the interface, divided into built-in components provided by the framework and custom components created by developers. Relying solely on built-in components can lead to rigid, hard-to-maintain designs. Custom components help improve code reusability, separate UI from business logic, and support version upgrades. They offer key features such as:
 - **Combinable**: Combine built-in and custom components with shared properties and methods.
@@ -1104,17 +1102,17 @@ In the preceding figure, the decorators in the components area are used for stat
 
 #### Decorators for component state management
 
-- **[@State](/application-development/basic-concepts/state-management/state-decorator)**: An @State decorated variable holds the state of the owning component. It can be the source of one- or two-way synchronization with child components. When the variable changes, the dependent component will be updated. 
+- **[@State](/application-development/basic-concepts/state-management/state-decorator.html)**: An @State decorated variable holds the state of the owning component. It can be the source of one- or two-way synchronization with child components. When the variable changes, the dependent component will be updated. 
 
-- **[@Prop](/application-development/basic-concepts/state-management/prop-decorator)**: An @Prop decorated variable can create one-way synchronization with a variable of its parent component. @Prop decorated variables are mutable, but changes are not synchronized to the parent component.
+- **[@Prop](/application-development/basic-concepts/state-management/prop-decorator.html)**: An @Prop decorated variable can create one-way synchronization with a variable of its parent component. @Prop decorated variables are mutable, but changes are not synchronized to the parent component.
 
-- **[@Link](/application-development/basic-concepts/state-management/link-decorator)**: An @Link decorated variable creates two-way synchronization with a variable of its parent component. When the @Link decorated variable has its value changed, its source is updated as well; when the source updates, the @Link decorated variable will do as well.
+- **[@Link](/application-development/basic-concepts/state-management/link-decorator.html)**: An @Link decorated variable creates two-way synchronization with a variable of its parent component. When the @Link decorated variable has its value changed, its source is updated as well; when the source updates, the @Link decorated variable will do as well.
 
-- **[@Provide/@Consume](/application-development/basic-concepts/state-management/provide-consume-decorator)**: Variables decorated by @Provide/@Consume are used for data synchronization across component levels. The components can be bound to the variables through aliases or attribute names. Data does not need to be passed through the named parameter mechanism.
+- **[@Provide/@Consume](/application-development/basic-concepts/state-management/provide-consume-decorator.html)**: Variables decorated by @Provide/@Consume are used for data synchronization across component levels. The components can be bound to the variables through aliases or attribute names. Data does not need to be passed through the named parameter mechanism.
 
-- **[@Observed](/application-development/basic-concepts/state-management/observed-objectlink-decorator)**: @Observed is a class decorator. You can use it to decorate the class that has multiple levels of nested objects or arrays to be observed. Note that @Observed must be used with @ObjectLink for two-way synchronization or with @Prop for one-way synchronization.
+- **[@Observed](/application-development/basic-concepts/state-management/observed-objectlink-decorator.html)**: @Observed is a class decorator. You can use it to decorate the class that has multiple levels of nested objects or arrays to be observed. Note that @Observed must be used with @ObjectLink for two-way synchronization or with @Prop for one-way synchronization.
 
-- **[@ObjectLink](/application-development/basic-concepts/state-management/observed-objectlink-decorator)**: An @ObjectLink decorated variable is used with an @Observed decorated class of the parent component for two-way data synchronization. It is applicable in scenarios involving multiple levels of nested objects or arrays in the class.
+- **[@ObjectLink](/application-development/basic-concepts/state-management/observed-objectlink-decorator.html)**: An @ObjectLink decorated variable is used with an @Observed decorated class of the parent component for two-way data synchronization. It is applicable in scenarios involving multiple levels of nested objects or arrays in the class.
 
 > **NOTE**
 >
