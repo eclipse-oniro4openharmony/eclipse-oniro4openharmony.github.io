@@ -19,11 +19,14 @@ There are two types of SDKs:
 
 #### Get the Full SDK
 
-1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipline [Daily Build - OpenHarmony CI](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
+1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipeline [Daily Build - OpenHarmony CI](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
    
    Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-4.1-Release, selecting a date from the previous month, or manually choosing a range.  
    
-   In the daily build or rolling build, find **ohos-sdk-full_4.1-Release**, and click on the download link to choose and download the full package, which includes Full-SDK for Windows and Linux.  (If daily build SDK is not compatible with your version of DevEco Studio, try to use rolling build SDK instead)  
+   In the daily build or rolling build, find **ohos-sdk-full_4.1-Release**, and click on the download link to choose and download the full package, which includes Full-SDK for Windows and Linux.  (If daily build SDK is not compatible with your version of DevEco Studio, try to use rolling build SDK instead).  
+   
+   **Note:** While this guide uses the `4.1-Release` version as an example, more recent SDK versions, such as `5.0.0-Release` with API version 12, are also available. Make sure to select the version that matches your requirements.
+
 <img src='./images/image19.png'>  
  
 
@@ -53,42 +56,24 @@ Copy the entire SDK directory (e.g., 11) to another location on your system wher
 Now you can remove the original SDK from its directory.
 
 1. The SDK you have acquired needs to be recognized by DevEco Studio in order to be used. 
-For example, with the daily build SDK: `version-Master_Version-OpenHarmony_4.1.7.7-20240830_034700-ohos-sdk-public_4.1-release.tar.gz`, the compressed file has the following directory structure. 
+For example, with the daily build SDK: `version-Release_Version-OpenHarmony-4.1.10.3-20250415_034027-ohos-sdk-full_4.1-Release.tar.gz`, the compressed file has the following directory structure. 
 You can see that it contains SDK files for both Linux and Windows platforms. Each platform's SDK includes directories such as ets, js, native, previewer, and toolchains.
 ```
-   └─version-Master_Version-OpenHarmony_4.1.7.7-20240830_034700-ohos-sdk-public_4.1-Release
-   
-       │  manifest\_tag.xml
-       
-       │
-       
-       └─ohos-sdk
-       
-           ├─linux
-       
-           │      ets-linux-x64-4.1.7.8-Release
-       
-           │      js-linux-x64-4.1.7.8-Release
-       
-           │      native-linux-x64-4.1.7.8-Release
-       
-           │      previewer-linux-x64-4.1.7.8-Release
-       
-           │      toolchains-linux-x64-4.1.7.8-Release
-       
-           │
-       
-           └─windows
-       
-                   ets-windows-x64-4.1.7.8-Release
-       
-                   js-windows-x64-4.1.7.8-Release
-       
-                   native-windows-x64-4.1.7.8-Release
-       
-                   previewer-windows-x64-4.1.7.8-Release
-       
-                   toolchains-windows-x64-4.1.7.8-Release
+├── version-Release_Version-OpenHarmony-4.1.10.3-20250415_034027-ohos-sdk-full_4.1-Release
+│   ├── manifest_tag.xml
+│   └── ohos-sdk
+│       ├── linux
+│       │   ├── ets-linux-x64-4.1.10.3-Release.zip
+│       │   ├── js-linux-x64-4.1.10.3-Release.zip
+│       │   ├── native-linux-x64-4.1.10.3-Release.zip
+│       │   ├── previewer-linux-x64-4.1.10.3-Release.zip
+│       │   └── toolchains-linux-x64-4.1.10.3-Release.zip
+│       └── windows
+│           ├── ets-windows-x64-4.1.10.3-Release.zip
+│           ├── js-windows-x64-4.1.10.3-Release.zip
+│           ├── native-windows-x64-4.1.10.3-Release.zip
+│           ├── previewer-windows-x64-4.1.10.3-Release.zip
+│           └── toolchains-windows-x64-4.1.10.3-Release.zip
 ```
 2. Create a new directory with the API version 11  as the file name in dir path: xxx\\Sdk\\ , unzip the compressed files  into this directory to form a structure below:
 <img src='./images/image21.png'>  
@@ -96,14 +81,11 @@ You can see that it contains SDK files for both Linux and Windows platforms. Eac
 3. Verify in the IDE:  
    Full API will be loaded in IDE and you can now rebuild the project.  
 <img src='./images/image24.png'>  
-Full SDK replacement tutorial finished.
 
 ### **Approach 2: From Compiled Source Files**
 
 The Full-SDK is not available directly. It can be compiled from the source code of OpenHarmony and manually replaced in DevEco Studio. The method of replacing the SDK is the same as the one mentioned in [**Approach 1**](#approach-1-from-cicd-pipeline-recommended).
 
-You can find the guide  of compilation of source code here: [How to compile Full SDK](https://gitee.com/openharmony/docs/blob/OpenHarmony-3.2-Release/zh-cn/application-dev/quick-start/full-sdk-compile-guide.md#%E7%BC%96%E8%AF%91full-sdk)
-
-Please use translation tools if needed.
+You can find the guide  of compilation of source code here: [How to compile Full SDK](https://github.com/eclipse-oniro-mirrors/docs/blob/master/en/application-dev/faqs/full-sdk-compile-guide.md)
 
 <div style="margin-top: 50px;"></div>
