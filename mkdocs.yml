@@ -1,0 +1,143 @@
+site_name: Oniro Project
+site_url: https://imansmallapple.github.io/mkdocs/
+theme:
+ name: material
+ features:
+   - content.code.copy
+   - content.code.select
+   - navigation.footer
+ font: 
+  text: Plus Jakarta Sans
+  code: Plus Jakarta Sans # Change font in code
+ logo: assets/oniro.png
+ favicon: assets/favicon.ico
+ palette: 
+   # Dark mode
+  - scheme: slate
+    toggle:
+     icon: material/weather-sunny
+     name: Dark mode
+    primary: indigo
+    accent: deep purple
+
+  # Light mode
+  - scheme: default
+    toggle:
+      icon: material/weather-night
+      name: Light mode
+    primary: blue
+    accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+nav:
+  - Home: index.md
+  - Eclipse Oniro Project:
+      - OpenHarmony Downstream / Upstream Relationship: eclipse-oniro-project/openharmony-relationship.md
+      - OpenHarmony Mirror: eclipse-oniro-project/openharmony-mirror.md
+      - Oniro Architecture: eclipse-oniro-project/oniro-architecture.md
+  - Application Development: 
+      - Development Overview: application-development/index.md
+      - Environment Setup Guide: 
+        - Overview: application-development/environment-setup-config/index.md
+        - System Requirement: application-development/environment-setup-config/system-requirement.md
+        - IDE Installation: application-development/environment-setup-config/ide-installation.md
+        - Environment Configuration: application-development/environment-setup-config/env-config.md
+        - Full SDK & Public SDK: application-development/environment-setup-config/full-public-sdk.md
+        - Developer Account: application-development/environment-setup-config/developer-account.md
+        - Introduction to OHPM: application-development/environment-setup-config/ohpm.md
+        - Common Issues and Solutions: application-development/environment-setup-config/common-issue.md
+      - Create Your First Eclipse Oniro Application:
+        - Overview: application-development/create-first-eclipse-oniro-app/index.md
+        - Create an Eclipse Oniro app using OpenHarmony Template: application-development/create-first-eclipse-oniro-app/create-template.md
+        - Find Project Files: application-development/create-first-eclipse-oniro-app/find-project-files.md
+        - Usage of Previewer: application-development/create-first-eclipse-oniro-app/use-previewer.md
+        - Build the First Page: application-development/create-first-eclipse-oniro-app/build-first-page.md
+        - Build the Second Page: application-development/create-first-eclipse-oniro-app/build-second-page.md
+        - Implementing Page Redirection: application-development/create-first-eclipse-oniro-app/page-redirect.md
+        - Running the Application on a Real Device: application-development/create-first-eclipse-oniro-app/run-real-device.md
+      - Basic Concepts: 
+        - Overview: application-development/basic-concepts/index.md
+        - Application Package Structure in Stage Model: application-development/basic-concepts/app-pack-structure.md
+        - Introduction to ArkTS: application-development/basic-concepts/introduction-to-arkts.md
+        - ArkTS Language Reference: application-development/basic-concepts/arkts-language-reference.md
+        - ArkTS-Based declarative UI Development: 
+          - Overview: application-development/basic-concepts/ui-development/index.md
+          - Component: application-development/basic-concepts/ui-development/component.md
+          - Layout: application-development/basic-concepts/ui-development/layout.md
+        - UIAbility: 
+          - Overview: application-development/basic-concepts/uiability/index.md
+          - UIAbility Component Lifecycle: application-development/basic-concepts/uiability/uiability-lifecycle.md
+          - UIAbility Launch Type: application-development/basic-concepts/uiability/uiability-launch-type.md
+      - Resource Categories and Access: 
+        - Overview: application-development/resource-categories-and-access/index.md
+        - Resource Categories:
+            - Overview: application-development/resource-categories-and-access/resource-categories/index.md
+            - Resource Directories: application-development/resource-categories-and-access/resource-categories/resource-directories.md
+            - Resource Group Directories: application-development/resource-categories-and-access/resource-categories/resource-group-directories.md
+        - Resource Access: application-development/resource-categories-and-access/resource-access/index.md
+        - State Management: 
+          - Overview: application-development/basic-concepts/state-management/index.md
+          - State Decorator: application-development/basic-concepts/state-management/state-decorator.md
+          - Prop Decorator: application-development/basic-concepts/state-management/prop-decorator.md
+          - Link Decorator: application-development/basic-concepts/state-management/link-decorator.md
+          - Provide and Consume Decorator: application-development/basic-concepts/state-management/provide-consume-decorator.md
+          - Observed and ObjectLink Decorator: application-development/basic-concepts/state-management/observed-objectlink-decorator.md
+          - LocalStorage: application-development/basic-concepts/state-management/localstorage.md
+          - AppStorage: application-development/basic-concepts/state-management/appstorage.md
+          - PersistentStorage: application-development/basic-concepts/state-management/persistentstorage.md
+          - Watch Decorator: application-development/basic-concepts/state-management/watch-decorator.md
+          - $$ Syntax: application-development/basic-concepts/state-management/operator.md
+      - Code Labs: application-development/codeLabs/index.md
+  - Device Development: 
+      - Development Overview: device-development/index.md
+      - Building Oniro: device-development/building-oniro.md
+      - Developer Boards: 
+          - Overview: device-development/developer-boards/index.md
+          - HiHope HH-SCDAYU200: device-development/developer-boards/hihope-hh-scdayu200.md
+          - Raspberry Pi 4 Model B: device-development/developer-boards/raspberry-pi-4model-b.md
+          - Oniro Emulator: device-development/developer-boards/emulator.md
+      - Oniro IDE: 
+          - Overview: device-development/oniro-ide/index.md
+          - Getting Started: device-development/oniro-ide/getting-started.md
+          - User Interface: device-development/oniro-ide/user-interface.md
+          - Code Editing: device-development/oniro-ide/code-editing.md
+          - Code Navigation: device-development/oniro-ide/code-navigation.md
+          - Refactoring: device-development/oniro-ide/refactoring.md
+          - Language Support: device-development/oniro-ide/language-support.md
+  - Contributing:
+      - Overview: contributing/index.md
+      - Quick Start Guide for New Developer: contributing/quick-start-guide-for-new-developers.md
+      - Eclipse Contributor Agreement: contributing/eclipse-contributor-agreement.md
+      - DCO-signoff: contributing/dco-signoff.md
+      - GitHub Contributions: contributing/github-contributions.md
+      - Bug Handling Process: contributing/bug-handling-process.md
+      - REUSE Compliance: contributing/reuse-compliance.md
+      - Contributing to Projects not Maintained by Team: contributing/contributing-to-projects-not-maintained-by-team.md
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/solid/message
+      link: https://chat.eclipse.org/#/room/#oniro:matrix.eclipse.org
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@OniroProject
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/showcase/oniro-project/
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/Oniro_Project
