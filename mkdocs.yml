@@ -1,5 +1,5 @@
 site_name: Oniro Project
-site_url: https://imansmallapple.github.io/mkdocs/
+site_url: https://docs.oniroproject.org/
 theme:
  name: material
  features:
