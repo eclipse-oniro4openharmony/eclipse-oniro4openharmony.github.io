@@ -83,13 +83,6 @@ nav:
           - Overview: application-development/basic-concepts/uiability/index.md
           - UIAbility Component Lifecycle: application-development/basic-concepts/uiability/uiability-lifecycle.md
           - UIAbility Launch Type: application-development/basic-concepts/uiability/uiability-launch-type.md
-      - Resource Categories and Access: 
-        - Overview: application-development/resource-categories-and-access/index.md
-        - Resource Categories:
-            - Overview: application-development/resource-categories-and-access/resource-categories/index.md
-            - Resource Directories: application-development/resource-categories-and-access/resource-categories/resource-directories.md
-            - Resource Group Directories: application-development/resource-categories-and-access/resource-categories/resource-group-directories.md
-        - Resource Access: application-development/resource-categories-and-access/resource-access/index.md
         - State Management: 
           - Overview: application-development/basic-concepts/state-management/index.md
           - State Decorator: application-development/basic-concepts/state-management/state-decorator.md
@@ -101,7 +94,14 @@ nav:
           - AppStorage: application-development/basic-concepts/state-management/appstorage.md
           - PersistentStorage: application-development/basic-concepts/state-management/persistentstorage.md
           - Watch Decorator: application-development/basic-concepts/state-management/watch-decorator.md
-          - $$ Syntax: application-development/basic-concepts/state-management/operator.md
+          - $$ Syntax: application-development/basic-concepts/state-management/operator.md 
+      - Resource Categories and Access: 
+        - Overview: application-development/resource-categories-and-access/index.md
+        - Resource Categories:
+            - Overview: application-development/resource-categories-and-access/resource-categories/index.md
+            - Resource Directories: application-development/resource-categories-and-access/resource-categories/resource-directories.md
+            - Resource Group Directories: application-development/resource-categories-and-access/resource-categories/resource-group-directories.md
+        - Resource Access: application-development/resource-categories-and-access/resource-access/index.md
       - Code Labs: application-development/codeLabs/index.md
   - Device Development: 
       - Development Overview: device-development/index.md
