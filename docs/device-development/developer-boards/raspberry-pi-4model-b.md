@@ -12,12 +12,13 @@ The Raspberry Pi 4B is powered by the Broadcom BCM2711, a quad-core Cortex-A72 (
 
 The onboard wireless capabilities (Wi-Fi and Bluetooth) and the Raspberry Pi's standard 40-pin GPIO header ensure a wide range of expansion possibilities. It’s an excellent platform for IoT, media centers, and general-purpose computing projects.
 
-The Oniro Project supports the Raspberry Pi 4B, and the following features have been verified to be working:
-- GPU graphical acceleration
-- USB camera support
-- HDMI output
-- Touch input
-- Mouse input
+The Oniro Project supports the Raspberry Pi 4B, and the following features have been verified to be working:  
+
+- GPU graphical acceleration  
+- USB camera support  
+- HDMI output  
+- Touch input  
+- Mouse input  
 
 ![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](images/raspberry-po-4-model-b/rpi4b-waveshare-oniro.png)  
 *Oniro on Raspberry Pi 4b and waveshare 7inch touch screen*
