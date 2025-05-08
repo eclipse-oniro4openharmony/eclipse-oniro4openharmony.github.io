@@ -6,8 +6,6 @@ ArkTS is optimized to provide better performance and efficiency while maintainin
 ## Basic Syntax Overview  
 With a basic understanding of the ArkTS language, let's explore its composition through an example. As shown below, when the user clicks the button, the text content changes from "Hello World" to "Hello ArkUI."  
 
-> Portions of this documentation are adapted from *[OpenHarmony Documentation](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
 **Figure 1** Example effect drawing  
     <img src='../images/image-basic/v1.gif'>
 
@@ -38,8 +36,6 @@ In this example, the basic composition of ArkTS is as follows:
 ## Key Features
 ### Declarative UI
 ArkTS declaratively combines and extends components to describe the UI of an application. It also provides basic methods for configuring attributes, events, and child components to help you implement application interaction logic.
-
-> Portions of this documentation are adapted from *[OpenHarmony Documentation](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-declarative-ui-description.md)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 #### Creating a Component
 
@@ -1273,7 +1269,7 @@ ArkTS provides conditional rendering. It supports the use of the **if**, **else*
 
 - The build function inside each conditional branch must follow the special rules for build functions. Each of such build functions must create one or more components. An empty build function that creates no components will result in a syntax error.
 
-- Some container components impose restrictions on the type or number of child components. When conditional statements are used in such components, these restrictions also apply to the components to be created by using the conditional statements. For example, when a conditional statement is used in the **\<Grid>** container component, whose child components can only be **\<GridItem>**, only the **\<GridItem>** component can be used in the conditional statement.
+- Some container components impose restrictions on the type or number of child components. When conditional statements are used in such components, these restrictions also apply to the components to be created by using the conditional statements. For example, when a conditional statement is used in the **Grid** container component, whose child components can only be **GridItem**, only the **GridItem** component can be used in the conditional statement.
 
 
 ##### Update Mechanism
@@ -1328,7 +1324,7 @@ Each branch of the **if** statement includes a build function. Each of such buil
 
 2. Execute the build function of the branch and add the generated child component to its parent component.
 
-In the preceding example, if **count** increases from 0 to 1, then **if** updates, the condition **count > 0** is re-evaluated, and the evaluation result changes from **false** to **true**. Therefore, the positive branch build function will be executed, which creates a **\<Text>** component and adds it to the **\<Column>** parent component. If **count** changes back to 0 later, then the **\<Text>** component will be removed from the **\<Column>** component. Since there is no **else** branch, no new build function will be executed.
+In the preceding example, if **count** increases from 0 to 1, then **if** updates, the condition **count > 0** is re-evaluated, and the evaluation result changes from **false** to **true**. Therefore, the positive branch build function will be executed, which creates a **Text** component and adds it to the **Column** parent component. If **count** changes back to 0 later, then the **Text** component will be removed from the **Column** component. Since there is no **else** branch, no new build function will be executed.
 
 Here is a preview of the example:
 <div style="text-align:center">
@@ -1440,7 +1436,7 @@ Here, the @State decorated variable **counter** is owned by the parent component
 
 #### ForEach: Rendering of Repeated Content
 
-**ForEach** enables rendering of repeated content based on array type data. It must be used in a container component, and the component it returns must be one allowed inside the container component. For example, for rendering of list items, **ForEach** must be used in the **\<List>** component.
+**ForEach** enables rendering of repeated content based on array type data. It must be used in a container component, and the component it returns must be one allowed inside the container component. For example, for rendering of list items, **ForEach** must be used in the **List** component.
 
 > **NOTE**
 >
@@ -1460,7 +1456,7 @@ The parameters are described in the table below.
 | Name       | Type                               | Mandatory| Description                                                    |
 | ------------- | --------------------------------------- | -------- | ------------------------------------------------------------ |
 | arr           | Array\<Object\>                                   | Yes      | Data source, which is an array.<br>**NOTE**<br>- You can set this parameter to an empty array. In this case, no child component is created.<br>- You can also set this parameter to a function whose return value is an array, for example, **arr.slice (1, 3)**. However, the set function cannot change any state variables including the array itself. For example, **Array.splice**, **Array.sort**, and **Array.reverse** functions are not allowed, as they may change the array.|
-| itemGenerator | `(item: Object, index: number) => void`   | Yes      | Component generator.<br>- It generates a component for each data item in an array. <br>- **item**: data item in the **arr** array.<br>- (Optional) **index**: index of the data item in the **arr** array.<br>**NOTE**<br>- The type of the created component must be the one allowed inside the parent container component of **ForEach**. For example, a **\<ListItem>** component is allowed only when the parent container component of **ForEach** is **\<List>**.|
+| itemGenerator | `(item: Object, index: number) => void`   | Yes      | Component generator.<br>- It generates a component for each data item in an array. <br>- **item**: data item in the **arr** array.<br>- (Optional) **index**: index of the data item in the **arr** array.<br>**NOTE**<br>- The type of the created component must be the one allowed inside the parent container component of **ForEach**. For example, a **ListItem** component is allowed only when the parent container component of **ForEach** is **List**.|
 | keyGenerator  | `(item: Object, index: number) => string` | No      | Key generator.<br>- It generates a unique and persistent key for each array item of the data source **arr**. The return value is the key generation rule you customize.<br>- **item**: data item in the **arr** array.<br>- (Optional) **index**: index of the data item in the **arr** array.<br>**NOTE**<br>- If this function is not specified, the default key generator of the framework is used: **(item: T, index: number) => { return index + '__' + JSON.stringify(item); }**.<br>- The key generator should not change any component state.|
 
 > **NOTE**
@@ -1827,7 +1823,7 @@ In this example, the **ArticleCard** component functions as a child component of
 
 ###### Properties of Data Source Array Items Changed
 
-If the data source array items are of the Object type, property changes of these array items cannot be detected by the ArkUI framework, because the framework cannot detect property changes of array items of complex types when the array is decorated by @State. As a result, re-rendering by **ForEach** is not performed. To trigger **ForEach** to perform re-rendering, use the @Observed and @ObjectLink decorators. In the following example, clicking the Like icon on the article list changes the number of likes for an article.
+If the data source array items are of the Object type, property changes of these array items cannot be detected by the ArkUI framework, because the framework cannot detect property changes of array items of complex types when the array is decorated by @State. As a result, re-rendering by **ForEach** is not performed. To trigger **ForEach** to perform re-rendering, use the **@Observed** and **@ObjectLink** decorators. In the following example, clicking the Like icon on the article list changes the number of likes for an article.
 
 ```ts
 @Observed
@@ -1934,10 +1930,10 @@ The following figure shows the initial screen (on the left) and the screen after
     <img src='../images/image-basic/image34.png' width='50%'>
 </div>
 
-In this example, the **Article** class is decorated by the @Observed decorator. The parent component **ArticleListView** passes an **Article** object instance to the child component **ArticleCard**, and the child component uses the @ObjectLink decorator to receive the instance.
+In this example, the **Article** class is decorated by the **@Observed** decorator. The parent component **ArticleListView** passes an **Article** object instance to the child component **ArticleCard**, and the child component uses the **@ObjectLink** decorator to receive the instance.
 
 1. When the Like icon of Article 1 is clicked, the **handleLiked** function of the **ArticleCard** component is triggered. This function changes the values of the **isLiked** and **likesCount** properties of the **article** instance in the component pertaining to Article 1.
-2. Because **article** in the child component **ArticleCard** uses the @ObjectLink decorator, the parent and child components share the same article data. As such, the values of **isLiked** and **likedCounts** of the first array item of **articleList** in the parent component are changed synchronously.
+2. Because **article** in the child component **ArticleCard** uses the **@ObjectLink** decorator, the parent and child components share the same article data. As such, the values of **isLiked** and **likedCounts** of the first array item of **articleList** in the parent component are changed synchronously.
 3. When the parent component detects property changes of the data source array items, **ForEach** is triggered for re-rendering.
 4. Here, the **ForEach** key generation rule is the **id** property value of the array item. If **ForEach** traverses the new data source and finds no changes in the **id** values, no component is created.
 5. When the **ArticleCard** component corresponding to the first array item is rendered, the obtained values of **isLiked** and **likedCounts** are the new values.

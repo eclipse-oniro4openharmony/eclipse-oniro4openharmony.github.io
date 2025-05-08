@@ -1,10 +1,5 @@
 This topic explores the structure of an application package in the phase of application development.
 
-**Content table:**  
-- [Application Model Overview](#application-model-overview)  
-- [Package Structure in the Development Phase](#package-structure-in-the-development-phase)  
-- [Selecting a File Type](#selecting-a-file-type)  
-
 ## Application Model Overview
 
 The system has provided two application models:
