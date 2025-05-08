@@ -86,7 +86,7 @@ This example uses @LocalStorageLink to show how to:
 
 - Use @LocalStorageLink to create a two-way data synchronization with the given attribute in LocalStorage.
 
- ```ts
+```ts
 class PropB {
   code: number;
 

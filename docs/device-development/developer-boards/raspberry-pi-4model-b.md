@@ -19,7 +19,7 @@ The Oniro Project supports the Raspberry Pi 4B, and the following features have 
 - Touch input
 - Mouse input
 
-![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](images/raspberry-po-4-model-b/rpi4b-waveshare-oniro.png)\
+![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](images/raspberry-po-4-model-b/rpi4b-waveshare-oniro.png)  
 *Oniro on Raspberry Pi 4b and waveshare 7inch touch screen*
 
 ## Specification

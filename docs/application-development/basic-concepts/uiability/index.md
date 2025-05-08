@@ -12,5 +12,5 @@ You can develop a single UIAbility or multiple UIAbilities for your application 
 
 - If you want your application to be displayed as multiple missions in Recents or multiple windows to be opened simultaneously, use multiple UIAbilities.
 
-
-> Portions of this documentation are adapted from *[OpenHarmony Documentation](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/reference/apis-ability-kit/js-apis-app-ability-uiAbility.md)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+## Additional Information
+For additional information please refer to [UIAbility](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/reference/apis-ability-kit/js-apis-app-ability-uiAbility.md)

@@ -58,7 +58,7 @@ struct CityList {
 }
 ```
 
-Each **\<ListItem>** component can contain only one root child component. Therefore, it does not allow for child components in tile mode. If tile mode is required, encapsulate the child components into a container or create a custom component.
+Each **ListItem** component can contain only one root child component. Therefore, it does not allow for child components in tile mode. If tile mode is required, encapsulate the child components into a container or create a custom component.
 
   **Figure 3** Example of a contacts list 
 
