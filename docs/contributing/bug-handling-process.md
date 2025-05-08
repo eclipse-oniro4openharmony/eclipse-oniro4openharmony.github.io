@@ -45,16 +45,15 @@ from that point. Please refer to the CVE Process for details.
 If the bug is confirmed as a bug, the developer will assign bug
 severity: critical, normal, minor or low.
 
-**NOTE：**
-
-_Critical_ severity bugs make a feature unusable, cause a major data
-loss or hardware breakage. There is no workaround, or a complex one.
-_Normal_ severity bugs make a feature hard to use, but there is a
-workaround (including another feature to use instead of the desired
-one). _Minor_ severity bugs cause a loss of non-critical feature (like
-missing or incorrect logging). _Low_ severity bugs cause minor
-inconveniences (like a typo in the user interface or in the
-documentation).
+!!! note
+    _Critical_ severity bugs make a feature unusable, cause a major data
+    loss or hardware breakage. There is no workaround, or a complex one.
+    _Normal_ severity bugs make a feature hard to use, but there is a
+    workaround (including another feature to use instead of the desired
+    one). _Minor_ severity bugs cause a loss of non-critical feature (like
+    missing or incorrect logging). _Low_ severity bugs cause minor
+    inconveniences (like a typo in the user interface or in the
+    documentation).
 
 The bug can originate in a package developed by the project, or from one
 we use from an upstream source. The process of handling a bug report

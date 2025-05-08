@@ -16,7 +16,14 @@ Check the summary information and go next
 <img src='../images/image13.png'>  
 Environment configuration is finished.
 <img src='../images/image14.png'>  
->**Note:**
-If you want to run application for OpenHarmony, you need to install revelent APIs as well. You can download public SDK from `DevEco Studio`->`Tool`->`SDK Manager`->`OpenHarmony`, select API and click `Apply` to download.
-(If you downloaded DevEco Studio version is 4.1, choose API Version 11 for development.)
-<img src='../images/image18.png'>  
+
+!!! note "Install Revelant APIs"
+
+    To run applications for OpenHarmony, you also need to install the relevant APIs.
+
+    Open **DevEco Studio** and go to:  
+    `Tool` → `SDK Manager` → `OpenHarmony`, select an API version and click **Apply** to download.
+
+    > 💡 If you're using **DevEco Studio 4.1**, select **API Version 11** for development.
+
+    ![SDK Manager](../images/image18.png){: .center}

@@ -7,10 +7,8 @@
 - An @Provide decorated state variable exists in the ancestor component and is said to be "provided" to descendent components. 
 - An @Consume decorated state variable is used in a descendent component. It is linked to ("consumes") the provided state variable in its ancestor component.
 
-
-> **NOTE**
->
-> Since API version 9, these two decorators are supported in ArkTS widgets.
+!!! note
+    Since API version 9, these two decorators are supported in ArkTS widgets.
 
 
 ## Features

@@ -41,11 +41,10 @@ Apart from custom resources, developers can obtain the ID and configuration-spec
 
 During development, the usage of layered parameters is basically the same as that of qualifiers. To reference a system resource, use the "$r('sys.type.resource_id')" format. Wherein: **sys** indicates a system resource; **type** indicates the resource type, which can be **color**, **float**, **string**, or **media**; **resource_id** indicates the resource ID.
 
-> **NOTE**
->
-> - The use of system resources is only supported in the declarative development paradigm.
->
-> - For preset applications, you are advised to use system resources. For third-party applications, you can choose to use system resources or custom application resources as required.
+!!! note
+    - The use of system resources is only supported in the declarative development paradigm.
+
+    - For preset applications, you are advised to use system resources. For third-party applications, you can choose to use system resources or custom application resources as required.
 
   ```ts
     Text('Hello')

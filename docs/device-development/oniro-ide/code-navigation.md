@@ -20,9 +20,8 @@ This allows you to quickly navigate to symbols (ie. variables, functions, classe
 ## Go to Implementations
 The "Go to Implementations" feature allows you to quickly jump to the implementations of a particular function, method, or interface in your codebase. This feature is particularly useful in languages that support interfaces, classes, or methods with multiple implementations.
 
-> **Note:**
->
->  If you want to see all the places where a particular method or function is implemented, "Find All Implementations" is useful for a more comprehensive overview.
+!!! note
+    If you want to see all the places where a particular method or function is implemented, "Find All Implementations" is useful for a more comprehensive overview.
 
 
 ## Find All References

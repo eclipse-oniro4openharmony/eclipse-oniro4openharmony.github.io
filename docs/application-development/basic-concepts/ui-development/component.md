@@ -20,9 +20,8 @@ As shown in the following figure, in a vertical list, **ListItemGroup** or **Lis
     <img src='../images/image1.png'>
 </div>
 
->**NOTE**
->
->A **List** component can contain only **ListItemGroup** or **ListItem** as its child components. **ListItemGroup** and **ListItem** must be used together with **List**.
+!!! note
+    A **List** component can contain only **ListItemGroup** or **ListItem** as its child components. **ListItemGroup** and **ListItem** must be used together with **List**.
 
 ### Display data in List  
 
@@ -223,13 +222,13 @@ The effect is drawing as follows:
     <img src='../images/image6.png'>
 </div>
 
->**NOTE**
->
->1. The stroke width of the divider causes some space between list items. If the content spacing set for the list is smaller than the stroke width of the divider, the latter is used instead.
->
->2. When a list contains multiple columns, the **startMargin** and **endMargin** attributes of the divider apply to each column.
->
->3. The divider is drawn between list items. No divider is drawn above the first list item and below the last list item.
+!!! note
+
+    1. The stroke width of the divider causes some space between list items. If the content spacing set for the list is smaller than the stroke width of the divider, the latter is used instead.
+
+    2. When a list contains multiple columns, the **startMargin** and **endMargin** attributes of the divider apply to each column.
+
+    3. The divider is drawn between list items. No divider is drawn above the first list item and below the last list item.
 
 #### Adding a Scrollbar
 When the total height (width) of list items exceeds the screen height (width), the list can scroll vertically (horizontally). The scrollbar of a list enables users to quickly navigate the list content, as shown below.
@@ -262,9 +261,8 @@ Each item in the **Grid** container corresponds to a **GridItem** component, as 
     <img src='../images/image7.png'>
 </div>
 
->**NOTE**
->
->The **Grid** component accepts only **GridItem** as its child.
+!!! note
+    The **Grid** component accepts only **GridItem** as its child.
 
 ### Display data in Grid
 
@@ -355,9 +353,8 @@ Grid() {
 .columnsTemplate('1fr 2fr 1fr')
 ```
 
->**NOTE**
->
->When **rowsTemplate** or **columnsTemplate** is set for the **Grid** component, its **layoutDirection**, **maxCount**, **minCount**, and **cellLength** attributes do not take effect.
+!!! note
+    When **rowsTemplate** or **columnsTemplate** is set for the **Grid** component, its **layoutDirection**, **maxCount**, **minCount**, and **cellLength** attributes do not take effect.
 
 ## Additional Information
 For additional information please refer to [Creating a List](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-create-list.md) and [Creating a Grid](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-create-grid.md)

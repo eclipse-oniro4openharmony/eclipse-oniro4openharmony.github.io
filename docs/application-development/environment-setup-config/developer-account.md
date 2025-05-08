@@ -1,6 +1,6 @@
 # Developer Account
->**Note:**
-For application development, a developer account is not necessary. 
+!!! note
+    For application development, a developer account is not necessary. 
 
 Introduction of Register and Identify Verification:  
 [HUAWEI ID Registration and Verification | HUAWEI Developers](https://developer.huawei.com/consumer/en/doc/start/registration-and-verification-0000001053628148)

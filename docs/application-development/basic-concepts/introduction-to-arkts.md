@@ -14,9 +14,8 @@ In this example, the basic composition of ArkTS is as follows:
 **Figure 2** Basic composition of ArkTS  
     <img src='../images/image-basic/image3.png'>
 
-> **NOTE**
->
-> The name of a custom variable cannot be the same as that of any universal attribute or event.
+!!! note
+    The name of a custom variable cannot be the same as that of any universal attribute or event.
 
 - **Decorator**: A design pattern used to decorate classes, structs, methods, and variables to assign special meanings to them. In the preceding sample code, `@Entry`, `@Component`, and `@State` are decorators. 
   - `@Component` indicates a custom component.
@@ -41,8 +40,8 @@ ArkTS declaratively combines and extends components to describe the UI of an app
 
 Depending on the builder, you can create components with or without mandatory parameters.
 
->  **NOTE**
->  The **new** operator is not required when you create a component.
+!!! note
+    The **new** operator is not required when you create a component.
 
 ##### Without Mandatory Parameters
 A struct without mandatory parameters is a component defined with empty parentheses. For example, the Divider component:
@@ -175,9 +174,8 @@ Use chainable event methods to configure events supported by built-in components
     .onClick(this.fn)
   ```
 
-> **NOTE**
-> In arrow functions, **this** inherits its value from the surrounding (lexical) scope in which they are defined. This means that, in anonymous functions, **this** may present an unclear reference and is therefore not allowed in ArkTS.
-
+!!! note
+    In arrow functions, **this** inherits its value from the surrounding (lexical) scope in which they are defined. This means that, in anonymous functions, **this** may present an unclear reference and is therefore not allowed in ArkTS.
 
 #### Configuring Child Components
 
@@ -220,9 +218,8 @@ Components are the fundamental building blocks of a user interface. Everything y
 
 The **<Row\>** component lays out child components horizontally.
 
->  **NOTE**
->
->  This component is supported since API version 7. Updates will be marked with a superscript to indicate their earliest API version.
+!!! note
+    This component is supported since API version 7. Updates will be marked with a superscript to indicate their earliest API version.
 
 
 ###### Child Components
@@ -250,9 +247,8 @@ This API can be used in ArkTS widgets since API version 9.
 | alignItems | VerticalAlign | Alignment mode of child components in the vertical direction.<br>Default value: **VerticalAlign.Center**<br>This API can be used in ArkTS widgets since API version 9.|
 | justifyContent | FlexAlign | Alignment mode of the child components in the horizontal direction.<br>Default value: **FlexAlign.Start**<br>This API can be used in ArkTS widgets since API version 9.|
 
->  **NOTE**   
->
->  During row layout, child components do not shrink if flexShrink is not set for them. In this case, the total size of the child components on the main axis can exceed the size of the container on the main axis.
+!!! note
+    During row layout, child components do not shrink if flexShrink is not set for them. In this case, the total size of the child components on the main axis can exceed the size of the container on the main axis.
 
 ###### Example
 
@@ -306,9 +302,8 @@ struct RowExample {
 
 The **<Column\>** component lays out child components vertically.
 
->  **NOTE**
->
->  This component is supported since API version 7. Updates will be marked with a superscript to indicate their earliest API version.
+!!! note
+    This component is supported since API version 7. Updates will be marked with a superscript to indicate their earliest API version.
 
 ###### Child Components
 
@@ -336,9 +331,8 @@ This API can be used in ArkTS widgets since API version 9.
 | alignItems | HorizontalAlign | Alignment mode of the child components in the horizontal direction.<br>Default value: **HorizontalAlign.Center**<br>This API can be used in ArkTS widgets since API version 9.|
 | justifyContent | FlexAlign | Alignment mode of the child components in the vertical direction.<br>Default value: **FlexAlign.Start**<br>This API can be used in ArkTS widgets since API version 9.|
 
->  **NOTE**   
->
->  During column layout, child components do not shrink if flexShrink is not set for them. In this case, the total size of the child components on the main axis can exceed the size of the container on the main axis.
+!!! note
+    During column layout, child components do not shrink if flexShrink is not set for them. In this case, the total size of the child components on the main axis can exceed the size of the container on the main axis.
 
 ###### Example
 
@@ -431,9 +425,8 @@ On `Previewer`, click `Hello, World!`, the text will change into `Hello, ArkUI!`
 <img src='../images/image-basic/image7.png'>
 </div>
 
-> **NOTE**
->
-> To reference the custom component in another file, use the keyword **export** to export the component and then use **import** to import it to the target file.
+!!! note
+    To reference the custom component in another file, use the keyword **export** to export the component and then use **import** to import it to the target file.
 
 Multiple **HelloComponent** instances can be created in **build()** of other custom components. In this way, **HelloComponent** is reused by those custom components.
 
@@ -462,18 +455,16 @@ Basic structure are listed below:
 - **struct**
 The definition of a custom component must start with the @Component struct followed by the component name, and then component body enclosed by curly brackets. No inheritance is allowed. You can omit the **new** operator when instantiating a struct.
 
-  > **NOTE**
-  >
-  > The name or its class or function name of a custom component must be different from that of any built-in components.
+!!! note
+    The name or its class or function name of a custom component must be different from that of any built-in components.
 
 - **@Component**
 The @Component decorator can decorate only the structs declared by the **struct** keyword. When being decorated by @Component, a struct has the componentization capability. You must implement the **build** function for it to describe the UI. Each struct can be decorated by only one @Component. @Component can accept an optional parameter of the Boolean type.
 
-  > **NOTE**
-  >
-  > This decorator can be used in ArkTS widgets since API version 9.
-  > 
-  > An optional parameter of the Boolean type can be used in the @Component since API version 11.
+!!! note
+    This decorator can be used in ArkTS widgets since API version 9.
+  
+    An optional parameter of the Boolean type can be used in the @Component since API version 11.
 
   ```ts
   @Component
@@ -494,13 +485,12 @@ The **build** function is used to define the declarative UI description of a cus
 - **@Entry**
 A custom component decorated with @Entry is used as the default entry component of the page. Only one component can be decorated with @Entry in a single page. The @Entry decorator accepts an optional parameter of type **LocalStorage**.
 
-  > **NOTE**
-  >
-  > This decorator can be used in ArkTS widgets since API version 9.
-  >
-  > Since API version 10, the @Entry decorator accepts an optional parameter of type **LocalStorage** or type **EntryOptions**.
-  >
-  > This decorator can be used in atomic services since API version 11.
+!!! note  
+    This decorator can be used in ArkTS widgets since API version 9.
+  
+    Since API version 10, the @Entry decorator accepts an optional parameter of type **LocalStorage** or type **EntryOptions**.
+  
+    This decorator can be used in atomic services since API version 11.
 
   ```ts
   @Entry
@@ -512,9 +502,8 @@ A custom component decorated with @Entry is used as the default entry component 
 - **@Reusable**
 Custom components decorated by @Reusable can be reused.
 
-  > **NOTE**
-  >
-  > This decorator can be used in ArkTS widgets since API version 10.
+!!! note
+    This decorator can be used in ArkTS widgets since API version 10.
 
   ```ts
   @Reusable
@@ -783,9 +772,8 @@ struct MyComponent {
 
 <img src='../images/image-basic/image12.png'>
 
-> **NOTE**
->
-> When ArkUI sets styles for custom components, an invisible container component is set for **ChildComponent**. These styles are set on the container component instead of the **Button** component of **ChildComponent**. As seen from the rendering result, the red background color is not directly applied to the button. Instead, it is applied to the container component that is invisible to users where the button is located.
+!!! note
+    When ArkUI sets styles for custom components, an invisible container component is set for **ChildComponent**. These styles are set on the container component instead of the **Button** component of **ChildComponent**. As seen from the rendering result, the red background color is not directly applied to the button. Instead, it is applied to the container component that is invisible to users where the button is located.
 
 ##### Page and Custom Component Lifecycle
 
@@ -1062,9 +1050,8 @@ The following figure illustrates the decorators. You can use these decorators at
 
 In the preceding figure, the decorators in the components area are used for state management at the `component level`, while others are used for state management at the `application level`. You can use **@StorageLink/@LocalStorageLink** to implement two-way synchronization of the application and component state, and **@StorageProp/@LocalStorageProp** to implement one-way synchronization.
 
-> **NOTE**
->
->To start, use @State, @Prop and @Link decorator is enough for simple development.
+!!! note
+    To start, use @State, @Prop and @Link decorator is enough for simple development.
 
 ##### Decorators for component state management
 
@@ -1080,12 +1067,10 @@ In the preceding figure, the decorators in the components area are used for stat
 
 - **[@ObjectLink](state-management/observed-objectlink-decorator.md)**: An @ObjectLink decorated variable is used with an @Observed decorated class of the parent component for two-way data synchronization. It is applicable in scenarios involving multiple levels of nested objects or arrays in the class.
 
-> **NOTE**
->
-> Only **@Observed/@ObjectLink** can be used to observe changes of nested attributes. Other decorators can be used to observe changes of attributes at the first layer only.
+!!! note
+    Only **@Observed/@ObjectLink** can be used to observe changes of nested attributes. Other decorators can be used to observe changes of attributes at the first layer only.
 
 ##### Decorators for application state management
-
 
 - **AppStorage**: a special **LocalStorage** singleton instance. It is an application-wide database bound to the application process and can be linked to components through the **@StorageProp** and **@StorageLink** decorators.
 
@@ -1253,9 +1238,9 @@ These rendering control statements includes:
 
 #### if/else: Conditional Rendering
 ArkTS provides conditional rendering. It supports the use of the **if**, **else**, and **else if** statements to display different content based on the application state.
-> **NOTE**
->
-> This API can be used in ArkTS widgets since API version 9.
+
+!!! note
+    This API can be used in ArkTS widgets since API version 9.
 
 ##### Rules of Use
 
@@ -1388,9 +1373,8 @@ Here is a preview of the example:
 </div>
 
 
-> **NOTE**
->
-> **CounterView** (label: **'CounterView \#positive'**) and **CounterView** (label: **'CounterView \#negative'**) are two distinct instances of the same custom component. When the **if** branch changes, there is no update to an existing child component or no preservation of state.
+!!! note
+    **CounterView** (label: **'CounterView \#positive'**) and **CounterView** (label: **'CounterView \#negative'**) are two distinct instances of the same custom component. When the **if** branch changes, there is no update to an existing child component or no preservation of state.
 
 The following example shows the required modifications if the value of **counter** needs to be preserved when the **if** condition changes:
 ```ts
@@ -1438,9 +1422,8 @@ Here, the @State decorated variable **counter** is owned by the parent component
 
 **ForEach** enables rendering of repeated content based on array type data. It must be used in a container component, and the component it returns must be one allowed inside the container component. For example, for rendering of list items, **ForEach** must be used in the **List** component.
 
-> **NOTE**
->
-> This API is supported in ArkTS widgets since API version 9.
+!!! note
+    This API is supported in ArkTS widgets since API version 9.
 
 ##### Interface Description
 ```ts
@@ -1459,10 +1442,9 @@ The parameters are described in the table below.
 | itemGenerator | `(item: Object, index: number) => void`   | Yes      | Component generator.<br>- It generates a component for each data item in an array. <br>- **item**: data item in the **arr** array.<br>- (Optional) **index**: index of the data item in the **arr** array.<br>**NOTE**<br>- The type of the created component must be the one allowed inside the parent container component of **ForEach**. For example, a **ListItem** component is allowed only when the parent container component of **ForEach** is **List**.|
 | keyGenerator  | `(item: Object, index: number) => string` | No      | Key generator.<br>- It generates a unique and persistent key for each array item of the data source **arr**. The return value is the key generation rule you customize.<br>- **item**: data item in the **arr** array.<br>- (Optional) **index**: index of the data item in the **arr** array.<br>**NOTE**<br>- If this function is not specified, the default key generator of the framework is used: **(item: T, index: number) => { return index + '__' + JSON.stringify(item); }**.<br>- The key generator should not change any component state.|
 
-> **NOTE**
->
-> - The **itemGenerator** function can contain an **if/else** statement, and an **if/else** statement can contain **ForEach**.
-> - On initial rendering, **ForEach** loads all data of the data source, creates a component for each data item, and mounts the created components to the render tree. If the data source contains a large number of items or performance is a critical concern, you are advised to use **LazyForEach**.
+!!! note
+    - The **itemGenerator** function can contain an **if/else** statement, and an **if/else** statement can contain **ForEach**.
+    - On initial rendering, **ForEach** loads all data of the data source, creates a component for each data item, and mounts the created components to the render tree. If the data source contains a large number of items or performance is a critical concern, you are advised to use **LazyForEach**.
 
 ##### Key Generation Rules
 
@@ -1473,9 +1455,8 @@ The parameters are described in the table below.
 - The ArkUI framework has a set of specific judgment rules for **ForEach** key generation, which are mainly associated with the second parameter **index** of the **itemGenerator** function and the second parameter **index** of the **keyGenerator** function. The following figure shows the logic of the key generation rules.
 <br>
 
-> **NOTE**
->
-> The ArkUI framework warns of duplicate keys. If duplicate keys exist during UI re-rendering, the framework may not work properly.
+!!! note
+    The ArkUI framework warns of duplicate keys. If duplicate keys exist during UI re-rendering, the framework may not work properly.
 
 ##### Component Creation Rules
 
@@ -1569,12 +1550,6 @@ The figure below shows the effect.
 </div>
 
 In this example, the final key value generation rule is **item**. When **ForEach** traverses the data source **simpleList** and finds the key **two** whose index is **1**, **ForEach** creates a component whose key is **two** based on the final key value generation rule and marks the component. When **ForEach** finds the key **two** whose index is **2**, it does not create a component, because the key of the current item is also **two** according to the final key generation rule.
-
-
-
-
-
-
 
 ###### Non-Initial Rendering
 

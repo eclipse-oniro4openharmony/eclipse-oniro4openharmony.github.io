@@ -50,5 +50,5 @@ Solution:
 		"app-feature":"hos_system_app"
 	},
 ```
-> **Note:**
-If switching the system permissions does not work, try regenerating the automatic signature files.
+!!! note
+	If switching the system permissions does not work, try regenerating the automatic signature files.

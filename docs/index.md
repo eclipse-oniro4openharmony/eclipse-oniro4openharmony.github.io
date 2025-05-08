@@ -1,8 +1,9 @@
 # Welcome to Oniro Project documentation!
 
-> *Oniro™ is a registered trademark of Eclipse Foundation.*
->
-> *In 2023, the Oniro project underwent a significant transition. For those seeking information on the project's previous developments, including the state of the art [IP compliance toolchain](https://oniroproject.readthedocs.io/en/latest/releases/2.0/2.0.0/ip_compliance_note.html), please consult our [legacy documentation](https://oniroproject.readthedocs.io/).*
+!!! info
+    *Oniro™ is a registered trademark of Eclipse Foundation.*  
+
+    *In 2023, the Oniro project underwent a significant transition. For those seeking information on the project's previous developments, including the state of the art [IP compliance toolchain](https://oniroproject.readthedocs.io/en/latest/releases/2.0/2.0.0/ip_compliance_note.html), please consult our [legacy documentation](https://oniroproject.readthedocs.io/).*
 
 ## About Oniro
 

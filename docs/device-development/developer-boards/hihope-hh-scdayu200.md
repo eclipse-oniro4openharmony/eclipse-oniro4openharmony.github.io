@@ -196,11 +196,10 @@ BUSID  VID:PID    DEVICE                                                        
 ```
 
 In our case, we need take **busid** `1-17`.
->**Note**
->
->If the status of **HDC Device** is **Not shared**, type `usbpid bind --busid 1-17`, in above case the device **busid** is 1-17, change it to adjust your case if necessary.
->
->After re-running command `usbipd list`, you will find the device status changed into `Shared`.
+!!! note
+    If the status of **HDC Device** is **Not shared**, type `usbpid bind --busid 1-17`, in above case the device **busid** is 1-17, change it to adjust your case if necessary.
+
+    After re-running command `usbipd list`, you will find the device status changed into `Shared`.
 
 Then we need to attach the device to wsl using command `usbipd attach --wsl --busid 1-17`, the output should be like the following, wait until attach process finishes:
 
@@ -210,9 +209,8 @@ usbipd: info: Detected networking mode 'nat'.
 usbipd: info: Using IP address 172.24.144.1 to reach the host.
 ```
 
->**Note**
->
-> If you are not sure about if the device had been attached already, detach it first using command `usbipd detach --busid 1-17`
+!!! note
+    If you are not sure about if the device had been attached already, detach it first using command `usbipd detach --busid 1-17`
 
 
 After this setup, running `flash/flash.py -q` should produce the following output, indicating readiness:
@@ -221,11 +219,10 @@ After this setup, running `flash/flash.py -q` should produce the following outpu
 maskrom
 ```
 
->**Note**
->
-> If the output is `none`, try to re-run **detach** and **attach** procedures above, you can also check your device connection details using `dmesg | tail -n 50` command on **WSL**.
->
-> If still not working, try to change a cable, switch to connect another port on your PC or keep your board screen unlocked.
+!!! note
+    If the output is `none`, try to re-run **detach** and **attach** procedures above, you can also check your device connection details using `dmesg | tail -n 50` command on **WSL**.
+
+    If still not working, try to change a cable, switch to connect another port on your PC or keep your board screen unlocked.
 
 
 

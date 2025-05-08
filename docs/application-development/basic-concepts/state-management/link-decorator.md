@@ -2,9 +2,8 @@
 
 An @Link decorated variable creates two-way synchronization with a variable of its parent component.
 
-> **NOTE**
->
-> This decorator can be used in ArkTS widgets since API version 9.
+!!! note
+    This decorator can be used in ArkTS widgets since API version 9.
 
 ## Feature and Constraint
 
