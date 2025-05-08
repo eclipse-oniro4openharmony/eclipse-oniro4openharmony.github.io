@@ -26,4 +26,4 @@ Environment configuration is finished.
 
     > 💡 If you're using **DevEco Studio 4.1**, select **API Version 11** for development.
 
-    ![SDK Manager](../images/image18.png){: .center}
+    ![SDK Manager](images/image18.png){: .center}
