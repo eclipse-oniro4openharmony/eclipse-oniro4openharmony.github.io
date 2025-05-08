@@ -17,7 +17,11 @@ There are two types of SDKs:
    
    In the daily build or rolling build, find **ohos-sdk-full_4.1-Release**, and click on the download link to choose and download the full package, which includes Full-SDK for Windows and Linux.  (If daily build SDK is not compatible with your version of DevEco Studio, try to use rolling build SDK instead).  
    
-   **Note:** While this guide uses the `4.1-Release` version as an example, more recent SDK versions, such as `5.0.0-Release` with API version 12, are also available. Make sure to select the version that matches your requirements.
+!!! note "SDK Version Notice"
+
+    While this guide uses the `4.1-Release` version as an example, newer SDKs such as `5.0.0-Release` with **API version 12** are also available.
+
+    👉 Make sure to select the version that matches your development requirements.
 
 <img src='../images/image19.png'>  
  

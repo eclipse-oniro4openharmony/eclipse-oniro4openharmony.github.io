@@ -1,7 +1,9 @@
 To preview the UI display effect of a file in real-time using DevEco Studio's Previewer, click on the **Previewer** tab located on the right side of the DevEco Studio interface.   
 During UI code development, if you add or remove UI components, simply save your changes by pressing **Ctrl+S** or click **Reload**. The Previewer will then immediately refresh to reflect the updated UI.
->**Note**:
-For .ets file, Previewer only works with components which decorated with **@Entry** or **@Preview** decorator.
+
+!!! note
+    For .ets file, Previewer only works with components which decorated with **@Entry** or **@Preview** decorator.
+
 <div style="text-align:center">
     <img src='../images/image12.png'>
 </div> 

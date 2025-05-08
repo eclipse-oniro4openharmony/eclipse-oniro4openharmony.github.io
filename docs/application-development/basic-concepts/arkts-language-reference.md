@@ -1639,7 +1639,8 @@ class Person {
 }
 ```
 
-**Note**: The return type of `getSpouseNick` must be `string | null | undefined`, as the method can return `null` or `undefined`.
+!!! note
+    The return type of `getSpouseNick` must be `string | null | undefined`, as the method can return `null` or `undefined`.
 
 An optional chain can be of any length and contain any number of `?.` operators.
 

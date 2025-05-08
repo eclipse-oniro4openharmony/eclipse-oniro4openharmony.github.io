@@ -7,9 +7,8 @@ LocalStorage provides storage for the page-level UI state. The parameters of the
 This topic describes only the LocalStorage application scenarios and related decorators: **@LocalStorageProp** and **@LocalStorageLink**.
 
 
-> **NOTE**
->
-> LocalStorage is supported since API version 9.
+!!! note
+    LocalStorage is supported since API version 9.
 
 
 ## Overview
@@ -40,9 +39,8 @@ As mentioned above, if you want to establish a binding between LocalStorage and 
 When a custom component is initialized, the @LocalStorageProp(key)/@LocalStorageLink(key) decorated variable is initialized with the value of the attribute with the given key in LocalStorage. Local initialization is mandatory. If an attribute with the given key is missing from LocalStorage, it will be added with the stated initializing value. (Whether the attribute with the given key exists in LocalStorage depends on the application logic.)
 
 
-> **NOTE**
->
-> This decorator can be used in ArkTS widgets since API version 9.
+!!! note
+    This decorator can be used in ArkTS widgets since API version 9.
 
 
 By decorating a variable with @LocalStorageProp(key), a one-way data synchronization is established from the attribute with the given key in LocalStorage to the variable. This means that, local changes (if any) will not be synchronized to LocalStorage, and an update to the attribute with the given key in LocalStorage – for example, a change made with the **set ** API – will overwrite local changes.

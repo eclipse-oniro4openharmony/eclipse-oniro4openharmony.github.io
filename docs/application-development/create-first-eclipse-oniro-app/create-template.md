@@ -34,8 +34,8 @@ In DevEco Studio, a project template serves as a blueprint for building specific
 
 - Select **Stage** for **Model** and keep the default values for all other parameters.
 
->**Note:**
- If you plan to use **JavaScript**, select **API 8** instead. This will provide a language option where you can choose **JS**.
+!!! note
+     If you plan to use **JavaScript**, select **API 8** instead. This will provide a language option where you can choose **JS**.
 
 <div style="text-align:center">
     <img src='../images/image5.png'>

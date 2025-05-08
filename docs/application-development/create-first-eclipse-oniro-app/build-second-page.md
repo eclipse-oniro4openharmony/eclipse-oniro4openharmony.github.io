@@ -21,8 +21,9 @@ Navigate to `entry > resources > base > profile`, open `main_pages.json` you wil
   ]
 }
 ```
->**Note:**
-If you create the page in other methods, you have to manually configure the page routes in above path.
+
+!!! note
+    If you create the page in other methods, you have to manually configure the page routes in above path.
 
 ### Add `Text` and `Button` Components
 Add **Text** and **Button** components with styled properties, using the first page as a reference. The sample code in `Second.ets` is shown below:

@@ -102,8 +102,8 @@ To start the emulator, use the appropriate script for your operating system:
   ```
   > Run the script from a Command Prompt or PowerShell window with administrator rights if required.
 
-> **Note for Windows Users:**  
-> The emulator requires **Hyper-V** to be enabled on your system.
+!!! note "Note for Windows Users"
+    The emulator requires **Hyper-V** to be enabled on your system.
 
 ### Enabling Hyper-V on Windows
 
@@ -126,8 +126,8 @@ hdc tconn localhost:55555
 
 This command connects your host to the emulator instance for debugging and file transfer.
 
-> **Note:**  
-> `hdc` is included in the OpenHarmony SDK toolchain. Ensure it is in your `PATH`.
+!!! note
+    `hdc` is included in the OpenHarmony SDK toolchain. Ensure it is in your `PATH`.
 
 ## Reference
 

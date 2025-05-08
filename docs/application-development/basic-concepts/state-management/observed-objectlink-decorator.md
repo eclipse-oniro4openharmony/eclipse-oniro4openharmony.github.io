@@ -2,9 +2,8 @@
 
 @ObjectLink and @Observed class decorators are used for two-way data synchronization in scenarios involving **nested objects or arrays**, making up for the limitation that other decorators can only observe changes in one layer.
 
-> **NOTE**
->
-> These two decorators can be used in ArkTS widgets since API version 9.
+!!! note
+    These two decorators can be used in ArkTS widgets since API version 9.
 
 ## Features
 
@@ -22,9 +21,8 @@
 ## Usage Scenarios
 ### Nested Object
 
-> **NOTE**
->
-> **NextID** is used to generate a unique, persistent key for each array item during **ForEach rendering**, so as to identify the corresponding component.
+!!! note
+    **NextID** is used to generate a unique, persistent key for each array item during **ForEach rendering**, so as to identify the corresponding component.
 
 ```ts
 // objectLinkNestedObjects.ets

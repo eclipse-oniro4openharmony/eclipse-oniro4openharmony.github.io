@@ -31,9 +31,8 @@ You can do many things to files and folders in the explorer:
 * Move files and folders by drag and drop.
 * Duplicate, copy and paste files into a folder.
 
-> **Note:**
->
-> You could run commands in a folder by right clicking on the folder itself or a file in the folder and choosing `Open in Terminal` from the pop out menu.
+!!! note
+    You could run commands in a folder by right clicking on the folder itself or a file in the folder and choosing `Open in Terminal` from the pop out menu.
 
 
 ### Open Editors

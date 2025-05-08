@@ -4,9 +4,8 @@
 @Watch is used to listen for state variables. If your application needs watch for value changes of a state variable, you can decorate the variable with @Watch.
 
 
-> **NOTE**
->
-> Since API version 9, this decorator is supported in ArkTS widgets.
+!!! note
+    Since API version 9, this decorator is supported in ArkTS widgets.
 
 
 ## Overview

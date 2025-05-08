@@ -59,8 +59,3 @@ Review the summary information and click `Next`.
 <img src='../images/image13.png'>  
 The environment configuration is now complete.
 <img src='../images/image14.png'>  
-
->**Note:**
-If you want to run applications for OpenHarmony, you need to install the relevant APIs as well. You can download the public SDK from `DevEco Studio` -> `Tool` -> `SDK Manager` -> `OpenHarmony`. Select the desired API and click `Apply` to download.
-(If you downloaded DevEco Studio version 4.1, choose API Version 11 for development.)
-<img src='../images/image18.png'>

@@ -3,9 +3,8 @@
 Resource files used during application development must be stored in specified directories for management. There are two types of resource directories, namely, **resource directories** and **resource group directories**. 
 The resource directories are the **base**, **qualifiers**, **rawfile** directories. The resource group directories are the **element**, **media**, and **profile** directories.
 
-> **NOTE**
->
-> The common resource files used across projects in the stage model are stored in the **resources** directory under **AppScope**.
+!!! note
+    The common resource files used across projects in the stage model are stored in the **resources** directory under **AppScope**.
 
 Example of the **resources** directory:
 ```

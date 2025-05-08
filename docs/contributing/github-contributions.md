@@ -16,7 +16,8 @@ SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
 ## Commit Guidelines
 
-> 💡 **NOTE：** If you are new to `git`, start by reading the official [Getting Started Document](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
+!!! note
+    If you are new to `git`, start by reading the official [Getting Started Document](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
 At its core, contributing to the project means _wrapping_ your work as
 `git` commits. How we handle this has an impact on rebasing,
