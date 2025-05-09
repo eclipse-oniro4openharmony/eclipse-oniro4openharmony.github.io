@@ -8,8 +8,7 @@ handle bugs.
 
 If you think you have found a bug in our distribution, please file a bug
 report in our [bug
-tracker](https://github.com/eclipse-oniro4openharmony/manifest/issues) and in the project that you think is the
-source of the issue. Use the provided template:
+tracker](https://github.com/eclipse-oniro4openharmony/manifest/issues) and in the project that you think is the source of the issue. Use the provided template:
 
 - The module affected
 - What is the action to reproduce the bug? (Steps to reproduce)
@@ -81,7 +80,7 @@ is to update to the latest stable version of the package.
 
 ### Bug Sources
 
-Bugs might be reported by different sources, including Project\'s own
+Bugs might be reported by different sources, including Project's own
 findings (like QA), partner findings, community, or security
 researchers. There might be also different ways the Project team learns
 about the issue, including Matrix channels, discussion forums etc.
