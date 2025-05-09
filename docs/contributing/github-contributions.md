@@ -83,8 +83,7 @@ achieve this, we also require the following commit message guidelines:
 - The commit message will have the commit message _trailers_ separated
   by a new line from the _body_.
   - Each commit requires at least a _Signed-off-by_ trailer line.
-    See more as part of the `/contributing/dco`{.interpreted-text
-    role="doc"} document.
+    See more as part of the `/contributing/dco` document.
   - All _trailer_ lines are to be provided as part of the same text
     block - no empty lines in between the _trailers_.
 
