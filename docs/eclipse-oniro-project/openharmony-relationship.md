@@ -21,7 +21,7 @@ different URL in `repo init`, enabling repo sync to pick up the correct reposito
 and revisions from the manifest.
 
 ```bash
-repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-4.1-Release --no-repo-verify
+repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-5.0.2-Release --no-repo-verify
 ```
 
 Creating a new repository is necessary for new add-ons. Once the add-on is
