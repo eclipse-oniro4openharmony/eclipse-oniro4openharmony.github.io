@@ -950,8 +950,8 @@ In the preceding example, the **Index** page contains two custom components. One
 - When the application exits, the following callbacks are executed in order: Index onPageHide -> MyComponent aboutToDisappear -> Child aboutToDisappear.
 
 ##### More Usage
-- [Custom Component Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-page-custom-components-layout.md)  
-- [Freezing a Custom Component](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-custom-components-freeze.md)
+- [Custom Component Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/quick-start/arkts-page-custom-components-layout.md)  
+- [Freezing a Custom Component](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/quick-start/arkts-custom-components-freeze.md)
 
 ### State Management
 In previous examples, most of the pages built are static pages, which are delivered to the end user without having to be processed. If you are building dynamic, interactive pages, you need to handle **state management**.
@@ -1090,7 +1090,7 @@ In the preceding figure, the decorators in the components area are used for stat
 ### Event Binding
 #### Universal Events
 
-This tutorial will introduce **Touchscreen Event** only, you can redirect the link to learn more like **[Focus Event](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-common-events-focus-event.md)** and **[Keyboard and Mouse Event](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-common-events-device-input-event.md)**.
+This tutorial will introduce **Touchscreen Event** only, you can redirect the link to learn more like **[Focus Event](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/ui/arkts-common-events-focus-event.md)** and **[Keyboard and Mouse Event](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/ui/arkts-common-events-device-input-event.md)**.
 
 **Touchscreen events** are events triggered when a finger or stylus is placed on, moved along, or lifted from a component. Events like [click event](#click-event), [touch event](#touch-event) are most often used.
 
@@ -1224,7 +1224,7 @@ You can bind to each component different gesture events and design the logic for
 
 **gesture** is a frequently used API for binding a gesture to a component.
 
-We don't expand it in this tutorial but you can check some examples [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-gesture-events-binding.md) if interested.
+We don't expand it in this tutorial but you can check some examples [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/ui/arkts-gesture-events-binding.md) if interested.
 
 
 ### Rendering Control
