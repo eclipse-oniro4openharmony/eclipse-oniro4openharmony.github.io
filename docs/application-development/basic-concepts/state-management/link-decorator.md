@@ -169,4 +169,4 @@ struct Parent {
 </div>
 
 ### Additional Information
-For additional information please refer to the [ArkTS Link Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-link.md)
+For additional information please refer to the [ArkTS Link Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/quick-start/arkts-link.md)
