@@ -22,7 +22,7 @@ your email to activate the account.
 
 ### Signing the ECA
 
-In order to contribute to the you need to sign the [Eclipse Contributor
+In order to contribute to the project you need to sign the [Eclipse Contributor
 Agreement](https://accounts.eclipse.org/user/eca), which describes the
 terms under which you can contribute to the project.
 
