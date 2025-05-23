@@ -9,24 +9,23 @@ theme:
  font: 
   text: Plus Jakarta Sans
   code: Plus Jakarta Sans # Change font in code
- logo: assets/oniro_black.png
+ logo: assets/oniro_white.png
  favicon: assets/favicon.ico
  palette: 
-   # Dark mode
-  - scheme: slate
-    toggle:
-     icon: material/weather-sunny
-     name: Dark mode
-    primary: blue
-    accent: deep purple
-
   # Light mode
   - scheme: default
     toggle:
       icon: material/weather-night
-      name: Light mode
-    primary: white
-    accent: deep orange
+      name: Switch to dark mode
+    primary: custom
+    accent: custom
+   # Dark mode
+  - scheme: slate
+    toggle:
+     icon: material/weather-sunny
+     name: Switch to light mode
+    primary: custom
+    accent: custom
 
 markdown_extensions:
   - attr_list

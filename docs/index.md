@@ -25,11 +25,3 @@ The Oniro code is hosted in GitHub [Eclipse Oniro for OpenHarmony](https://githu
 ## Quick Start
 
 To quickly start working with the code and building Oniro please follow our concise [tutorial](device-development/building-oniro.md). For those interested in experiencing its functionality on actual hardware, as a starting point, we recommend the HiHope HH-SCDAYU200 development kit, which is based on Rockchip's RK3568 processor. This kit is readily accessible in Europe and the USA, offering convenience for developers in these regions.
-
-## Chat with Us
-
-The Oniro Project engages in community discussions primarily through Eclipse Matrix rooms, and we warmly welcome everyone to join. Whether you seek assistance, wish to contribute, or are keen on interacting with our maintainers, contributors, and community members, the [Oniro Project room](https://matrix.to/#/#oniro-project:matrix.eclipse.org) is the ideal starting point. You can find a full list of Eclipse Oniro chat rooms [here](https://chat.eclipse.org/#/room/#oniro:matrix.eclipse.org). Matrix provides a secure, decentralized communication network, allowing the use of existing accounts from any server. Don’t have a Matrix account? Your [Eclipse Foundation account](https://accounts.eclipse.org/) can seamlessly fulfill this role. Creating an Eclipse Foundation account is a straightforward process, ensuring quick and easy access.
-
-## Issue Reporting
-
-We welcome feedback and issue reports for continuous improvement of the project. If you encounter any problems or bugs, kindly report them on our [GitHub issues page](https://github.com/eclipse-oniro4openharmony/manifest/issues). Your contributions are valuable to the project’s development.
