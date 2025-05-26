@@ -17,17 +17,7 @@ This guide provides step-by-step instructions to **build and run the Oniro Emula
 
 ### 📦 Prerequisites
 
-Before proceeding, make sure you have followed the [Quick Build Setup](../building-oniro.md) guide to prepare your build environment.
-
-### ⬇️ Download Oniro Source Code
-
-Use the following commands to fetch the Oniro source:
-
-```bash
-repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-5.0.2-Release -m oniro.xml --no-repo-verify
-repo sync -c
-repo forall -c 'git lfs pull'
-```
+Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-5.0.2-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
 
 ### 🧰 Switch to Required Kernel Version
 
