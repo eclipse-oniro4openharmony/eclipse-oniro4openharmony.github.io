@@ -12,6 +12,8 @@ repo sync -c
 repo forall -c 'git lfs pull'
 ```
 
+Other versions of Oniro are available in the [Oniro manifest repository](https://github.com/eclipse-oniro4openharmony/manifest) by checking the available branches. Some boards may require a specific version, so consult the [Developer Boards](developer-boards/) section to ensure compatibility.
+
 ## Fetching Prebuilt Tools
 
 Once you have the source code run the following script to fetch the prebuilt tools:
