@@ -7,7 +7,7 @@ The aim of this project is to create a template for new React Native application
 The code is divided into two directories:
 
 - **oh-app**: OpenHarmony application template serving as a container for the React Native app.
-- **rnoh-app**: The actual React Native app embedded in the OH.
+- **rnoh-app**: The actual React Native app embedded in oh-app.
 
 <table>
     <tr>
