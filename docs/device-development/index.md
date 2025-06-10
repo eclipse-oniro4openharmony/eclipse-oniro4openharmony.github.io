@@ -21,8 +21,6 @@ OpenHarmony defines three system types: Mini, Small, and Standard.
 
 ## Development Flow
 
-## Development Flow
-
 1. **Obtaining the Source Code**  
    Follow the instructions in [Building Oniro](building-oniro.md) to fetch the source code and set up your environment.
 
