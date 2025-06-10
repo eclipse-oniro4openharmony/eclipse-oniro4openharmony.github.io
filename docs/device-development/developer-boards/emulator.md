@@ -15,21 +15,11 @@ This guide provides step-by-step instructions to **build and run the Oniro Emula
 
 <img src="../images/oniro_qemu.gif" alt="Oniro Emulator" width="200"/>
 
-### 📦 Prerequisites
+## Fetch and Build
 
-Before proceeding, make sure you have followed the [Quick Build Setup](../building-oniro.md) guide to prepare your build environment.
+Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-5.0.2-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
 
-### ⬇️ Download Oniro Source Code
-
-Use the following commands to fetch the Oniro source:
-
-```bash
-repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-5.0.2-Release -m oniro.xml --no-repo-verify
-repo sync -c
-repo forall -c 'git lfs pull'
-```
-
-### 🧰 Switch to Required Kernel Version
+### Switch to Required Kernel Version
 
 Replace the default kernel with the required version:
 
@@ -38,7 +28,7 @@ rm -rf kernel/linux/linux-6.6
 git clone -b weekly_20241216 https://gitee.com/openharmony/kernel_linux_6.6.git kernel/linux/linux-6.6 --depth=1
 ```
 
-### 🩹 Apply source patches
+### Apply source patches
 
 Run the patching script:
 
@@ -46,7 +36,7 @@ Run the patching script:
 bash vendor/oniro/std_emulator/hook/hook_start.sh
 ```
 
-### 🛠️ Build the images
+### Build the images
 
 Start the build with ccache enabled:
 
@@ -54,7 +44,7 @@ Start the build with ccache enabled:
 ./build.sh --product-name std_emulator --ccache
 ```
 
-### 🔄 (Optional) Revert patches
+### (Optional) Revert patches
 
 If needed, you can undo the applied patches:
 
@@ -62,11 +52,11 @@ If needed, you can undo the applied patches:
 bash vendor/oobemulator/std_emulator/hook/hook_end.sh
 ```
 
-### 📥 Download Prebuilt Images
+## Alternative: Download Prebuilt Images
 
-Alternatively, you can download the [prebuilt Oniro Emulator images](https://github.com/eclipse-oniro4openharmony/device_board_oniro/releases/latest/download/oniro_emulator.zip). 
+Instead of building the images yourself, you can download the [prebuilt Oniro Emulator images](https://github.com/eclipse-oniro4openharmony/device_board_oniro/releases/latest/download/oniro_emulator.zip).
 
-Extract the archive and use the included run scripts as described below.
+After downloading, extract the archive and use the included run scripts as described in the next section.
 
 ## QEMU Installation
 
@@ -75,7 +65,29 @@ The emulator requires **QEMU** to be installed on your system.
 - Download and install QEMU from the official website:  
   [https://www.qemu.org/download/](https://www.qemu.org/download/)
 
-Refer to the platform-specific instructions on the QEMU website for installation details.
+### Linux
+
+- **On Debian-based Linux distributions:**  
+  Install QEMU using the following command:
+  ```bash
+  sudo apt install qemu-system-x86
+  ```
+
+### Windows
+
+- Download and install QEMU from the official website.
+- After installing QEMU, add the QEMU installation directory (e.g., `C:\Program Files\qemu`) to your `PATH` environment variable to ensure the QEMU executables are accessible from the command line.
+- The emulator requires **Hyper-V** to be enabled on your system:
+
+  1. Open **Start Menu** and search for “Turn Windows features on or off”.
+  2. In the Windows Features dialog, check the boxes for:
+     - **Hyper-V**
+     - **Hyper-V Management Tools**
+     - **Hyper-V Platform**
+  3. Click **OK** and wait for the changes to apply.
+  4. Restart your system after enabling Hyper-V.
+
+Refer to the platform-specific instructions on the QEMU website for further installation details.
 
 ## Running the Emulator
 
@@ -101,20 +113,6 @@ To start the emulator, use the appropriate script for your operating system:
   .\run.bat
   ```
   > Run the script from a Command Prompt or PowerShell window with administrator rights if required.
-
-!!! note "Note for Windows Users"
-    The emulator requires **Hyper-V** to be enabled on your system.
-
-### Enabling Hyper-V on Windows
-
-1. Open **Start Menu** and search for “Turn Windows features on or off”.
-2. In the Windows Features dialog, check the boxes for:
-   - **Hyper-V**
-   - **Hyper-V Management Tools**
-   - **Hyper-V Platform**
-3. Click **OK** and wait for the changes to apply.
-
-Restart your system after enabling Hyper-V.
 
 ## Connecting to the Emulator with HDC
 
