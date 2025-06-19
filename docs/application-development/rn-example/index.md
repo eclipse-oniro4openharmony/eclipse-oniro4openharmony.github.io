@@ -7,7 +7,7 @@ The aim of this project is to create a template for new React Native application
 The code is divided into two directories:
 
 - **oh-app**: OpenHarmony application template serving as a container for the React Native app.
-- **rnoh-app**: The actual React Native app embedded in the OH.
+- **rnoh-app**: The actual React Native app embedded in oh-app.
 
 <table>
     <tr>
@@ -33,11 +33,12 @@ The code is divided into two directories:
     </tr>
 </table>
 
-### Language Corrections
 
 ## A quick how-to
 
 The code of the sample application has already been prepared and adapted for compilation with RN, it can serve as a template for other apps.
+
+**Note:** Before using the quick build, ensure you have completed all the steps outlined in the [prerequisites](prerequisites.md) section. The quick build will not work correctly unless these prerequisites are met.
 
 1. Download project and  dependent libraries:
 
