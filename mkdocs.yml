@@ -102,14 +102,27 @@ nav:
             - Resource Group Directories: application-development/resource-categories-and-access/resource-categories/resource-group-directories.md
         - Resource Access: application-development/resource-categories-and-access/resource-access/index.md
       - React Native Example:
-          - Overview: application-development/rn-example/index.md
-          - Prerequisites: application-development/rn-example/prerequisites.md
-          - Development environment configuration: application-development/rn-example/development-environment-configuration.md
-          - Preparation of the React Native application code: application-development/rn-example/react-native-application-code.md
-          - Preparation of the OpenHarmony application code: application-development/rn-example/open-harmony-application-code.md
-          - Compilation of the app: application-development/rn-example/compilation.md
-          - Troubleshooting: application-development/rn-example/troubleshooting.md
-      - Code Labs: application-development/codeLabs/index.md
+        - Overview: application-development/rn-example/index.md
+        - Prerequisites: application-development/rn-example/prerequisites.md
+        - Development environment configuration: application-development/rn-example/development-environment-configuration.md
+        - Preparation of the React Native application code: application-development/rn-example/react-native-application-code.md
+        - Preparation of the OpenHarmony application code: application-development/rn-example/open-harmony-application-code.md
+        - Compilation of the app: application-development/rn-example/compilation.md
+        - Troubleshooting: application-development/rn-example/troubleshooting.md
+      - Code Labs: 
+        - Overview: application-development/codeLabs/index.md 
+        - AI: application-development/codeLabs/ai.md
+        - Communication: application-development/codeLabs/communication.md
+        - Distributed Ability: application-development/codeLabs/distributed-ability.md
+        - Education: application-development/codeLabs/education.md
+        - Entertainment: application-development/codeLabs/entertainment.md
+        - Utility: application-development/codeLabs/utility.md
+        - Health: application-development/codeLabs/health.md
+        - Information: application-development/codeLabs/information.md
+        - Game: application-development/codeLabs/game.md
+        - Video: application-development/codeLabs/video.md
+        - Weather: application-development/codeLabs/weather.md
+        - Common Questions: application-development/codeLabs/common-problems.md  
   - Device Development: 
       - Development Overview: device-development/index.md
       - Building Oniro: device-development/building-oniro.md
