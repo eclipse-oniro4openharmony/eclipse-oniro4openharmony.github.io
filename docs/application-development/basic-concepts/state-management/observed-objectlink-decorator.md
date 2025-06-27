@@ -186,4 +186,4 @@ Event handle in **ViewC**:
 - The @ObjectLink decorated variable is read-only. Assigning **this.bookName = new bookName(...)** is not allowed. Once value assignment occurs, the reference to the data source is reset and the synchronization is interrupted.
 
 ### Additional Information
-For additional information please refer to the [ArkTS Observed and ObjectLink Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/quick-start/arkts-observed-and-objectlink.md)
+For additional information please refer to the [ArkTS Observed and ObjectLink Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/quick-start/arkts-observed-and-objectlink.md)

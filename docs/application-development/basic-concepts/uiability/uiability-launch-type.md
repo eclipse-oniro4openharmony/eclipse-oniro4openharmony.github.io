@@ -78,4 +78,4 @@ The **specified** mode is used in some special scenarios. For example, in a docu
 
 In the following example, there are two UIAbility components: EntryAbility and SpecifiedAbility (with the launch type **specified**). 
 
-You can learn more about `Specified` from [this](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/application-models/uiability-launch-type.md#singleton) source.
+You can learn more about `Specified` from [this](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/application-models/uiability-launch-type.md#singleton) source.

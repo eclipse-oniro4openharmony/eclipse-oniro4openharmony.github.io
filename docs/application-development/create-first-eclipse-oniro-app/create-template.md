@@ -1,11 +1,11 @@
 To create a project in DevEco Studio:
 
-1. Double-click the DevEco Studio icon to begin.
+**1.** Double-click the DevEco Studio icon to begin.
 <div style="text-align:center">
     <img src='../images/image1.png' width='30%'>
 </div>
 
-2. In welcome page click `Create Project`.
+**2.** In welcome page click `Create Project`.
 <div style="text-align:center">
     <img src='../images/image2.png'>
 </div>
@@ -17,12 +17,9 @@ The **Create Project** window opens with template market provided by DevEco Stud
 
 In DevEco Studio, a project template serves as a blueprint for building specific types of apps. It defines the project structure and essential files, providing starter code to help you get started quickly.
 
-3. Make sure the `Application` tab is selected on the left bar, then choose `[OpenHarmony]Empty Ability` as project template and click `Next`.
-<div style="text-align:center">
-    <img src='../images/image4.png'>
-</div>
+**3.** Make sure the `Application` tab is selected on the left bar, then choose `Empty Ability` as project template and click `Next`.
 
-4. Configure your project with following information:  
+**4.** Configure your project with following information:  
 
 - The **Project name** field is used to enter the name of your project.
 
@@ -30,7 +27,7 @@ In DevEco Studio, a project template serves as a blueprint for building specific
 
 - The **Save location** field specifies where all project files are stored, you can leave it as default.  
 
-- The **Compile SDK** specifies the API version used for compilation. By default, **API 11** is selected in our case, which also sets **ArkTS** as the development language.  
+- The **Compile SDK** specifies the API version used for compilation. By default, **API 18** is selected in our case, which also sets **ArkTS** as the development language.  
 
 - Select **Stage** for **Model** and keep the default values for all other parameters.
 
@@ -41,13 +38,13 @@ In DevEco Studio, a project template serves as a blueprint for building specific
     <img src='../images/image5.png'>
 </div>  
 
-5. Click `Finish` and wait for the project creation.
+**5.** Click `Finish` and wait for the project creation.
 
 <div style="text-align:center">
     <img src='../images/image6.png'>
 </div> 
 
-6. Click **Previewer** on the right sidebar of DevEco Studio to view both the code and design simultaneously.
+**6.** Click **Previewer** on the right sidebar of DevEco Studio to view both the code and design simultaneously.
 
 <div style="text-align:center">
     <img src='../images/image7.png'>

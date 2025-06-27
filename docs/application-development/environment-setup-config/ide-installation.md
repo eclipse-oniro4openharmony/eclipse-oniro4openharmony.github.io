@@ -3,6 +3,8 @@
 
 ## Download
 The latest version of DevEco Studio can be downloaded from [here](https://developer.huawei.com/consumer/en/download/).
+!!!info
+    You need a Huawei account to download
 
 ## Step-by-Step Installation
 After the download completes, extract the downloaded package and run `deveco-studio-xxxx.exe`. 

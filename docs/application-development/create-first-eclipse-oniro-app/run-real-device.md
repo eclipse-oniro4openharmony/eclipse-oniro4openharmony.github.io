@@ -1,8 +1,8 @@
 ### Install HDC  
 
 1. Find the [pipeline](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist) whose name is ohos-sdk-full or ohos-sdk-public, click **Download Link**, and select **Full Package**.  
-   Use conditional filtering: select project `openharmony`, branch `OpenHarmony-4.1-Release`, and a date from the previous month or a manual range.  
-   Then find **ohos-sdk-full_4.1-Release**, and download the full package (Windows/Linux).  
+   Use conditional filtering: select project `openharmony`, branch `OpenHarmony-5.1.0-Release`, and a date from the previous month or a manual range.  
+   Then find **ohos-sdk-full_5.1.0-Release**, and download the full package (Windows/Linux).  
    *(If daily build SDK is not compatible with your DevEco Studio, try the rolling build SDK.)*
    ![Download SDK](images/image39.png){: .center}
 
