@@ -198,5 +198,5 @@ struct Child {
 
 
 ### Additional Information
-For additional information please refer to the [ArkTS LocalStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/quick-start/arkts-localstorage.md#localstorageprop)
+For additional information please refer to the [ArkTS LocalStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/quick-start/arkts-localstorage.md#localstorageprop)
 

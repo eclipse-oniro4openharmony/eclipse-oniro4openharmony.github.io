@@ -1,6 +1,6 @@
 The declarative UI provides different common layouts like **Linear layout**, **Stack layout**, **Flex layout** and etc.
 
-In this chapter we will focus on **Linear Layout**, for additional information please refer to [layout overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/ui/arkts-layout-development-overview.md) documentation.
+In this chapter we will focus on **Linear Layout**, for additional information please refer to [layout overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-overview.md) documentation.
 
 **Linear layout** is the most frequently used layout in development, built with the **Row** and **Column** linear containers. The linear layout is the basis of other layouts. Its child elements are arranged in sequence linearly in the horizontal direction, as in a **Row** container, or vertical direction, as in a **Column** container.
 
@@ -605,4 +605,4 @@ Adaptive scaling means that the size of a child element is automatically adjuste
 </div>
 
 ## Reference
-For additional information please refer to [Linear Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.0.2-Release/en/application-dev/ui/arkts-layout-development-linear.md)
+For additional information please refer to [Linear Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-linear.md)

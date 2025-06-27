@@ -24,6 +24,6 @@ Environment configuration is finished.
     Open **DevEco Studio** and go to:  
     `Tool` → `SDK Manager` → `OpenHarmony`, select an API version and click **Apply** to download.
 
-    > 💡 If you're using **DevEco Studio 4.1**, select **API Version 11** for development.
+    > 💡 If you're using **DevEco Studio 5.1.0**, select **API Version 18** for development.
 
     ![SDK Manager](images/image18.png){: .center}
