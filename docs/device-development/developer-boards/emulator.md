@@ -17,23 +17,14 @@ This guide provides step-by-step instructions to **build and run the Oniro Emula
 
 ## Fetch and Build
 
-Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-5.0.2-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
-
-### Switch to Required Kernel Version
-
-Replace the default kernel with the required version:
-
-```bash
-rm -rf kernel/linux/linux-6.6
-git clone -b weekly_20241216 https://gitee.com/openharmony/kernel_linux_6.6.git kernel/linux/linux-6.6 --depth=1
-```
+Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-5.1.0-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
 
 ### Apply source patches
 
 Run the patching script:
 
 ```bash
-bash vendor/oniro/std_emulator/hook/hook_start.sh
+bash vendor/oniro/std_emulator/hook/do_patch.sh
 ```
 
 ### Build the images
@@ -41,7 +32,7 @@ bash vendor/oniro/std_emulator/hook/hook_start.sh
 Start the build with ccache enabled:
 
 ```bash
-./build.sh --product-name std_emulator --ccache
+./build.sh --product-name std_emulator --ccache --gn-args allow_sanitize_debug=true
 ```
 
 ### (Optional) Revert patches
@@ -49,7 +40,7 @@ Start the build with ccache enabled:
 If needed, you can undo the applied patches:
 
 ```bash
-bash vendor/oobemulator/std_emulator/hook/hook_end.sh
+bash vendor/oniro/std_emulator/hook/undo_patch.sh
 ```
 
 ## Alternative: Download Prebuilt Images
@@ -119,7 +110,7 @@ To start the emulator, use the appropriate script for your operating system:
 Once the emulator is running, you can connect to it using **HDC** (the OpenHarmony Device Connector):
 
 ```bash
-hdc tconn localhost:55555
+hdc tconn 127.0.0.1:55555
 ```
 
 This command connects your host to the emulator instance for debugging and file transfer.
