@@ -1,11 +1,11 @@
 ### [Duolingo](https://github.com/eclipse-oniro4openharmony/app-duolingo)  
 #### Software requirements
-- **DevEco Studio version**: DevEco Studio 3.1 Release or higher version
-- **OpenHarmony SDK version**: API version 9
+- **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
+- **OpenHarmony SDK version**: API version 18
 
 #### Hardware requirements
 - **Development board type**: Dayu Development Kit
-- **OpenHarmony system**: 3.2 Release or higher version
+- **OpenHarmony system**: 5.1.0 Release or higher version
 
 #### Screenshots
 <div style="text-align: center">
