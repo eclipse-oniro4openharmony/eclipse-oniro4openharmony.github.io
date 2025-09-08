@@ -120,19 +120,23 @@ nav:
         - Compilation of the app: application-development/rn-example/compilation.md
         - Troubleshooting: application-development/rn-example/troubleshooting.md
       - Code Labs: 
-        - Overview: application-development/codeLabs/index.md 
-        - AI: application-development/codeLabs/ai.md
-        - Communication: application-development/codeLabs/communication.md
-        - Distributed Ability: application-development/codeLabs/distributed-ability.md
-        - Education: application-development/codeLabs/education.md
-        - Entertainment: application-development/codeLabs/entertainment.md
-        - Utility: application-development/codeLabs/utility.md
-        - Health: application-development/codeLabs/health.md
-        - Information: application-development/codeLabs/information.md
-        - Game: application-development/codeLabs/game.md
-        - Video: application-development/codeLabs/video.md
-        - Weather: application-development/codeLabs/weather.md
-        - Common Questions: application-development/codeLabs/common-problems.md  
+        - Mobile:
+          - Overview: application-development/codeLabs/mobile/index.md 
+          - AI: application-development/codeLabs/mobile/ai.md
+          - Communication: application-development/codeLabs/mobile/communication.md
+          - Distributed Ability: application-development/codeLabs/mobile/distributed-ability.md
+          - Education: application-development/codeLabs/mobile/education.md
+          - Entertainment: application-development/codeLabs/mobile/entertainment.md
+          - Utility: application-development/codeLabs/mobile/utility.md
+          - Health: application-development/codeLabs/mobile/health.md
+          - Information: application-development/codeLabs/mobile/information.md
+          - Game: application-development/codeLabs/mobile/game.md
+          - Video: application-development/codeLabs/mobile/video.md
+          - Weather: application-development/codeLabs/mobile/weather.md
+          - Common Questions: application-development/codeLabs/mobile/common-problems.md  
+        - Wearable:
+          - Overview: application-development/codeLabs/wearable/index.md
+          - Health: application-development/codeLabs/wearable/health.md
   - Device Development: 
       - Development Overview: device-development/index.md
       - Building Oniro: device-development/building-oniro.md

@@ -1,11 +1,11 @@
 ### [Time Around World](https://github.com/eclipse-oniro4openharmony/app-TimeAroundWorld)  
 #### Software requirements
-- **DevEco Studio version**: DevEco Studio 4.1 Release or higher version
-- **OpenHarmony SDK version**: API version 11
+- **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
+- **OpenHarmony SDK version**: API version 18
 
 #### Hardware requirements
 - **Development board type**: Dayu Development Kit
-- **OpenHarmony system**: 4.1 Release or higher version
+- **OpenHarmony system**: 5.1.0 Release or higher version
 
 #### Screenshots
 
@@ -18,12 +18,12 @@
 
 ### [Super Bright Flashlight](https://github.com/eclipse-oniro4openharmony/app-SuperBrightFlashlight)  
 #### Software requirements
-- **DevEco Studio version**: DevEco Studio 4.1 Release or higher version
-- **OpenHarmony SDK version**: API version 11
+- **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
+- **OpenHarmony SDK version**: API version 18
 
 #### Hardware requirements
 - **Development board type**: Dayu Development Kit
-- **OpenHarmony system**: 4.1 Release or higher version
+- **OpenHarmony system**: 5.1.0 Release or higher version
 
 #### Screenshots
 <div style="text-align: center">
@@ -34,12 +34,12 @@
 
 ### [Bmicalculator](https://github.com/eclipse-oniro4openharmony/app-bmicalculator)  
 #### Software requirements
-- **DevEco Studio version**: DevEco Studio 4.1 Release or higher version
-- **OpenHarmony SDK version**: API version 11
+- **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
+- **OpenHarmony SDK version**: API version 18
 
 #### Hardware requirements
 - **Development board type**: Dayu Development Kit
-- **OpenHarmony system**: 4.1 Release or higher version
+- **OpenHarmony system**: 5.1.0 Release or higher version
 
 #### Screenshots
 <div style="text-align: center">
@@ -62,12 +62,12 @@
 
 ### [Unit Converter](https://github.com/eclipse-oniro4openharmony/app-unitconverter)  
 #### Software requirements
-- **DevEco Studio version**: DevEco Studio 4.1 Release or higher version
-- **OpenHarmony SDK version**: API version 11
+- **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
+- **OpenHarmony SDK version**: API version 18
 
 #### Hardware requirements
 - **Development board type**: Dayu Development Kit
-- **OpenHarmony system**: 4.1 Release or higher version
+- **OpenHarmony system**: 5.1.0 Release or higher version
 
 #### Screenshots
 <div style="text-align: center">
@@ -76,12 +76,12 @@
 
 ### [MyList](https://github.com/eclipse-oniro4openharmony/app-MyList)  
 #### Software requirements
-- **DevEco Studio version**: DevEco Studio 4.1 Release or higher version
-- **OpenHarmony SDK version**: API version 11
+- **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
+- **OpenHarmony SDK version**: API version 18
 
 #### Hardware requirements
 - **Development board type**: Dayu Development Kit
-- **OpenHarmony system**: 4.1 Release or higher version
+- **OpenHarmony system**: 5.1.0 Release or higher version
 
 #### Screenshots
 <div style="text-align: center">
