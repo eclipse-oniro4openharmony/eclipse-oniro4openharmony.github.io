@@ -22,4 +22,4 @@ For detailed instructions, please refer to the [Environment Setup Guide](environ
 ## Learning Path
 To support your application development, we provide comprehensive development guidelines.
 
-You can familiarize yourself with the application development process by [getting started with a simple project](create-first-eclipse-oniro-app/index.md).
+You can familiarize yourself with the mobile application development process by [getting started with a simple mobile project](create-first-eclipse-oniro-app/mobile/index.md) and wearable application development process by[getting started with a simple watch project](create-first-eclipse-oniro-app/wearable/index.md).
