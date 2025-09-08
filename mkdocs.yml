@@ -61,14 +61,24 @@ nav:
         - Introduction to OHPM: application-development/environment-setup-config/ohpm.md
         - Common Issues and Solutions: application-development/environment-setup-config/common-issue.md
       - Create Your First Eclipse Oniro Application:
-        - Overview: application-development/create-first-eclipse-oniro-app/index.md
-        - Create an Eclipse Oniro app using OpenHarmony Template: application-development/create-first-eclipse-oniro-app/create-template.md
-        - Find Project Files: application-development/create-first-eclipse-oniro-app/find-project-files.md
-        - Usage of Previewer: application-development/create-first-eclipse-oniro-app/use-previewer.md
-        - Build the First Page: application-development/create-first-eclipse-oniro-app/build-first-page.md
-        - Build the Second Page: application-development/create-first-eclipse-oniro-app/build-second-page.md
-        - Implementing Page Redirection: application-development/create-first-eclipse-oniro-app/page-redirect.md
-        - Running the Application on a Real Device: application-development/create-first-eclipse-oniro-app/run-real-device.md
+        - mobile: 
+          - Overview: application-development/create-first-eclipse-oniro-app/mobile/index.md
+          - Create an Eclipse Oniro app using OpenHarmony Template: application-development/create-first-eclipse-oniro-app/mobile/create-template.md
+          - Find Project Files: application-development/create-first-eclipse-oniro-app/mobile/find-project-files.md
+          - Usage of Previewer: application-development/create-first-eclipse-oniro-app/mobile/use-previewer.md
+          - Build the First Page: application-development/create-first-eclipse-oniro-app/mobile/build-first-page.md
+          - Build the Second Page: application-development/create-first-eclipse-oniro-app/mobile/build-second-page.md
+          - Implementing Page Redirection: application-development/create-first-eclipse-oniro-app/mobile/page-redirect.md
+          - Running the Application on a Real Device: application-development/create-first-eclipse-oniro-app/mobile/run-real-device.md
+        - wearable: 
+          - Overview: application-development/create-first-eclipse-oniro-app/wearable/index.md
+          - Create an Eclipse Oniro app using OpenHarmony Template: application-development/create-first-eclipse-oniro-app/wearable/create-template.md
+          - Find Project Files: application-development/create-first-eclipse-oniro-app/wearable/find-project-files.md
+          - Usage of Previewer: application-development/create-first-eclipse-oniro-app/wearable/use-previewer.md
+          - Build the First Page: application-development/create-first-eclipse-oniro-app/wearable/build-first-page.md
+          - Build the Second Page: application-development/create-first-eclipse-oniro-app/wearable/build-second-page.md
+          - Implementing Page Redirection: application-development/create-first-eclipse-oniro-app/wearable/page-redirect.md
+          - Running the Application on a Real Device: application-development/create-first-eclipse-oniro-app/wearable/run-real-device.md
       - Basic Concepts: 
         - Overview: application-development/basic-concepts/index.md
         - Application Package Structure in Stage Model: application-development/basic-concepts/app-pack-structure.md
