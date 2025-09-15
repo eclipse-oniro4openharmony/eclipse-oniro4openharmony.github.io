@@ -60,6 +60,7 @@ nav:
         - Developer Account: application-development/environment-setup-config/developer-account.md
         - Introduction to OHPM: application-development/environment-setup-config/ohpm.md
         - Common Issues and Solutions: application-development/environment-setup-config/common-issue.md
+        - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
       - Create Your First Eclipse Oniro Application:
         - mobile: 
           - Overview: application-development/create-first-eclipse-oniro-app/mobile/index.md
