@@ -87,6 +87,14 @@ The compiled files will be archived in the `out/rpi4/` directory, and the final 
 out/rpi4/packages/phone/images/
 ```
 
+## Alternative: Download Prebuilt Images
+
+If you prefer not to build the system image yourself, you can download prebuilt images for the Raspberry Pi 4B from the Oniro releases page:
+
+[Download Oniro Raspberry Pi 4B Images](https://github.com/eclipse-oniro4openharmony/device_board_rpi/releases)
+
+After downloading, you can proceed directly to the flashing instructions below.
+
 ## Flashing
 
 To flash the image, follow these steps in a Linux environment:
