@@ -1,4 +1,9 @@
-### [Super Device Demo](https://github.com/eclipse-oniro4openharmony/app-SuperDeviceDemo)  
+### Super Device Demo
+Cross-device sync demo using OpenHarmony distributed KV store.
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-SuperDeviceDemo)  
+ 
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 4.1 Release or higher version

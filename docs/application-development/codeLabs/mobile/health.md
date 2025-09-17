@@ -1,4 +1,9 @@
-### [Workout Logbook](https://github.com/eclipse-oniro4openharmony/app-WorkoutLogbook)  
+### Workout Logbook  
+An intuitive app to track workouts, exercise duration, and calories for efficient health management.
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-WorkoutLogbook)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18
@@ -19,7 +24,12 @@
     <img src='../images/health/workout-logbook/image_7.png' width='50%'>
 </div>
 
-### [Water Tracker](https://github.com/eclipse-oniro4openharmony/app-WaterTracker)  
+### Water Tracker  
+App that tracks your water intake, allowing the user to follow their hydration levels.
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-WaterTracker)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18

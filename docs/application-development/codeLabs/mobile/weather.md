@@ -1,4 +1,9 @@
-### [MyMeteo](https://github.com/eclipse-oniro4openharmony/app-MyMeteo)  
+### MyMeteo  
+The application is a client of OpenMeteo and allows you to check the weather forecast for the city you are searching for.
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-MyMeteo)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18

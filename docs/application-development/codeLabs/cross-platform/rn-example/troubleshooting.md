@@ -3,7 +3,7 @@
 Application should compile and run without issues on the **HarmonyNEXT** system.
 However, when using the current **RNOH** version **0.72** in **Open Harmony**, problems may occur.
 
-The application was running on the [HiHope HH-SCDAYU200](../../device-development/developer-boards/hihope-hh-scdayu200.md) development board with **OpenHarmony 5.0**.
+The application was running on the [HiHope HH-SCDAYU200](../../../../device-development/developer-boards/hihope-hh-scdayu200.md) development board with **OpenHarmony 5.0**.
 
 ## Issues
 

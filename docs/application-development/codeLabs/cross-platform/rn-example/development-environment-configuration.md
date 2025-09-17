@@ -2,7 +2,7 @@
 ## Environment Setup
 
 1. **Install DevEco Studio**  
-    Refer to [Downloading Software and Installing Software](../environment-setup-config/ide-installation.md) for details.
+    Refer to [Downloading Software and Installing Software](../../../environment-setup-config/ide-installation.md) for details.
 
 2. **Set Up the Development Environment**  
     Ensure that network access is enabled to run the tool properly.
