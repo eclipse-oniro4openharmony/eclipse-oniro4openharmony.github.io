@@ -1,4 +1,9 @@
-### [PlayScout](https://github.com/eclipse-oniro4openharmony/app-PlayScout)  
+### PlayScout  
+An App to explore and download free games.
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-PlayScout)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18
@@ -15,7 +20,12 @@
     <img src='../images/information/play-scout/image4.png' width='50%'>
 </div>
 
-### [Pokemon List](https://github.com/eclipse-oniro4openharmony/app-PokemonList)  
+### Pokemon List  
+Pokemon List: A application to explore Pokémon types, attributes, and skill effects with ease.
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-PokemonList)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18
@@ -32,7 +42,12 @@
     <img src='../images/information/pokemon-list/image_4.png' width='50%'>
 </div>
 
-### [OniroNews](https://github.com/eclipse-oniro4openharmony/app-OniroNews)  
+### OniroNews  
+A personalized news app where users can browse and collect their favorite news content.
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-OniroNews)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18

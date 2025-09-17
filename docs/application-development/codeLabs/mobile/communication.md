@@ -1,4 +1,9 @@
-### [Discord](https://github.com/eclipse-oniro4openharmony/app-discord)  
+### Discord
+Discord application for Oniro
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-discord)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18
@@ -12,7 +17,12 @@
     <img src='../images//communication/image1.png' width='50%'>
 </div>
 
-### [Gmail](https://github.com/eclipse-oniro4openharmony/app-gmail)  
+### Gmail  
+Gmail application for Oniro
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-gmail)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 3.1 Release or higher version
 - **OpenHarmony SDK version**: API version 9

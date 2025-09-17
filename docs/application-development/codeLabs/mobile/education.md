@@ -1,4 +1,9 @@
-### [Duolingo](https://github.com/eclipse-oniro4openharmony/app-duolingo)  
+### Duolingo  
+Duolingo application for Oniro
+
+#### Repository address
+You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-duolingo)  
+
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
 - **OpenHarmony SDK version**: API version 18
