@@ -19,11 +19,33 @@ Environment configuration is finished.
 
 !!! note "Install Revelant APIs"
 
-    To run applications for OpenHarmony, you also need to install the relevant APIs.
+    <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;" markdown>
+      <div style="flex:1 1 360px;font-size:0.9rem;line-height:1.9;" markdown>
 
-    Open **DevEco Studio** and go to:  
-    `Tool` → `SDK Manager` → `OpenHarmony`, select an API version and click **Apply** to download.
+      To run applications for OpenHarmony, you also need to install the relevant APIs.
 
-    > 💡 If you're using **DevEco Studio 5.1.0**, select **API Version 18** for development.
+      Open **DevEco Studio** and go to:  
+      `Tool` → `SDK Manager` → `OpenHarmony`, select an API version and click **Apply** to download.
+
+      > 💡 If you're using **DevEco Studio 5.1.0**, select **API Version 18** for development.
+
+      </div>
+
+      <div style="flex:0 0 auto;margin-left:auto;max-width:360px;overflow-x:auto;" markdown>
+
+      | Version | API Level |
+      |:-------:|:---------:|
+      | 4.0     | 10        |
+      | 4.1     | 11        |
+      | 5.0.0   | 12        |
+      | 5.0.1   | 13        |
+      | 5.0.2   | 14        |
+      | 5.0.3   | 15        |
+      | 5.1.0   | 18        |
+      | 5.1.1   | 19        |
+      | 6.0     | 20        |
+
+      </div>
+    </div>
 
     ![SDK Manager](images/image18.png){: .center}
