@@ -15,6 +15,19 @@ This guide provides step-by-step instructions to **build and run the Oniro Emula
 
 <img src="../images/oniro_qemu.gif" alt="Oniro Emulator" width="200"/>
 
+It is also recommended to go through the video first.
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/kaedNr02Xm0?list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&amp;index=3"
+    title="HarmonyOS Wearable Tutorial #3"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    allowfullscreen
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
+  </iframe>
+</div>
+
 ## Fetch and Build
 
 Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-5.1.0-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
