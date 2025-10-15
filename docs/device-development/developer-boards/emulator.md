@@ -15,12 +15,10 @@ This guide provides step-by-step instructions to **build and run the Oniro Emula
 
 <img src="../images/oniro_qemu.gif" alt="Oniro Emulator" width="200"/>
 
-It is also recommended to go through the video first.
-
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
   <iframe
     src="https://www.youtube-nocookie.com/embed/kaedNr02Xm0?list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&amp;index=3"
-    title="HarmonyOS Wearable Tutorial #3"
+    title="Running Applications on Oniro Emulator with DevEco Studio"
     loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
     allowfullscreen
