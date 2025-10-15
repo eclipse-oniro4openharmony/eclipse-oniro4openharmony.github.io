@@ -5,6 +5,19 @@ Make sure you have gone through the [Environment Setup Guide](../../environment-
 <!--  -->
 In this tutorial, you will create your first Eclipse Oniro application using the `OpenHarmony` template provided by `DevEco Studio`. 
 
+It is also recommended to go through the video first.
+
+<iframe
+  width="100%"
+  height="420"
+  src="https://www.youtube-nocookie.com/embed/ofNolFCVIFM?list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&amp;index=1"
+  title="YouTube video"
+  frameborder="0"
+  loading="lazy"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
 #### Prerequisites
 - The latest available version of DevEco Studio installed on your system.
 

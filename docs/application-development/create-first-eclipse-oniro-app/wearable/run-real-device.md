@@ -56,3 +56,16 @@
 ---
 
 🎉 You’ve successfully installed HDC and deployed your first watch application using DevEco Studio!
+
+If you’re interested, this video takes you deeper into wearable development with practical sensor usage.
+<iframe
+  width="100%"
+  height="420"
+  src="https://www.youtube-nocookie.com/embed/PEnczSZpKpw?list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&amp;index=2"
+  title="HarmonyOS Wearable Tutorial"
+  frameborder="0"
+  loading="lazy"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
