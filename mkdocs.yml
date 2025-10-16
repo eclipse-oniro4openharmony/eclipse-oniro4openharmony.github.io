@@ -62,7 +62,7 @@ nav:
         - Common Issues and Solutions: application-development/environment-setup-config/common-issue.md
         - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
       - Create Your First Eclipse Oniro Application:
-        - mobile: 
+        - Mobile: 
           - Overview: application-development/create-first-eclipse-oniro-app/mobile/index.md
           - Create an Eclipse Oniro app using OpenHarmony Template: application-development/create-first-eclipse-oniro-app/mobile/create-template.md
           - Find Project Files: application-development/create-first-eclipse-oniro-app/mobile/find-project-files.md
@@ -71,7 +71,7 @@ nav:
           - Build the Second Page: application-development/create-first-eclipse-oniro-app/mobile/build-second-page.md
           - Implementing Page Redirection: application-development/create-first-eclipse-oniro-app/mobile/page-redirect.md
           - Running the Application on a Real Device: application-development/create-first-eclipse-oniro-app/mobile/run-real-device.md
-        - wearable: 
+        - Wearable: 
           - Overview: application-development/create-first-eclipse-oniro-app/wearable/index.md
           - Create an Eclipse Oniro app using OpenHarmony Template: application-development/create-first-eclipse-oniro-app/wearable/create-template.md
           - Find Project Files: application-development/create-first-eclipse-oniro-app/wearable/find-project-files.md

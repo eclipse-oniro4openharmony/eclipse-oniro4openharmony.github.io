@@ -31,21 +31,41 @@ Environment configuration is finished.
 
       </div>
 
-      <div style="flex:0 0 auto;margin-left:auto;max-width:360px;overflow-x:auto;" markdown>
-
-      | Version | API Level |
-      |:-------:|:---------:|
-      | 4.0     | 10        |
-      | 4.1     | 11        |
-      | 5.0.0   | 12        |
-      | 5.0.1   | 13        |
-      | 5.0.2   | 14        |
-      | 5.0.3   | 15        |
-      | 5.1.0   | 18        |
-      | 5.1.1   | 19        |
-      | 6.0     | 20        |
-
-      </div>
     </div>
 
     ![SDK Manager](images/image18.png){: .center}
+
+<div style="flex:0 0 auto;margin-left:auto;max-width:100%;overflow-x:auto;" markdown>
+
+<table style="border-collapse:separate;border-spacing:0;min-width:520px;">
+  <thead>
+    <tr>
+      <th style="text-align:left;padding:8px 12px;white-space:nowrap;">Version</th>
+      <th style="text-align:center;padding:4px 8px;">4.0</th>
+      <th style="text-align:center;padding:4px 8px;">4.1</th>
+      <th style="text-align:center;padding:4px 8px;">5.0.0</th>
+      <th style="text-align:center;padding:4px 8px;">5.0.1</th>
+      <th style="text-align:center;padding:4px 8px;">5.0.2</th>
+      <th style="text-align:center;padding:4px 8px;">5.0.3</th>
+      <th style="text-align:center;padding:4px 8px;">5.1.0</th>
+      <th style="text-align:center;padding:4px 8px;">5.1.1</th>
+      <th style="text-align:center;padding:4px 8px;">6.0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="text-align:left;padding:4px 8px;white-space:nowrap;">API Level</th>
+      <td style="text-align:center;padding:4px 8px;">10</td>
+      <td style="text-align:center;padding:4px 8px;">11</td>
+      <td style="text-align:center;padding:4px 8px;">12</td>
+      <td style="text-align:center;padding:4px 8px;">13</td>
+      <td style="text-align:center;padding:4px 8px;">14</td>
+      <td style="text-align:center;padding:4px 8px;">15</td>
+      <td style="text-align:center;padding:4px 8px;">18</td>
+      <td style="text-align:center;padding:4px 8px;">19</td>
+      <td style="text-align:center;padding:4px 8px;">20</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
