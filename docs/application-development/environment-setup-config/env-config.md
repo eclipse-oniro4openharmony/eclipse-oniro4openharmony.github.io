@@ -35,37 +35,37 @@ Environment configuration is finished.
 
     ![SDK Manager](images/image18.png){: .center}
 
-<div style="flex:0 0 auto;margin-left:auto;max-width:100%;overflow-x:auto;" markdown>
-
-<table style="border-collapse:separate;border-spacing:0;min-width:520px;">
-  <thead>
-    <tr>
-      <th style="text-align:left;padding:8px 12px;white-space:nowrap;">Version</th>
-      <th style="text-align:center;padding:4px 8px;">4.0</th>
-      <th style="text-align:center;padding:4px 8px;">4.1</th>
-      <th style="text-align:center;padding:4px 8px;">5.0.0</th>
-      <th style="text-align:center;padding:4px 8px;">5.0.1</th>
-      <th style="text-align:center;padding:4px 8px;">5.0.2</th>
-      <th style="text-align:center;padding:4px 8px;">5.0.3</th>
-      <th style="text-align:center;padding:4px 8px;">5.1.0</th>
-      <th style="text-align:center;padding:4px 8px;">5.1.1</th>
-      <th style="text-align:center;padding:4px 8px;">6.0</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th style="text-align:left;padding:4px 8px;white-space:nowrap;">API Level</th>
-      <td style="text-align:center;padding:4px 8px;">10</td>
-      <td style="text-align:center;padding:4px 8px;">11</td>
-      <td style="text-align:center;padding:4px 8px;">12</td>
-      <td style="text-align:center;padding:4px 8px;">13</td>
-      <td style="text-align:center;padding:4px 8px;">14</td>
-      <td style="text-align:center;padding:4px 8px;">15</td>
-      <td style="text-align:center;padding:4px 8px;">18</td>
-      <td style="text-align:center;padding:4px 8px;">19</td>
-      <td style="text-align:center;padding:4px 8px;">20</td>
-    </tr>
-  </tbody>
-</table>
-
+<div style="width:100%;box-sizing:border-box; display:flex; justify-content:center;">
+  <div style="width:100%; max-width:720px; box-sizing:border-box;">
+    <table style="width:100%; table-layout:fixed; border-collapse:separate; border-spacing:0; border:1px solid #e6e6e6; border-radius:6px; overflow:hidden;">
+      <thead style="background:#fafafa;">
+        <tr>
+          <th style="text-align:left;padding:12px 14px;white-space:normal;font-weight:600;border-right:1px solid #f0f0f0;">Version</th>
+          <td style="text-align:center;padding:12px 10px;">4.0</td>
+          <td style="text-align:center;padding:12px 10px;">4.1</td>
+          <td style="text-align:center;padding:12px 10px;">5.0.0</td>
+          <td style="text-align:center;padding:12px 10px;">5.0.1</td>
+          <td style="text-align:center;padding:12px 10px;">5.0.2</td>
+          <td style="text-align:center;padding:12px 10px;">5.0.3</td>
+          <td style="text-align:center;padding:12px 10px;">5.1.0</td>
+          <td style="text-align:center;padding:12px 10px;">5.1.1</td>
+          <td style="text-align:center;padding:12px 10px;">6.0</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th style="text-align:left;padding:12px 14px;white-space:normal;background:#fff;font-weight:600;border-right:1px solid #f0f0f0;">API Level</th>
+          <td style="text-align:center;padding:12px 10px;">10</td>
+          <td style="text-align:center;padding:12px 10px;">11</td>
+          <td style="text-align:center;padding:12px 10px;">12</td>
+          <td style="text-align:center;padding:12px 10px;">13</td>
+          <td style="text-align:center;padding:12px 10px;">14</td>
+          <td style="text-align:center;padding:12px 10px;">15</td>
+          <td style="text-align:center;padding:12px 10px;">18</td>
+          <td style="text-align:center;padding:12px 10px;">19</td>
+          <td style="text-align:center;padding:12px 10px;">20</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
