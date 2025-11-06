@@ -7,7 +7,7 @@ parent: Eclipse Oniro Project
 
 ## Eclipse Oniro Downstream Integration
 
-Eclipse Oniro currently bases its enhancements of OpenHarmony on the 5.1.0 release.
+Eclipse Oniro currently bases its enhancements of OpenHarmony on the 6.0 release.
 Newer versions will be targeted as they become available and used by the
 working group members. To collect enhancements and fixes, check for consistency, and 
 run them through continuous integration (CI), the project is using a downstream fork to 
@@ -21,7 +21,7 @@ different URL in `repo init`, enabling repo sync to pick up the correct reposito
 and revisions from the manifest.
 
 ```bash
-repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-5.1.0-Release --no-repo-verify
+repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-6.0-Release --no-repo-verify
 ```
 
 Creating a new repository is necessary for new add-ons. Once the add-on is
