@@ -7,7 +7,7 @@
 
 ## About Oniro
 
-[Oniro](https://oniroproject.org/) is an open-source, vendor-neutral Operating System (OS) managed by the [Eclipse Foundation](https://www.eclipse.org/). It is built upon the foundational layers of [OpenHarmony](https://gitee.com/openharmony/docs), an open-source project incubated and operated by the [OpenAtom Foundation](https://www.openatom.org/). OpenHarmony is known for its distributed OS features that cater to a wide range of smart devices, regardless of their size. Oniro extends OpenHarmony code base with add-ons for the European and Global markets, such as [ReactNative](https://reactnative.dev/) support, [Eclipse Theia](https://theia-ide.org/) based IDE, [Servo](https://servo.org/) web engine, and more that are coming.
+[Oniro](https://oniroproject.org/) is an open-source, vendor-neutral Operating System (OS) managed by the [Eclipse Foundation](https://www.eclipse.org/). It is built upon the foundational layers of [OpenHarmony](https://gitcode.com/openharmony/docs), an open-source project incubated and operated by the [OpenAtom Foundation](https://www.openatom.org/). OpenHarmony is known for its distributed OS features that cater to a wide range of smart devices, regardless of their size. Oniro extends OpenHarmony code base with add-ons for the European and Global markets, such as [ReactNative](https://reactnative.dev/) support, [Eclipse Theia](https://theia-ide.org/) based IDE, [Servo](https://servo.org/) web engine, and more that are coming.
 
 ## The Project
 
@@ -19,7 +19,7 @@ You can learn more about Oniro Project by going to [https://oniroproject.org](ht
 
 ## The Code
 
-The Oniro code is hosted in GitHub [Eclipse Oniro for OpenHarmony](https://github.com/eclipse-oniro4openharmony) organization. Additionally, the project mirrors all repositories from Gitee [OpenHarmony organization](https://gitee.com/openharmony) to GitHub [Eclipse Oniro Mirrors organization](https://github.com/eclipse-oniro-mirrors). These mirrored repositories are *read-only* and consumed by Eclipse Oniro build system. The mirroring aims to enhance speed and reliability of the repositories' access. Additionally, it simplifies forking and consumption on GitHub. To keep the mirrors current, a synchronization CI workflow runs every 24 hours, updating them with the latest changes.
+The Oniro code is hosted in GitHub [Eclipse Oniro for OpenHarmony](https://github.com/eclipse-oniro4openharmony) organization. Additionally, the project mirrors all repositories from GitCode [OpenHarmony organization](https://gitcode.com/openharmony) to GitHub [Eclipse Oniro Mirrors organization](https://github.com/eclipse-oniro-mirrors). These mirrored repositories are *read-only* and consumed by Eclipse Oniro build system. The mirroring aims to enhance speed and reliability of the repositories' access. Additionally, it simplifies forking and consumption on GitHub. To keep the mirrors current, a synchronization CI workflow runs every 24 hours, updating them with the latest changes.
 
 
 ## Quick Start

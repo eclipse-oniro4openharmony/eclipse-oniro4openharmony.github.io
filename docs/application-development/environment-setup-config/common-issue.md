@@ -46,7 +46,7 @@ Have the device connected and detected by IDE, click on “run”, the IDE gives
 
 It should be a permission issue, and now we need to identify the permissions causing the problem.   
 
-[This documentation](https://gitee.com/openharmony/resources/blob/master/systemres/main/config.json) lists all permissions and their levels in OpenHarmony. 
+[This documentation](https://gitcode.com/openharmony/resources/blob/master/systemres/main/config.json) lists all permissions and their levels in OpenHarmony. 
 
 There are three types of permissions used in OpenHarmony for requests, ordered from low to high: normal, system\_basic, system\_core.
 

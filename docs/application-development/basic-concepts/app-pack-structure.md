@@ -56,4 +56,4 @@ There are two types of modules by usage scenario:
 
 
 ## Reference
-For additional information please refer to [Overview of Application Configuration Files in Stage Model](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-configuration-file-overview-stage.md) and [Application Models](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/application-models/application-models.md)
+For additional information please refer to [Overview of Application Configuration Files in Stage Model](https://gitcode.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-configuration-file-overview-stage.md) and [Application Models](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/application-models/application-models.md)

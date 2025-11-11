@@ -1827,4 +1827,4 @@ The keyword `this` used as a primary expression denotes a value that is a refere
 The value denoted by `this` in a lambda body and in the surrounding context is the same.
 
 ## Reference
-For additional information please refer to the [ArkTS Basics](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/introduction-to-arkts.md#the-basics)
+For additional information please refer to the [ArkTS Basics](https://gitcode.com/openharmony/docs/blob/master/en/application-dev/quick-start/introduction-to-arkts.md#the-basics)
