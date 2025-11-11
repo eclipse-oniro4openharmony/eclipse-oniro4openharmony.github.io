@@ -37,7 +37,7 @@ For detailed information please reference [Inter-Bundle, Cross-Module Access](ht
 
 ### System Resources
 
-Apart from custom resources, developers can obtain the ID and configuration-specific values of colors, fonts, or other resources in [Resources](https://gitee.com/openharmony/docs/blob/master/en/design/ux-design/design-resources.md) and system icons in [HarmonyOS Symbol](https://developer.huawei.com/consumer/cn/design/harmonyos-symbol/).
+Apart from custom resources, developers can obtain the ID and configuration-specific values of colors, fonts, or other resources in [Resources](https://gitcode.com/openharmony/docs/blob/master/en/design/ux-design/design-resources.md) and system icons in [HarmonyOS Symbol](https://developer.huawei.com/consumer/cn/design/harmonyos-symbol/).
 
 During development, the usage of layered parameters is basically the same as that of qualifiers. To reference a system resource, use the "$r('sys.type.resource_id')" format. Wherein: **sys** indicates a system resource; **type** indicates the resource type, which can be **color**, **float**, **string**, or **media**; **resource_id** indicates the resource ID.
 

@@ -47,7 +47,7 @@ Follow these steps to clone the project repository:
 1. Open a terminal or command prompt.
 2. Run the following command to clone the repository:
     ```bash
-    git clone https://gitee.com/openharmony-sig/ohos_react_native.git
+    git clone https://gitcode.com/openharmony-sig/ohos_react_native.git
     ```
 3. Change to the newly created project directory:
     ```bash

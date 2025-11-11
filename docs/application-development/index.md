@@ -1,5 +1,5 @@
 !!! info
-    Portions of this documentation are adapted from *[OpenHarmony docs](https://gitee.com/openharmony/docs)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+    Portions of this documentation are adapted from *[OpenHarmony docs](https://gitcode.com/openharmony/docs)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 
 # Development Overview

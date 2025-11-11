@@ -29,9 +29,9 @@ pushed, it can be referenced in the forked manifest and included in the CI
 build.
 
 We also encourage every developer, if possible, to directly upstream fixes
-and enhancements into OpenHarmony's Gitee repositories. These changes
+and enhancements into OpenHarmony's GitCode repositories. These changes
 will return to Eclipse Oniro with the next release, or earlier if backported
-to the current release branches on Gitee.
+to the current release branches on GitCode.
 
 ## Upstreaming into OpenHarmony
 
@@ -42,7 +42,7 @@ releases.
 
 However, this fork isn't intended as a permanent repository for most changes. 
 Any modification applicable to OpenHarmony upstream should be proposed 
-via a pull request on the Gitee master branch. By doing so we get crucial
+via a pull request on the GitCode master branch. By doing so we get crucial
 feedback from OpenHarmony developers. This will help in the design and
 implementation of changes, to fit well into the existing code base. Additionally,
 any changes viable for upstream inclusion will return to Eclipse Oniro with the next
