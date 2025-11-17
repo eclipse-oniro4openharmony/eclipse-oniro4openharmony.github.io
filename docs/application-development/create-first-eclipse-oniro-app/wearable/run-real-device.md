@@ -61,7 +61,7 @@ If you’re interested, this video takes you deeper into wearable development wi
 <iframe
   width="100%"
   height="420"
-  src="https://www.youtube-nocookie.com/embed/PEnczSZpKpw?list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&amp;index=2"
+  src="https://www.youtube-nocookie.com/embed/watch?v=WITjqfofG6k&list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&index=2"
   title="HarmonyOS Wearable Tutorial"
   frameborder="0"
   loading="lazy"

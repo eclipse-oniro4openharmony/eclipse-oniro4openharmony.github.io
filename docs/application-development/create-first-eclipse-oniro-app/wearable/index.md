@@ -8,7 +8,7 @@ In this tutorial, you will create your first Eclipse Oniro application using the
 <iframe
   width="100%"
   height="420"
-  src="https://www.youtube-nocookie.com/embed/ofNolFCVIFM?list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&amp;index=1"
+  src="https://www.youtube-nocookie.com/embed/watch?v=sp7sgwUG1Ew&list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&index=1"
   title="HelloWorld with Open Harmony SDK"
   frameborder="0"
   loading="lazy"
