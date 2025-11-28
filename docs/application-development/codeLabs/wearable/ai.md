@@ -1,4 +1,4 @@
-### Heart Rate Monitor  
+### App-OniroGPT  
 This demo presents a lightweight wearable application for real-time voice interaction with AI on HarmonyOS.
 Users can start speaking by tapping the Oniro icon, and the app will capture their speech, transcribe it into text, translate it into English, and forward it to a GPT model for response.
 
