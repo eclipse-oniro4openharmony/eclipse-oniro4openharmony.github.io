@@ -126,6 +126,8 @@ nav:
           - Video: application-development/codeLabs/mobile/video.md
           - Weather: application-development/codeLabs/mobile/weather.md 
         - Wearable:
+          - AI: application-development/codeLabs/wearable/ai.md
+          - Gesture: application-development/codeLabs/wearable/gesture.md
           - Health: application-development/codeLabs/wearable/health.md
         - Cross Platform Apps:
           - React Native Example:
