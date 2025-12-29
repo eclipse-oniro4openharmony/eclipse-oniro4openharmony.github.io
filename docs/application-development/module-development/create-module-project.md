@@ -7,7 +7,7 @@ Before you can implement modular architecture in your application, you need to s
     <img src='../images/image2.png'>
 </div> 
 
-**2.** In this tutorial we will seperate modules for `wearable` and `mobile` application. Make sure you have selected `Phone` and `Wearable` in `Device type` section.  
+**2.** In this tutorial we will separate modules for `wearable` and `mobile` applications. Make sure you have selected `Phone` and `Wearable` in the `Device type` section.  
 <div style="text-align:center">
     <img src='../images/image3.png'>
 </div> 

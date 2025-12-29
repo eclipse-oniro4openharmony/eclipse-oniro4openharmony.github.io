@@ -1,18 +1,18 @@
 ### Overview
 
-After completing the first step, a **dynamic shared package** has been created in our project. As shown below, the project now contains a main module (**entry**) and a dynamic shared package (**sharelibrary**).  
+After completing the first step, a **dynamic shared package** has been created in our project. As shown below, the project now contains a main module (**entry**) and a dynamic shared package (**shared_library**).  
 
 <div style="text-align:center">
     <img src='../images/image8.png'>
 </div> 
 
-If **entry** needs to access code or resources in **share_library**, it must be linked to **share_library**.  
+If **entry** needs to access code or resources in **shared_library**, it must be linked to **shared_library**.  
 
 There are 3 solutions to add dependencies:  
 
-### Mapping Soution 1
+### Mapping Solution 1
 
-Introduce the shared package in **entry** module `oh-package.json5` file under `dependencies` with following format:
+Introduce the shared package in **entry** module `oh-package.json5` file under `dependencies` with the following format:
 
 ```bash
 "mapped_directory_name": "file:../folder"
@@ -36,9 +36,9 @@ After installation, the shared package will be mapped into the `entry` module, u
     <img src='../images/image11.png'>
 </div>
 
-### Mapping Soution 2  
+### Mapping Solution 2  
 
-Besides Mapping solution 1, you can also use the following approach:
+Besides Mapping Solution 1, you can also use the following approach:
 
 Introduce the shared package in **entry** module `oh-package.json5` file under `dependencies` with following format:
 
@@ -52,9 +52,9 @@ The underlying mechanism is the same as in Method 1. The difference is that an `
     <img src='../images/image12.png'>
 </div>
 
-### Mapping Soution 3  
+### Mapping Solution 3  
 
-You can also install the dependencies through command line.
+You can also install the dependencies through the command line.
 
 **Navigate** to your `entry` module directory, and run the following command:  
 

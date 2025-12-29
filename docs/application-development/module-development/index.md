@@ -13,7 +13,7 @@ When your project becomes bigger and bigger, putting all code into one module qu
 - Changing one feature may affect others
 - Code and resources cannot be efficiently shared across multiple modules
 
-Therefore we have **shared package** solution to resolve the problems.
+Therefore we have the **shared package** solution to resolve the problems.
 
 ### Shared Packages Solution(HAR and HSP)
 
@@ -25,7 +25,7 @@ In **OpenHarmony**, developers are provided with two types of shared packages:
 
 - **HSP (Harmony Shared Package)** — a *dynamic* shared package
 
-The difference between is that **HAR**, as a static shared package, has its code and resources compiled together with the consuming module. If there are multiple consumers, multiple identical copies will exist in their respective build outputs.
+The difference between them is that **HAR**, as a static shared package, has its code and resources compiled together with the consuming module. If there are multiple consumers, multiple identical copies will exist in their respective build outputs.
 
 In contrast, **HSP**, as a dynamic shared package, can be compiled independently. At runtime, only a single copy of its code exists within a process, as illustrated in the figure below.
 

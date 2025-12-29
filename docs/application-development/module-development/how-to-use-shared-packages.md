@@ -5,7 +5,7 @@ After creating and configuring your shared packages, the next step is to actuall
 ### Method Call  
 
 In the **shared_library** module, there is a utility class **Calc** that contains a simple addition method **add**.  
-So, how can the **add** method in **sharelibrary** be called from **entry**?
+So, how can the **add** method in **shared_library** be called from **entry**?
 <div style="text-align:center">
     <img src='../images/image14.png'>
 </div>  
@@ -108,7 +108,7 @@ export class Log {
 ```
 
 !!! info
-    The ports that are exposed to other modules must be declared in the shared package entry file **index.ets** like:
+    The exported interfaces must be declared in the shared package entry file **index.ets** like:
     ```bash
     export { Log } from './src/main/ets/utils/Log';
     ```
@@ -144,7 +144,7 @@ export struct TextWidget {
 </div> 
 
 !!! info
-    The components that are exposed to other modules must be declared in the shared package entry file **index.ets** like:
+    The exported components must be declared in the shared package entry file **index.ets** like:
     ```bash
     export { TextWidget } from './src/main/ets/component/textWidget';
     ```
@@ -162,7 +162,7 @@ As a shared package intended for reuse by other modules, reuse is not limited to
 
 The solution is actually quite simple. Since resources themselves cannot be exposed, **classes and methods can be**. Therefore, resource attributes can be wrapped and exposed through **utility classes**, acting as an intermediate layer to access those resources indirectly.
 
-The demostration is divided into 3 steps.
+The demonstration is divided into 3 steps.
 
 #### Step 1: Define shared resource
 
