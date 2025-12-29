@@ -2,7 +2,7 @@
 
 ### Before You Begin
 
-Make sure you have gone through the [Environment Setup Guide](../../environment-setup-config/index.md) and studied [mobile development tutorial](../mobile/index.md) or [wearable development tutorial](../wearable/index.md).
+Make sure you have gone through the [Environment Setup Guide](../environment-setup-config/index.md) and studied [mobile development tutorial](../create-first-eclipse-oniro-app/mobile/index.md) or [wearable development tutorial](../create-first-eclipse-oniro-app/wearable/index.md).
 
 ### Why Module Development?
 

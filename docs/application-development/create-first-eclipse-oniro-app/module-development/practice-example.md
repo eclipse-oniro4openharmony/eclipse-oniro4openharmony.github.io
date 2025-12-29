@@ -1,1 +1,0 @@
-Perfect! You already familar with basic knowledge about module development, let's jump into a step-by-step module development tutorial.

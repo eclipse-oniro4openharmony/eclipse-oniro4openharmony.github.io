@@ -80,12 +80,13 @@ nav:
           - Build the Second Page: application-development/create-first-eclipse-oniro-app/wearable/build-second-page.md
           - Implementing Page Redirection: application-development/create-first-eclipse-oniro-app/wearable/page-redirect.md
           - Running the Application on a Real Device: application-development/create-first-eclipse-oniro-app/wearable/run-real-device.md
-        - Module Development:
-          - Overview: application-development/create-first-eclipse-oniro-app/module-development/index.md
-          - Create a Module Project: application-development/create-first-eclipse-oniro-app/module-development/create-module-project.md
-          - Add HSP Dependency: application-development/create-first-eclipse-oniro-app/module-development/add-hsp-dependency.md
-          - How to use shared packages: application-development/create-first-eclipse-oniro-app/module-development/how-to-use-shared-packages.md
-          - Best Practice: application-development/create-first-eclipse-oniro-app/module-development/practice-example.md
+      - Module Development:
+        - Overview: application-development/module-development/index.md
+        - Create a Module Project: application-development/module-development/create-module-project.md
+        - Add HSP Dependency: application-development/module-development/add-hsp-dependency.md
+        - How to use shared packages: application-development/module-development/how-to-use-shared-packages.md
+        - Best Practice: application-development/module-development/practice-example.md
+        - Environment signature isolation: application-development/module-development/sig_iso.md
       - Basic Concepts: 
         - Overview: application-development/basic-concepts/index.md
         - Application Package Structure in Stage Model: application-development/basic-concepts/app-pack-structure.md
