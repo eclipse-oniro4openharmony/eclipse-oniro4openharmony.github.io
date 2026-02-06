@@ -11,7 +11,7 @@ There are two types of SDKs:
 
 #### Get the Full SDK
 
-1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipeline [Daily Build - OpenHarmony CI](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
+1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipeline [Daily Build - OpenHarmony CI](https://dcp.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
    
    Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-5.1.0-Release, selecting a date from the previous month, or manually choosing a range.  
    
