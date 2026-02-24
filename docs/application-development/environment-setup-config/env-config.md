@@ -19,6 +19,7 @@ Before setting up your development environment, it's important to understand the
           <td style="text-align:center;padding:12px 10px;">5.1.0</td>
           <td style="text-align:center;padding:12px 10px;">5.1.1</td>
           <td style="text-align:center;padding:12px 10px;">6.0</td>
+          <td style="text-align:center;padding:12px 10px;">6.1</td>
         </tr>
       </thead>
       <tbody>
@@ -33,6 +34,7 @@ Before setting up your development environment, it's important to understand the
           <td style="text-align:center;padding:12px 10px;">18</td>
           <td style="text-align:center;padding:12px 10px;">19</td>
           <td style="text-align:center;padding:12px 10px;">20</td>
+          <td style="text-align:center;padding:12px 10px;">23</td>
         </tr>
       </tbody>
     </table>
