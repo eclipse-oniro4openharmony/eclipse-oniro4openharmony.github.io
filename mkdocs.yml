@@ -145,6 +145,7 @@ nav:
             - Preparation of the OpenHarmony application code: application-development/codeLabs/cross-platform/rn-example/open-harmony-application-code.md
             - Compilation of the app: application-development/codeLabs/cross-platform/rn-example/compilation.md
             - Troubleshooting: application-development/codeLabs/cross-platform/rn-example/troubleshooting.md
+          - Ionic Capacitor Tutorial: application-development/codeLabs/cross-platform/ionic-capacitor-tutorial/index.md
         - Common Questions: application-development/codeLabs/common-problems.md 
   - Device Development: 
       - Development Overview: device-development/index.md
