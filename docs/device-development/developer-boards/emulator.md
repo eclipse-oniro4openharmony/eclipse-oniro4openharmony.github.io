@@ -28,7 +28,7 @@ This guide provides step-by-step instructions to **build and run the Oniro Emula
 
 ## Fetch and Build
 
-Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-5.1.0-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
+Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-6.1-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
 
 ### Apply source patches
 
