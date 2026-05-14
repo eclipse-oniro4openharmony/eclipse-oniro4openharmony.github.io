@@ -54,15 +54,14 @@ The Oniro Project supports the Raspberry Pi 4B, and the following features have 
 
 ## Building
 
-After completing the steps in the [quick build documentation](../building-oniro.md) to set up your build environment and obtain the source code for the correct version (ensure you are using the `OpenHarmony-5.0.0-Release` branch), proceed with the following steps to compile and build the system image for the Raspberry Pi 4B.
+After completing the steps in the [quick build documentation](../building-oniro.md) to set up your build environment and obtain the source code for the correct version (ensure you are using the `OpenHarmony-6.1-Release` branch), proceed with the following steps to compile and build the system image for the Raspberry Pi 4B.
 
 ### Step 1: Prepare the Build Environment
 
 Run the following script to apply system patches:
 
 ```bash
-chmod 777 device/board/rpi/system_patch/system_patch.sh
-./device/board/rpi/system_patch/system_patch.sh
+./device/board/rpi/system_patch/do_patch.sh
 ```
 
 ### Step 2: Compile the System Image
