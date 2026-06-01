@@ -35,7 +35,7 @@ Before proceeding, ensure your build environment is ready and the Oniro source c
 Run the patching script:
 
 ```bash
-bash vendor/oniro/std_emulator/hook/do_patch.sh
+bash vendor/oniro/x86_general/hook/do_patch.sh
 ```
 
 ### Build the images
@@ -43,7 +43,7 @@ bash vendor/oniro/std_emulator/hook/do_patch.sh
 Start the build with ccache enabled:
 
 ```bash
-./build.sh --product-name std_emulator --ccache --gn-args allow_sanitize_debug=true
+./build.sh --product-name x86_general --ccache
 ```
 
 ### (Optional) Revert patches
@@ -51,7 +51,7 @@ Start the build with ccache enabled:
 If needed, you can undo the applied patches:
 
 ```bash
-bash vendor/oniro/std_emulator/hook/undo_patch.sh
+bash vendor/oniro/x86_general/hook/undo_patch.sh
 ```
 
 ## Alternative: Download Prebuilt Images
