@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="webGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4f71fa" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4f71fa" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="nativeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9523FA" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#9523FA" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Web Layer Box -->
+  <rect x="40" y="20" width="600" height="160" rx="12" fill="url(#webGrad)" stroke="#4f71fa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="50" font-size="13" font-weight="700" fill="#4f71fa" letter-spacing="0.5">WEB LAYER</text>
+
+  <text x="60" y="78" font-size="15" font-weight="600" fill="#1a1a2e">Your Ionic / React / Vue / Angular Web App</text>
+  <text x="60" y="98" font-size="12.5" fill="#555">(TypeScript, runs inside ArkUI WebView)</text>
+
+  <rect x="60" y="114" width="560" height="50" rx="8" fill="#fff" stroke="#4f71fa" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="80" y="136" font-size="12.5" fill="#333" font-family="'Courier New', monospace">import { Device } from '@capacitor/device'</text>
+  <text x="80" y="154" font-size="12.5" fill="#333" font-family="'Courier New', monospace">Device.getInfo()  &#x2192;  window.Capacitor.nativePromise()</text>
+
+  <!-- Arrow between layers -->
+  <line x1="340" y1="180" x2="340" y2="240" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <polygon points="333,236 340,250 347,236" fill="#6b7280"/>
+
+  <rect x="240" y="198" width="200" height="26" rx="13" fill="#fff" stroke="#6b7280" stroke-width="1"/>
+  <text x="340" y="215" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="600">JS Bridge (postMessage)</text>
+
+  <!-- Native Layer Box -->
+  <rect x="40" y="254" width="600" height="148" rx="12" fill="url(#nativeGrad)" stroke="#9523FA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="284" font-size="13" font-weight="700" fill="#9523FA" letter-spacing="0.5">NATIVE LAYER</text>
+
+  <text x="60" y="312" font-size="15" font-weight="600" fill="#1a1a2e">CapacitorBridge.ets</text>
+  <text x="232" y="312" font-size="13" fill="#555">(ArkTS native layer)</text>
+
+  <!-- Flow boxes -->
+  <rect x="60" y="326" width="150" height="34" rx="8" fill="#9523FA" fill-opacity="0.1" stroke="#9523FA" stroke-width="1"/>
+  <text x="135" y="348" font-size="12" fill="#1a1a2e" text-anchor="middle" font-weight="500">Routes call</text>
+
+  <text x="226" y="348" font-size="16" fill="#9523FA" text-anchor="middle">&#x2192;</text>
+
+  <rect x="242" y="326" width="160" height="34" rx="8" fill="#9523FA" fill-opacity="0.1" stroke="#9523FA" stroke-width="1"/>
+  <text x="322" y="348" font-size="12" fill="#1a1a2e" text-anchor="middle" font-weight="500">PluginRegistry</text>
+
+  <text x="420" y="348" font-size="16" fill="#9523FA" text-anchor="middle">&#x2192;</text>
+
+  <rect x="438" y="326" width="182" height="34" rx="8" fill="#9523FA" fill-opacity="0.1" stroke="#9523FA" stroke-width="1"/>
+  <text x="529" y="348" font-size="12" fill="#1a1a2e" text-anchor="middle" font-weight="500">Plugin.ets</text>
+
+  <text x="60" y="384" font-size="12.5" fill="#555">Plugin uses <tspan font-family="'Courier New', monospace" fill="#333">@kit.*</tspan> / <tspan font-family="'Courier New', monospace" fill="#333">@ohos.*</tspan> native APIs &#x2192; resolves result back to JS callback</text>
+</svg>
