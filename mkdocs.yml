@@ -120,6 +120,7 @@ nav:
             - Resource Group Directories: application-development/resource-categories-and-access/resource-categories/resource-group-directories.md
         - Resource Access: application-development/resource-categories-and-access/resource-access/index.md
       - Code Labs: 
+        - Overview: application-development/codeLabs/index.md
         - Mobile:
           - AI: application-development/codeLabs/mobile/ai.md
           - Communication: application-development/codeLabs/mobile/communication.md
