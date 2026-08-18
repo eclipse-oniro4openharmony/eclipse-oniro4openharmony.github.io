@@ -5,7 +5,7 @@ During UI code development, if you add or remove UI components, simply save your
     For .ets file, Previewer only works with components which decorated with **@Entry** or **@Preview** decorator.
 
 <div style="text-align:center">
-    <img src='../images/image12.png'>
+    <img src='../images_common/image12.png'>
 </div> 
 <br>
 
@@ -13,30 +13,30 @@ DevEco Studio's **Previewer** offers several essential features to enhance the U
 
 - **Screen Rotation**: You can switch between portrait and landscape orientations by clicking the **Orientation** button within the Previewer. 
 <div style="text-align:center">
-    <img src='../images/image13.png'>
+    <img src='../images_common/image13.png'>
 </div> 
 <br>
 
 - **Device Switching**: The Previewer allows you to switch between different device profiles to see how your application appears on various devices. 
 <div style="text-align:center">
-    <img src='../images/image14.png'>
-    <img src='../images/image15.png'>
-    <img src='../images/image16.png'>
+    <img src='../images_common/image14.png'>
+    <img src='../images_common/image15.png'>
+    <img src='../images_common/image16.png'>
 </div> 
 <br>
 
 
 - **Multi-Device Preview**: By enabling the multi-device preview feature, you can simultaneously view your application's UI across multiple devices.
 <div style="text-align:center">
-    <img src='../images/image17.png'>
-    <img src='../images/image18.png'>
+    <img src='../images_common/image17.png'>
+    <img src='../images_common/image18.png'>
 </div> 
 <br>
 
 - **Code Inspection**: ​DevEco Studio's **Inspector** feature enables bidirectional interaction between the `code editor`, `UI preview`, and `component tree`.  
 <div style="text-align:center">
-    <img src='../images/image19.png'>
-    <img src='../images/image20.png'>
+    <img src='../images_common/image19.png'>
+    <img src='../images_common/image20.png'>
 </div> 
 <br>
 

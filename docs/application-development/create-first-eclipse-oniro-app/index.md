@@ -5,6 +5,17 @@ Make sure you have gone through the [Environment Setup Guide](../../environment-
 <!--  -->
 In this tutorial, you will create your first Eclipse Oniro application using the `OpenHarmony` template provided by `DevEco Studio`. 
 
+<iframe
+  width="100%"
+  height="420"
+  src="https://www.youtube-nocookie.com/embed/watch?v=sp7sgwUG1Ew&list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&index=1"
+  title="HelloWorld with Open Harmony SDK"
+  frameborder="0"
+  loading="lazy"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
 #### Prerequisites
 - The latest available version of DevEco Studio installed on your system.
 
@@ -27,7 +38,7 @@ In this tutorial, you will create your first Eclipse Oniro application using the
 - **Implement Page Navigation**: Use the router module to enable redirection between pages with transition effects.
 <br>
 
-- **Deploy on a Real Device**: Install HDC, configure device settings, and run the application on a physical HiHope HH-SCDAYU200 Development Kit.
+- **Deploy on a Real Device**: Install HDC, configure device settings, and run the application on a physical HiHope HH-SCDAYU200 Development Kit or HUAWEI Watch 5.
 <br>
 
 #### What You Will Build

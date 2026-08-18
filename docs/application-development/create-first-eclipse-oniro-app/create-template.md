@@ -2,17 +2,17 @@ To create a project in DevEco Studio:
 
 **1.** Double-click the DevEco Studio icon to begin.
 <div style="text-align:center">
-    <img src='../images/image1.png' width='30%'>
+    <img src='../images_common/image1.png' width='30%'>
 </div>
 
 **2.** In welcome page click `Create Project`.
 <div style="text-align:center">
-    <img src='../images/image2.png'>
+    <img src='../images_common/image2.png'>
 </div>
 
 The **Create Project** window opens with template market provided by DevEco Studio.
 <div style="text-align:center">
-    <img src='../images/image3.png'>
+    <img src='../images_common/image3.png'>
 </div>
 
 In DevEco Studio, a project template serves as a blueprint for building specific types of apps. It defines the project structure and essential files, providing starter code to help you get started quickly.
@@ -35,19 +35,19 @@ In DevEco Studio, a project template serves as a blueprint for building specific
      If you plan to use **JavaScript**, select **API 8** instead. This will provide a language option where you can choose **JS**.
 
 <div style="text-align:center">
-    <img src='../images/image5.png'>
+    <img src='../images_common/image5.png'>
 </div>  
 
 **5.** Click `Finish` and wait for the project creation.
 
 <div style="text-align:center">
-    <img src='../images/image6.png'>
+    <img src='../images_common/image6.png'>
 </div> 
 
 **6.** Click **Previewer** on the right sidebar of DevEco Studio to view both the code and design simultaneously.
 
 <div style="text-align:center">
-    <img src='../images/image7.png'>
+    <img src='../images_mobile/image7.png'>
 </div> 
 
 - **Project View**(Part 1): Displays all files and folders in your project.  

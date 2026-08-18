@@ -53,7 +53,7 @@ struct Index {
 ```
 Click the `Next` button now and page will redirect to the `SecondPage`. You can also observe the printed information in console as well.
 <div style="text-align:center">
-    <img src='../images/image25.png'>
+    <img src='../images_mobile/image25.png'>
 </div> 
 
 ### Redirection from the second page to the first page
@@ -108,6 +108,6 @@ struct SecondPage {
 ```
 Click the `Back` button on the page or the triangle icon on the Previewer, the page will redirect back to the `Index`. You can also observe the printed information in console as well.
 <div style="text-align:center">
-    <img src='../images/image26.png'>
-    <img src='../images/image27.png'>
+    <img src='../images_mobile/image26.png'>
+    <img src='../images_mobile/image27.png'>
 </div> 
