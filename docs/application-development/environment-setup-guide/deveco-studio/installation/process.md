@@ -111,14 +111,23 @@ Before setting up your development environment, it's important to understand the
 
 ### DevEco Studio Initial Setup
 
-When you run `DevEco Studio` for the first time, the setup wizard will appear.
+When you run `DevEco Studio` for the first time, the setup wizard will appear. This first-run wizard is the same on Windows and macOS — the screenshots below are from Windows, but macOS shows the same dialogs (just with macOS-style window chrome instead of the Windows title bar).
 <img src='../../images/image7.png'>
+
+!!! note "macOS Gatekeeper / User Agreement"
+    On macOS, before the wizard below appears you may first see a **User Agreement** dialog asking you to accept the "HarmonyOS Software License and Service Agreement" — accept it to continue. If macOS blocked the app from opening at all, see the Gatekeeper note in [Step-by-Step Installation](#step-by-step-installation) above.
 
 Select `Do not import settings` (unless migrating from a previous install).
 <img src='../../images/image8.png'>
 
 !!! tip "Behind a proxy?"
     If your network requires a proxy, configure it now under **Settings → Appearance & Behavior → System Settings → HTTP Proxy** — otherwise the Basic Setup step below may fail to download Node.js, Ohpm, or SDK components.
+
+    === "Windows"
+        Reach Settings via **File → Settings**.
+
+    === "macOS"
+        Reach Settings via **DevEco Studio → Settings** in the menu bar (or the `⌘,` shortcut).
 
 On `Basic Setup` page, select install for **Node.js** and **Ohpm**.
 <img src='../../images/image9.png'>
