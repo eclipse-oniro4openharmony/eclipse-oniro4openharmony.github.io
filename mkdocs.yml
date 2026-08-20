@@ -67,6 +67,7 @@ nav:
             - Using the Previewer: application-development/environment-setup-guide/deveco-studio/tutorial/previewer.md
             - Emulators and Devices: application-development/environment-setup-guide/deveco-studio/tutorial/emulators-and-devices.md
             - Debugging and Profiling: application-development/environment-setup-guide/deveco-studio/tutorial/debugging-and-profiling.md
+            - Build Variants and Signing: application-development/environment-setup-guide/deveco-studio/tutorial/build-and-signing.md
         - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
         - Oniro App Builder:
             - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
