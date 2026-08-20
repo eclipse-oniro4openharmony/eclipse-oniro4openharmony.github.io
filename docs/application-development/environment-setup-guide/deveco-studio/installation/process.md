@@ -22,31 +22,46 @@ Enterprise developers receive a broader range of services compared to individual
 
 ## Download
 
-The latest version of DevEco Studio can be downloaded from [here](https://developer.huawei.com/consumer/en/download/).
+The latest version of DevEco Studio can be downloaded from the [official download page](https://developer.huawei.com/consumer/en/download/).
 
 !!! info
     You need a Huawei account to download.
 
+<img src='../../images/windows_download.png' alt="DevEco Studio download page listing the Windows, Mac (x86), and Mac (ARM) installers">
+
+=== "Windows"
+    Download the Windows installer (`.exe`, listed as "DevEco Studio for Windows").
+
+=== "macOS"
+    Download the build matching your Mac's chip: **Mac (X86)** for Intel Macs, or **Mac (ARM)** for Apple Silicon (M-series).
+
 ## Step-by-Step Installation
 
-After the download completes, extract the downloaded package and run `deveco-studio-xxxx.exe`.
+=== "Windows"
+    After the download completes, run the installer.
 
-Keep clicking `Next` until the **Choose Install Location** step.
-Specify the desired installation path by clicking `Browse...` if necessary, and then click `Next`.
-<img src='../../images/image3.png'>
+    Keep clicking `Next` until the **Choose Install Location** step.
+    Specify the desired installation path by clicking `Browse...` if necessary — the installer shows the space required alongside the space available on the selected drive — and then click `Next`.
+    <img src='../../images/windows_setup1.png' alt="Choose Install Location step, showing space required and space available">
 
->**Note:**
-Ensure that you delete all files from the previous installation path before proceeding if this is not your first installation.
-<img src='../../images/image2.png'>
+    >**Note:**
+    Ensure that you delete all files from the previous installation path before proceeding if this is not your first installation.
 
-In the **Installation Options** step, select `Create Desktop Shortcut`.
-<img src='../../images/image4.png'>
+    In the **Installation Options** step, keep `Create Desktop Shortcut` checked. Also check **Add "bin" folder to the PATH** if you want to invoke DevEco Studio's bundled command-line tools from any terminal; this option requires a restart to take effect. **Add "Open Folder as Project"** to the Explorer context menu is optional.
+    <img src='../../images/windows_setup2.png' alt="Installation Options step: desktop shortcut, PATH variable, and context menu checkboxes">
 
-In the **Choose Start Menu Folder** step, keep the default settings and click `Install`.
-<img src='../../images/image5.png'>
+    In the **Choose Start Menu Folder** step, keep the default settings and click `Install`.
+    <img src='../../images/windows_setup3.png' alt="Choose Start Menu Folder step with the Install button">
 
-The installation is now complete.
-<img src='../../images/image6.png'>
+    DevEco Studio bundles its own OpenJDK, so no separate JDK install is required for basic use.
+
+=== "macOS"
+    Open the downloaded `.dmg` file, then drag **DevEco-Studio** into the **Applications** folder shown in the same window.
+    <img src='../../images/macos_installation.png' alt="dmg window: dragging DevEco-Studio into the Applications folder">
+
+    Wait for the copy to finish, then eject the mounted disk image.
+
+    On first launch, macOS Gatekeeper may block the app since it was downloaded from outside the App Store — if so, go to **System Settings → Privacy & Security** and click **Open Anyway**.
 
 ## Environment Configuration
 
@@ -99,8 +114,11 @@ Before setting up your development environment, it's important to understand the
 When you run `DevEco Studio` for the first time, the setup wizard will appear.
 <img src='../../images/image7.png'>
 
-Select `Do not import settings`
+Select `Do not import settings` (unless migrating from a previous install).
 <img src='../../images/image8.png'>
+
+!!! tip "Behind a proxy?"
+    If your network requires a proxy, configure it now under **Settings → Appearance & Behavior → System Settings → HTTP Proxy** — otherwise the Basic Setup step below may fail to download Node.js, Ohpm, or SDK components.
 
 On `Basic Setup` page, select install for **Node.js** and **Ohpm**.
 <img src='../../images/image9.png'>
@@ -133,5 +151,26 @@ The environment configuration is completed.
     </div>
 
     ![SDK Manager](../../images/image18.png){: .center}
+
+### Enabling Additional Device Types
+
+By default, DevEco Studio's region setting can limit which emulator device types (phone, tablet, etc.) are available to download in Device Manager. To unlock the full set, edit the `country.region.xml` configuration file and set its region to `CN`.
+
+=== "Windows"
+    Open `%AppData%\Huawei\DevEcoStudio<version>\options\country.region.xml` in a text editor and set `"countryregion name"` to `"CN"`.
+    <img src='../../images/windows_conf_file.png' alt="File explorer showing country.region.xml inside the DevEco Studio options folder">
+
+=== "macOS"
+    Open a terminal and run:
+
+    ```bash
+    cd ~/Library/Application\ Support/Huawei/DevEcoStudio<version>/options && nano country.region.xml
+    ```
+
+    Set `"countryregion name"` to `"CN"`, then save and exit.
+    <img src='../../images/macos_command.png' alt="Terminal command to open country.region.xml with nano on macOS">
+
+!!! note
+    Replace `<version>` in the path above with your installed DevEco Studio version, e.g. `DevEcoStudio6.1`.
 
 With the developer account set up, DevEco Studio installed, and the environment configured, you're ready to explore the IDE itself — continue to [Workflow](../workflow.md).
