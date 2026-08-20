@@ -12,7 +12,11 @@ To get the full functionality you need to install command-line tools and SDK ver
 
 > the emulator runs OpenHarmony 6.1 (API level 23)
 
-In IDE use the "SDK manager" tab. For App Builder run:
+In IDE use the "SDK manager" tab. 
+
+> ADD IMAGE HERE
+
+For App Builder run:
 
 - `oniro-app cmdtools install`
 - `oniro-app sdk install 6.1` (or another version)
@@ -28,6 +32,8 @@ First, install [QEMU](https://www.qemu.org/download/#linux)
 ## Inside IDE or App Builder
 
 You can download the emulator inside the "SDK manager" tab in IDE, and manage it using the "Start Emulator" and "Stop Emulator" buttons.
+
+> ADD IMAGE HERE
 
 With App Builder, you'll need the following commands:
 

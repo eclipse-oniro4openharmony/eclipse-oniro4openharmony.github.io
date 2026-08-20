@@ -10,4 +10,6 @@
 
 In the IDE, simply click on the tab "Create Project".
 
+> ADD IMAGE HERE
+
 With App Builder, execute `oniro-app create --name <app_name> --location <location> --bundle <bundle_name> --sdk <api_level>`.
