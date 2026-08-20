@@ -64,6 +64,7 @@ nav:
             - Interface Tour: application-development/environment-setup-guide/deveco-studio/tutorial/interface-tour.md
             - Project Structure: application-development/environment-setup-guide/deveco-studio/tutorial/project-structure.md
             - Editor Features: application-development/environment-setup-guide/deveco-studio/tutorial/editor-features.md
+            - Using the Previewer: application-development/environment-setup-guide/deveco-studio/tutorial/previewer.md
         - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
         - Oniro App Builder:
             - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
