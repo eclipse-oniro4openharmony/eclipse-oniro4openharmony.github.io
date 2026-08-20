@@ -54,17 +54,16 @@ nav:
       - Environment Setup Guide: 
         - Overview: application-development/environment-setup-guide/index.md
         - DevEcoStudio:
-          - System Requirement: application-development/environment-setup-guide/deveco-studio/system-requirement.md
-          - IDE Installation: application-development/environment-setup-guide/deveco-studio/ide-installation.md
-          - Environment Configuration: application-development/environment-setup-guide/deveco-studio/env-config.md
-          - Developer Account: application-development/environment-setup-guide/deveco-studio/developer-account.md
-          - Common Issues and Solutions: application-development/environment-setup-guide/deveco-studio/common-issue.md
+          - Installation:
+            - System Requirements: application-development/environment-setup-guide/deveco-studio/installation/system-requirements.md
+            - Process of Installation: application-development/environment-setup-guide/deveco-studio/installation/process.md
+          - Workflow: application-development/environment-setup-guide/deveco-studio/workflow.md
+          - First App: application-development/environment-setup-guide/deveco-studio/first-app.md
+          - Emulator: application-development/environment-setup-guide/deveco-studio/emulator.md
         - Oniro App Builder & IDE:
             - Setup: application-development/environment-setup-guide/oniro/setup.md
             - Creating a Project: application-development/environment-setup-guide/oniro/create-project.md
-            # - Running Your App:
-        #     - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
-        #     - Usage: application-development/environment-setup-guide/oniro-app-builder/usage.md
+            - Running Your App:
         - Full SDK & Public SDK: application-development/environment-setup-guide/full-public-sdk.md
 
       - Create Your First Eclipse Oniro Application:
