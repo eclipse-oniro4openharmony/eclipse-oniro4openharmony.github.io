@@ -107,7 +107,7 @@ Before setting up your development environment, it's important to understand the
 </div>
 
 !!! tip "API Level Selection"
-    When developing applications, select the API level that corresponds to your target OpenHarmony system version. For example, if you're targeting OpenHarmony 5.1.0, use API Level 18.
+    When developing applications, select the API level that corresponds to your target OpenHarmony system version. For example, if you're targeting OpenHarmony 6.1, use API Level 23.
 
 ### DevEco Studio Initial Setup
 
@@ -142,7 +142,7 @@ The environment configuration is completed.
       Open **DevEco Studio** and go to:
       `Tool` → `SDK Manager` → `OpenHarmony`, select an API version and click **Apply** to download.
 
-      > 💡 If you're using **DevEco Studio 5.1.0**, select **API Version 18** for development.
+      > 💡 If you're using **DevEco Studio 6.1**, select **API Version 23** for development.
       >
       > Refer to the version mapping table above to choose the appropriate API level for your target OpenHarmony system.
 
