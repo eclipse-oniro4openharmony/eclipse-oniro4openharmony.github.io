@@ -8,7 +8,7 @@ By default, running or debugging from the IDE produces a **debug** build: automa
 
 A **release** build is what you'd hand off or publish — optimized, and signed with a certificate meant to persist across builds (so updates are trusted as coming from the same source).
 
-Which variant gets built is controlled by the **Build Variant** selector, plus the products/targets declared in the project's `build-profile.json5` files (see [Project Structure](project-structure.md)).
+Which variant gets built is controlled by the **Build Variant** selector, plus the products/targets declared in the project's `build-profile.json5` files (see [Project Structure](../workflow.md#project-structure)).
 
 ## Signing Configurations
 
@@ -32,7 +32,7 @@ Needed for CI pipelines, team-shared release certificates, or when a specific pr
 4. Reference this signing config from the relevant product entry in `build-profile.json5`.
 
 !!! warning "Keep release keys out of the repository"
-    Never commit a keystore file or its passwords. Store them in a secrets manager or CI-only environment variables, and keep only a *reference* (path/alias) in version control — see [Version Control](version-control.md) for a `.gitignore` starting point.
+    Never commit a keystore file or its passwords. Store them in a secrets manager or CI-only environment variables, and keep only a *reference* (path/alias) in version control — see [Version Control](../workflow.md#version-control) for a `.gitignore` starting point.
 
 ## Generating a Package
 
@@ -57,4 +57,4 @@ Two errors are common enough to call out specifically (both also covered in [Com
 3. Bump `versionCode`/`versionName` in `AppScope/app.json5` if this is an update to a previously distributed build.
 4. Do a clean install test on a device that was never used for debug builds of this app, to rule out state left over from development.
 
-Next: keep all of the above under proper history in [Version Control](version-control.md).
+Next: keep all of the above under proper history — see [Version Control](../workflow.md#version-control).

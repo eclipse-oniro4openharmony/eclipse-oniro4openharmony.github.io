@@ -57,17 +57,13 @@ nav:
           - Installation:
             - System Requirements: application-development/environment-setup-guide/deveco-studio/installation/system-requirements.md
             - Process of Installation: application-development/environment-setup-guide/deveco-studio/installation/process.md
+          - Workflow: application-development/environment-setup-guide/deveco-studio/workflow.md
           - Common Issues and Solutions: application-development/environment-setup-guide/deveco-studio/common-issue.md
           - In-Depth Tutorial:
-            - Overview: application-development/environment-setup-guide/deveco-studio/tutorial/index.md
-            - Interface Tour: application-development/environment-setup-guide/deveco-studio/tutorial/interface-tour.md
-            - Project Structure: application-development/environment-setup-guide/deveco-studio/tutorial/project-structure.md
-            - Editor Features: application-development/environment-setup-guide/deveco-studio/tutorial/editor-features.md
             - Using the Previewer: application-development/environment-setup-guide/deveco-studio/tutorial/previewer.md
             - Emulators and Devices: application-development/environment-setup-guide/deveco-studio/tutorial/emulators-and-devices.md
             - Debugging and Profiling: application-development/environment-setup-guide/deveco-studio/tutorial/debugging-and-profiling.md
             - Build Variants and Signing: application-development/environment-setup-guide/deveco-studio/tutorial/build-and-signing.md
-            - Version Control: application-development/environment-setup-guide/deveco-studio/tutorial/version-control.md
         - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
         - Oniro App Builder:
             - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
