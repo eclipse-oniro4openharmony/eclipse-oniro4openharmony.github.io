@@ -61,6 +61,7 @@ nav:
           - Common Issues and Solutions: application-development/environment-setup-guide/deveco-studio/common-issue.md
           - In-Depth Tutorial:
             - Overview: application-development/environment-setup-guide/deveco-studio/tutorial/index.md
+            - Interface Tour: application-development/environment-setup-guide/deveco-studio/tutorial/interface-tour.md
         - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
         - Oniro App Builder:
             - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
