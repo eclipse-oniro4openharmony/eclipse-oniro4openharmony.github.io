@@ -59,10 +59,12 @@ nav:
           - Environment Configuration: application-development/environment-setup-guide/deveco-studio/env-config.md
           - Developer Account: application-development/environment-setup-guide/deveco-studio/developer-account.md
           - Common Issues and Solutions: application-development/environment-setup-guide/deveco-studio/common-issue.md
-        - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
-        - Oniro App Builder:
-            - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
-            - Usage: application-development/environment-setup-guide/oniro-app-builder/usage.md
+        - Oniro App Builder & IDE:
+            - Setup: application-development/environment-setup-guide/oniro/setup.md
+            - Creating a Project: application-development/environment-setup-guide/oniro/create-project.md
+            # - Running Your App:
+        #     - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
+        #     - Usage: application-development/environment-setup-guide/oniro-app-builder/usage.md
         - Full SDK & Public SDK: application-development/environment-setup-guide/full-public-sdk.md
 
       - Create Your First Eclipse Oniro Application:

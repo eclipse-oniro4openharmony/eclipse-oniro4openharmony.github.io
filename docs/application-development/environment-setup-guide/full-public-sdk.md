@@ -23,7 +23,7 @@ There are two types of SDKs:
 
     👉 Make sure to select the version that matches your development requirements.
 
-<img src='../images/image19.png'>  
+<img src='../deveco-studio/images/image19.png'>  
  
 
 | pipeline        | description                                                                                          | remark                                                                                                           |
@@ -43,7 +43,7 @@ Take the replacement of the full SDK of DevEco Studio 5.1.0, API 18 on Windows O
 
 3. Backup and remove the local SDK:  
    Make sure to select OpenHarmony then navigate to the directory where the original SDK is installed.
-<img src='../images/image20.png'>  
+<img src='../deveco-studio/images/image20.png'>  
 
 
 
@@ -72,11 +72,11 @@ You can see that it contains SDK files for both Linux and Windows platforms. Eac
 │           └── toolchains-windows-x64-5.1.0.103-Beta1.zip
 ```
 2. Create a new directory with the API version 18 as the file name in dir path: xxx\\Sdk\\ , unzip the compressed files  into this directory to form a structure below:
-<img src='../images/image21.png'>  
+<img src='../deveco-studio/images/image21.png'>  
 
 3. Verify in the IDE:  
    Full API will be loaded in IDE and you can now rebuild the project.  
-<img src='../images/image24.png'>  
+<img src='../deveco-studio/images/image24.png'>  
 
 ### **Approach 2: From Compiled Source Files**
 
