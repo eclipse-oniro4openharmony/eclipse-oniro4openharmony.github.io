@@ -1,4 +1,4 @@
-# System Requirement  
+# System Requirements  
 For this tutorial, we use Windows system as example, it is recommended to meet the following requirements:
 
 | Item             | Requirement              |

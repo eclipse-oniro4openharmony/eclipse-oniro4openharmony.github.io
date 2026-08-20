@@ -54,7 +54,8 @@ nav:
       - Environment Setup Guide: 
         - Overview: application-development/environment-setup-guide/index.md
         - DevEcoStudio:
-          - System Requirement: application-development/environment-setup-guide/deveco-studio/system-requirement.md
+          - Installation:
+            - System Requirements: application-development/environment-setup-guide/deveco-studio/installation/system-requirements.md
           - IDE Installation: application-development/environment-setup-guide/deveco-studio/ide-installation.md
           - Environment Configuration: application-development/environment-setup-guide/deveco-studio/env-config.md
           - Developer Account: application-development/environment-setup-guide/deveco-studio/developer-account.md
