@@ -63,7 +63,7 @@ nav:
         - Oniro App Builder & IDE:
             - Setup: application-development/environment-setup-guide/oniro/setup.md
             - Creating a Project: application-development/environment-setup-guide/oniro/create-project.md
-            - Running Your App:
+            # - Running Your App:
         - Full SDK & Public SDK: application-development/environment-setup-guide/full-public-sdk.md
 
       - Create Your First Eclipse Oniro Application:
