@@ -60,10 +60,10 @@ nav:
           - Workflow: application-development/environment-setup-guide/deveco-studio/workflow.md
           - First App: application-development/environment-setup-guide/deveco-studio/first-app.md
           - Emulator: application-development/environment-setup-guide/deveco-studio/emulator.md
-        - Oniro IDE: application-development/environment-setup-config/oniro-ide.md
-        - Oniro App Builder:
-            - Setup: application-development/environment-setup-guide/oniro-app-builder/setup.md
-            - Usage: application-development/environment-setup-guide/oniro-app-builder/usage.md
+        - Oniro App Builder & IDE:
+            - Setup: application-development/environment-setup-guide/oniro/setup.md
+            - Creating a Project: application-development/environment-setup-guide/oniro/create-project.md
+            - Running Your App:
         - Full SDK & Public SDK: application-development/environment-setup-guide/full-public-sdk.md
 
       - Create Your First Eclipse Oniro Application:
