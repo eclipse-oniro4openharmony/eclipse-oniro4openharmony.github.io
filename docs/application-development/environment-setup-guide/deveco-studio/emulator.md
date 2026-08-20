@@ -1,27 +1,55 @@
 # Emulator
 
-Once your UI looks right in the Previewer (see [First App](first-app.md)), the next step is running the app for real — either on an emulator or on physical hardware.
+Once your UI looks right in the Previewer (see [First App](first-app.md)), the next step is running the app for real — either on an emulator or on physical hardware. The emulator works the same way on Windows and macOS.
+
+## Prerequisites
+
+* **Hardware virtualization** must be enabled — Intel VT-x / AMD-V on Windows (usually a BIOS/UEFI setting). Apple Silicon Macs run the emulator natively; Intel-based Macs do not support emulation in DevEco Studio.
+* You must be **signed in with a Huawei ID** — downloading emulator system images requires an authenticated account.
+* The first time you download a virtual device image, DevEco Studio shows an additional **User Agreement** (HarmonyOS Software License and Service Agreement, plus the User Experience Improvement Program notice) that you need to accept.
+
+<img src='../images/emulator_user_agreement.png' alt="User Agreement dialog with HarmonyOS Software License and User Experience Improvement Program checkboxes">
 
 ## Device Manager
 
-Open **Device Manager** from the toolbar (or **Tools → Device Manager**) to create and launch emulators.
+Open **Device Manager** either from **Tools → Device Manager**, or from the device dropdown next to the Run/Debug buttons in the toolbar (it's listed at the bottom of that dropdown).
 
-To create a new emulator:
+<img src='../images/emulator_device_manager.png' alt="Run target dropdown with Device Manager listed under Huawei|Emulator">
 
-1. Click **New Emulator**.
-2. Choose a device profile (phone, tablet, wearable, TV — availability depends on which system images you've installed via the SDK Manager).
-3. Select the system image / API level to match the target you're developing against (see the version/API table in [Process of Installation](installation/process.md)).
-4. Give it a name and confirm.
+Device Manager's **Your Devices** page lists any emulators you've already created under the **Local Emulator** tab, along with the on-disk location they're stored in.
+
+<img src='../images/emulator_device_manager2.png' alt="Device Manager Your Devices page, Local Emulator tab, with the New Emulator button">
+
+### Creating a Virtual Device
+
+1. Click **+ New Emulator**.
+2. On the **Select Virtual Device** screen, pick a device type from the tree on the left (Phone, Foldable, WideFold, TripleFold, Tablet, 2in1, 2in1 Foldable, TV) and a row matching the HarmonyOS/API version you're targeting (see the version/API table in [Process of Installation](installation/process.md)).
+3. If the system image isn't downloaded yet, click the download icon in the **Actions** column and wait for it to finish — budget roughly **2 GB** of free disk space to download an image and around **12 GB** free to actually run it.
+4. Click **Next**.
+<img src='../images/emulator_new_emulator.png' alt="Select Virtual Device screen listing device types, API versions, and a download action per row">
+5. On the **Virtual Device Configure** screen, confirm the device name and hardware profile — screen size, resolution, and DPI (or click **Customize** to change the screen profile) — choose a boot option (see below), and set the RAM/ROM allocated to the virtual device.
+6. Click **Finish** to create it.
+<img src='../images/emulator_device_configuration.png' alt="Virtual Device Configure screen with name, screen profile, boot options, RAM and ROM fields">
 
 !!! tip "Match the API level to your project"
     If the emulator's API level is lower than your module's `compatibleSdkVersion`/`compileSdkVersion`, install/run can fail or behave inconsistently. Keep at least one emulator matching your project's target API.
 
+!!! note "Limited device types available?"
+    If Device Manager only offers a narrow set of device types, your DevEco Studio region setting may be restricting them — see [Enabling Additional Device Types](installation/process.md#enabling-additional-device-types).
+
 ### Boot Modes
 
 * **Cold boot** — starts the emulator from a clean state every time. Slower, but useful when you need to rule out state left over from a previous run.
-* **Quick boot** (if available for the image) — resumes from a saved snapshot, which is much faster for everyday iteration.
+* **Quick boot** — resumes from a saved snapshot, which is much faster for everyday iteration.
 
 If an emulator becomes unresponsive or gets into a broken state (e.g. the "Unable to find BMS Service" issue described in [Common Issues and Solutions](first-app.md#common-issues-and-solutions)), a cold boot or wiping its data is usually the fastest fix.
+
+## Running Your App on the Emulator
+
+1. In Device Manager, start the emulator (or let the IDE boot it automatically the first time you target it).
+2. Back in your project, open the run target dropdown in the toolbar and select the emulator under **Huawei|Emulator** — alongside it you'll also find the **Huawei Simulator** entries (Wearable Simulator, Smart Vision Simulator) and the **Huawei Previewer**.
+<img src='../images/emulator_device_selection.png' alt="Run target dropdown with a created emulator selected under Huawei|Emulator">
+3. Click **Run**. The app builds, installs, and launches automatically on the emulator.
 
 ## Connecting a Real Device
 
@@ -58,8 +86,11 @@ hdc install ./entry-default-signed.hap
 !!! note "Multiple targets connected"
     If more than one device/emulator is connected, most `hdc` subcommands need a `-t <target-id>` (or `-s <serial>`, depending on version) flag — run `hdc list targets` first to get the identifier.
 
-## Choosing a Run Target in the IDE
+## Troubleshooting
 
-The dropdown next to the Run/Debug buttons in the navigation bar lists every currently available emulator and connected device. Select a target there before clicking **Run** — DevEco Studio remembers your last selection between sessions.
+* **Emulator won't start / black screen** — confirm virtualization is enabled in BIOS/UEFI (Windows), and check that no other virtualization software (Hyper-V, VirtualBox, etc.) is conflicting with it.
+* **Slow performance** — close unused emulators, allocate more RAM/CPU cores to the virtual device in its configuration, and prefer a lower-resolution device profile for quick UI checks.
+* **System image download stuck or failing** — check the region setting from [Enabling Additional Device Types](installation/process.md#enabling-additional-device-types) (some system images are region-restricted) and verify your network/proxy configuration.
+* **App fails to install on the emulator** — see the `compileSdkVersion`/permission-related entries in [Common Issues and Solutions](first-app.md#common-issues-and-solutions).
 
 Next: run the app and diagnose problems in [First App](first-app.md#debugging-and-profiling).
