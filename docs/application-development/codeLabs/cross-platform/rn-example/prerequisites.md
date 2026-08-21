@@ -34,7 +34,7 @@ npm install -g npm
 - **OpenHarmony SDK API:** 12 (downloaded)
 - **Huawei Developer Account:** Required to generate signing configurations
 - **Device/Emulator:** An installed OH emulator, a device with HarmonyNEXT, or a 64-bit version of OpenHarmony  
-  [OpenHarmony Overview](https://docs.openharmony.cn/pages/v5.0/en/OpenHarmony-Overview.md)
+  [OpenHarmony Overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/OpenHarmony-Overview.md)
 
 ---
 

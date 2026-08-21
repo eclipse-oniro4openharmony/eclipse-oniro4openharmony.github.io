@@ -1,6 +1,6 @@
 ### Install HDC  
 
-1. Find the [pipeline](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist) whose name is ohos-sdk-full or ohos-sdk-public, click **Download Link**, and select **Full Package**.  
+1. Find the [pipeline](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/release-notes/OpenHarmony-v5.1.0-release.md) whose name is ohos-sdk-full or ohos-sdk-public, click **Download Link**, and select **Full Package**.  
    Use conditional filtering: select project `openharmony`, branch `OpenHarmony-5.1.0-Release`, and a date from the previous month or a manual range.  
    Then find **ohos-sdk-full_5.1.0-Release**, and download the full package (Windows/Linux).  
    *(If daily build SDK is not compatible with your DevEco Studio, try the rolling build SDK.)*
@@ -33,9 +33,9 @@
 2. Generate signature:
    - Click `Project Structure...` → `Project > Signing Configs` → check `Automatically generate signature`.
    - Click `Apply` and wait until signature is generated.
-     ![Signature Settings](images_mobile/image28.png){: .center}
+     ![Signature Settings](images_common/image28.png){: .center}
    - You will find it in the `configuration` folder under `build-profile.json5`.  
-     ![Signature File](images_mobile/image35.png){: .center}
+     ![Signature File](images_common/image35.png){: .center}
 
 3. Click the `Run 'entry'` triangle button in the IDE.  
    ![Run App](images_mobile/image37.png){: .center}
@@ -64,9 +64,9 @@
 2. Generate signature:
    - Click `Project Structure...` → `Project > Signing Configs` → check `Automatically generate signature`.
    - Click `Apply` and wait until signature is generated.
-     ![Signature Settings](images_wearable/image28.png){: .center}
+     ![Signature Settings](images_common/image28.png){: .center}
    - You will find it in the `configuration` folder under `build-profile.json5`.  
-     ![Signature File](images_wearable/image35.png){: .center}
+     ![Signature File](images_common/image35.png){: .center}
 
 3. Click the `Run 'entry'` triangle button in the IDE.  
    ![Run App](images_wearable/image37.png){: .center}
@@ -82,7 +82,7 @@ If you’re interested, this video takes you deeper into wearable development wi
 <iframe
   width="100%"
   height="420"
-  src="https://www.youtube-nocookie.com/embed/watch?v=WITjqfofG6k&list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&index=2"
+  src="https://www.youtube-nocookie.com/embed/WITjqfofG6k?list=PLy7t4z5SYNaT3VUbRGCoNH471N9sSs0uV&index=2"
   title="HarmonyOS Wearable Tutorial"
   frameborder="0"
   loading="lazy"

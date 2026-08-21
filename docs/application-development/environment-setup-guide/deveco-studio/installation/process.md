@@ -159,7 +159,7 @@ The environment configuration is completed.
 
     </div>
 
-    ![SDK Manager](../../images/image18.png){: .center}
+    ![SDK Manager](../images/image18.png){: .center}
 
 ### Enabling Additional Device Types
 

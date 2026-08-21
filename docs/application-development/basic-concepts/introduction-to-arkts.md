@@ -950,8 +950,8 @@ In the preceding example, the **Index** page contains two custom components. One
 - When the application exits, the following callbacks are executed in order: Index onPageHide -> MyComponent aboutToDisappear -> Child aboutToDisappear.
 
 ##### More Usage
-- [Custom Component Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/quick-start/arkts-page-custom-components-layout.md)  
-- [Freezing a Custom Component](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/quick-start/arkts-custom-components-freeze.md)
+- [Custom Component Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-page-custom-components-layout.md)  
+- [Freezing a Custom Component](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-custom-components-freeze.md)
 
 ### State Management
 In previous examples, most of the pages built are static pages, which are delivered to the end user without having to be processed. If you are building dynamic, interactive pages, you need to handle **state management**.

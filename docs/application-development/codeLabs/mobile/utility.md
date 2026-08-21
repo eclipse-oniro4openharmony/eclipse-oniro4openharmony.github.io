@@ -123,6 +123,5 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
     <img src='../images/utility/mylist/img_6.png' width='50%'>
     <img src='../images/utility/mylist/img_7.png' width='50%'>
     <img src='../images/utility/mylist/img_8.png' width='50%'>
-    <img src='../images/utility/mylist/img_9.png' width='50%'>
     <img src='../images/utility/mylist/img_10.png' width='50%'>
 </div>

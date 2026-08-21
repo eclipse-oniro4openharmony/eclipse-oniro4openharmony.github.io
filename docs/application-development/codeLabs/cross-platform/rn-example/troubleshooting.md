@@ -116,7 +116,7 @@ The ```libRNOHApp``` library actually corresponds to the dynamic library ```libr
 - To manually solve the problem, you can also copy the content in the ```oh_modules/@rnoh/react-native-openharmony/src/main/cpp/third-party/prebuilt``` directory of the RN source code to the ```oh_modules/@rnoh/react-native-openharmony/libs``` directory.
 
 - Check if your version of Open Harmony is 64-bit. If not, flash your device with the 64-bit
- OHOS image: https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist
+ OHOS image: https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/release-notes/OpenHarmony-v5.1.0-release.md
 
 
 ## 3. Kit '@kit.ShareKit' has no corresponding config file in ArkTS SDK

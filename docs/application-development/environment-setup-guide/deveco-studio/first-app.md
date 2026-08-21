@@ -207,7 +207,7 @@ Two errors are common enough to call out specifically (both also covered in [Com
 
 `entry\src\main\module.json5` is the configuration file for the module, check `deviceTypes`, add `phone` if it is missing.
 
-![alt text](../images/SDK-11.png)
+![alt text](images/SDK-11.png)
 
 ### Unable to find BMS Service when running on Emulator
 

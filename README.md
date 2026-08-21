@@ -40,7 +40,7 @@ To build and preview the documentation on your local machine(We use Windows syst
    ```sh
    mkdocs serve
    ```
-6. Open `http://localhost:8000/mkdocs/` in your web browser to view the documentation.
+6. Open `http://localhost:8000/` in your web browser to view the documentation.
 
 ## Publishing on GitHub Pages
 
