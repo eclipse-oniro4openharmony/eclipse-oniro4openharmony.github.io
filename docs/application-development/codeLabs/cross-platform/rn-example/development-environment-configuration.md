@@ -14,8 +14,8 @@
 
 ### Configuring hdc (OpenHarmony Device Connector)
 
-The hdc tool is used for debugging on a real device in the OpenHarmony React Native project. Obtain the hdc tool from the OpenHarmony SDK and store it in the SDK’s toolchains directory. Then, add the full path of  
-{DevEco Studio installation path}/sdk/{SDK version}/openharmony/toolchains  
+The hdc tool is used for debugging on a real device in the OpenHarmony React Native project. It is included in the OpenHarmony SDK installed by DevEco Studio. Add the full path of
+`{DevEco Studio installation path}/sdk/{SDK version}/openharmony/toolchains`
 to your OS environment variables.
 
 #### On Windows
@@ -23,8 +23,8 @@ to your OS environment variables.
 a. Navigate to: This PC > Properties > Advanced system settings > Advanced > Environment Variables.  
     - Add the hdc path to the system variable `PATH`.
 
-b. Add a new system variable:  
-    - **Name:** HDC_SERVER_PORT  
+b. If the default HDC server port is unavailable, add a new system variable:
+    - **Name:** OHOS_HDC_SERVER_PORT
     - **Value:** A port number not in use (e.g., 7035).
 
 #### On macOS
@@ -36,9 +36,9 @@ vi ~/.bash_profile
 Add the following lines:
 ```
 export PATH="/Applications/DevEco-Studio.app/Contents/sdk/{Version path}/openharmony/toolchains:$PATH"
-HDC_SERVER_PORT=7035
-launchctl setenv HDC_SERVER_PORT $HDC_SERVER_PORT
-export HDC_SERVER_PORT
+OHOS_HDC_SERVER_PORT=7035
+launchctl setenv OHOS_HDC_SERVER_PORT $OHOS_HDC_SERVER_PORT
+export OHOS_HDC_SERVER_PORT
 ```
 b. Save and exit by pressing Esc, typing `:wq`, and pressing Enter.
 

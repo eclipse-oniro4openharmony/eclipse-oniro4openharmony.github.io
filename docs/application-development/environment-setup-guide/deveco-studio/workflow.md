@@ -10,7 +10,7 @@ DevEco Studio is built on the IntelliJ Platform, so if you have used Android Stu
 
 When no project is open, DevEco Studio shows the **Welcome** screen with:
 
-* **New Project** – start a project from an OpenHarmony/HarmonyOS template (Empty Ability, Native C++, and more).
+* **New Project** – start a project from a HarmonyOS template (Empty Ability, Native C++, and more). Configure the generated project for OpenHarmony when that is the target runtime.
 * **Open** – open an existing project directory.
 * **Get from VCS** – clone a Git repository directly.
 * A list of recently opened projects.
@@ -113,7 +113,7 @@ MyApplication/
 
 Settings that apply to the whole application, not just one module:
 
-* `app.json5` — bundle name, vendor, version code/name, minimum/target/compatible API levels.
+* `app.json5` — bundle name, vendor, version code/name, application icon, and application label.
 * `resources/` — app-wide resources such as the app icon and label, shared across all modules.
 
 #### entry Module
@@ -128,15 +128,15 @@ Settings that apply to the whole application, not just one module:
 | `src/main/resources/en_US/`, `zh_CN/`, ... | Locale-specific resource overrides |
 | `src/main/resources/rawfile/` | Raw assets bundled as-is, accessed by path rather than resource ID |
 | `module.json5` | Module-level manifest: `deviceTypes`, abilities, requested permissions, module name/type |
-| `build-profile.json5` | Module-level build configuration: target SDK/compile API, product flavors, signing config reference |
+| `build-profile.json5` | Module-level build configuration, including build options and module targets |
 | `oh-package.json5` | Module's dependencies, similar in spirit to `package.json` |
 
 !!! note "Where `deviceTypes` matters"
-    If your app refuses to show up as a run target for a certain emulator (e.g. "phone" not listed), check `deviceTypes` in `module.json5` — this is the same issue documented in [Common Issues and Solutions](first-app.md#common-issues-and-solutions).
+    If your app refuses to show up as a run target for a certain emulator, check `deviceTypes` in `module.json5`. HarmonyOS phone projects use `phone`; OpenHarmony projects use `default` (and can also list supported form factors such as `tablet`). This is the same issue documented in [Common Issues and Solutions](first-app.md#common-issues-and-solutions).
 
 #### Project-Level Files
 
-* `build-profile.json5` (root) — declares the products/targets and which modules/signing configs they use.
+* `build-profile.json5` (root) — declares products, SDK compatibility and compilation versions, signing configurations, build modes, and modules.
 * `oh-package.json5` (root) — workspace-level dependency declarations and the `oh_modules` resolution behavior.
 * `hvigorfile.ts` — the build script for **Hvigor**, OpenHarmony's build system (conceptually similar to a Gradle build script).
 
@@ -149,14 +149,14 @@ resources/
 ├── base/            # fallback, always present
 ├── en_US/            # locale
 ├── dark/             # color mode
-└── phone/            # device type
+└── tablet/           # device type
 ```
 
 DevEco Studio resolves the best-matching folder at build/runtime based on the current device's locale, color mode, screen density, and device type — you rarely need to write this logic yourself.
 
 ### Where the IDE Keeps Its Own State
 
-Two folders are IDE/tooling-generated and should **not** be committed to version control:
+The following IDE/tooling-generated paths should **not** be committed to version control:
 
 | Folder | Contents |
 |---|---|

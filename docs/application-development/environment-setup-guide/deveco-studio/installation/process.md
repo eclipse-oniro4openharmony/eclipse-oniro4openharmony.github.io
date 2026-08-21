@@ -9,15 +9,7 @@
 
 You need a Huawei account to download DevEco Studio. For instructions, see [HUAWEI ID Registration and Verification](https://developer.huawei.com/consumer/en/doc/start/registration-and-verification-0000001053628148).
 
-Anyone can register for an individual developer account without identity verification, but some permissions require a verified identity.
-
-According to the Huawei developer forum, verified developers gain access to more development resources, training materials, and market-promotion services. Only verified developers can publish applications.
-
-Enterprise developers receive a broader range of services than individual developers:
-
-* **Individual developers**: App Market, Themes, Product Management, Account, PUSH, New Game Pre-order, Interactive Comments, Social, HUAWEI HiAI, and Watch App Market.
-
-* **Enterprise developers**: App Market, Themes, Initial Release, Payment, Game Packages, App Market Promotion, Product Management, Games, Account, PUSH, New Game Pre-order, Interactive Comments, Social, HUAWEI HiAI, Watch App Market, Sports & Health, Cloud Testing, and Smart Home.
+Identity verification is not required for local Oniro/OpenHarmony application development. Publishing through Huawei services has separate account and verification requirements that are outside the scope of this guide.
 
 ## Download
 
@@ -80,7 +72,6 @@ Before setting up your development environment, review the relationship between 
           <td style="text-align:center;padding:12px 10px;">5.0.2</td>
           <td style="text-align:center;padding:12px 10px;">5.0.3</td>
           <td style="text-align:center;padding:12px 10px;">5.1.0</td>
-          <td style="text-align:center;padding:12px 10px;">5.1.1</td>
           <td style="text-align:center;padding:12px 10px;">6.0</td>
           <td style="text-align:center;padding:12px 10px;">6.1</td>
         </tr>
@@ -95,7 +86,6 @@ Before setting up your development environment, review the relationship between 
           <td style="text-align:center;padding:12px 10px;">14</td>
           <td style="text-align:center;padding:12px 10px;">15</td>
           <td style="text-align:center;padding:12px 10px;">18</td>
-          <td style="text-align:center;padding:12px 10px;">19</td>
           <td style="text-align:center;padding:12px 10px;">20</td>
           <td style="text-align:center;padding:12px 10px;">23</td>
         </tr>
@@ -158,26 +148,5 @@ The environment is now configured.
     </div>
 
     ![SDK Manager](../images/image18.png){: .center}
-
-### Enabling Additional Device Types
-
-By default, DevEco Studio's region setting can limit which emulator device types (phone, tablet, etc.) are available to download in Device Manager. To unlock the full set, edit the `country.region.xml` configuration file and set its region to `CN`.
-
-=== "Windows"
-    Open `%AppData%\Huawei\DevEcoStudio<version>\options\country.region.xml` in a text editor and set `"countryregion name"` to `"CN"`.
-    <img src='../../images/windows_conf_file.png' alt="File explorer showing country.region.xml inside the DevEco Studio options folder">
-
-=== "macOS"
-    Open a terminal and run:
-
-    ```bash
-    cd ~/Library/Application\ Support/Huawei/DevEcoStudio<version>/options && nano country.region.xml
-    ```
-
-    Set `"countryregion name"` to `"CN"`, then save and exit.
-    <img src='../../images/macos_command.png' alt="Terminal command to open country.region.xml with nano on macOS">
-
-!!! note
-    Replace `<version>` in the path above with your installed DevEco Studio version, for example, `DevEcoStudio6.1`.
 
 After setting up a developer account, installing DevEco Studio, and configuring the environment, continue to [Workflow](../workflow.md) to explore the IDE.

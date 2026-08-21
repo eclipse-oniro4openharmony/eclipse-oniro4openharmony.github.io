@@ -63,7 +63,7 @@ rnoh-app/harmony/entry/src/main/resources/rawfile
 ``` 
 to the directory:
 ```
-oh-app/entry/src/main/src/main/resources/rawfile
+oh-app/entry/src/main/resources/rawfile
 ```
 4. Compile the **oh-app** with the DevEco. Choose ```File > Sync and Refresh Project``` before compilation.
 

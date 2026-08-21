@@ -144,7 +144,7 @@ Open **View → Tool Windows → Profiler** (or the toolbar icon) while the app 
 
 ## Build Variants and Signing
 
-To distribute an application outside DevEco Studio's Run and Debug workflow, you need an installable `.hap` or `.app` package. Creating one requires an understanding of build products and signing.
+To distribute an application outside DevEco Studio's Run and Debug workflow, you need a signed `.hap`. An `.app` file is a distribution archive that can contain multiple HAPs and HSPs; it is not installed directly with `hdc`.
 
 ### Debug vs. Release
 
@@ -191,7 +191,7 @@ Build output appears under the module's `build/` directory, and the **Build** to
 
 Two errors are common enough to call out specifically (both also covered in [Common Issues and Solutions](#common-issues-and-solutions) below):
 
-* **`compileSdkVersion`/`releaseType` mismatch with the device** — the compiled SDK version is newer than what the target device supports. Lower the compiled version in the relevant `build-profile.json5`, or target a newer device/emulator.
+* **`compatibleSdkVersion`/`releaseType` mismatch with the device** — the minimum compatible SDK or release type does not match the target. Lower `compatibleSdkVersion` if the application does not require newer APIs, or use a matching device/emulator.
 * **Install failed due to "grant request permissions failed"** — the requested permission's level (`system_basic` or `system_core`) requires the ACLs be explicitly listed in the provisioning profile used for signing. Check [this permissions reference](https://gitcode.com/openharmony/resources/blob/master/systemres/main/config.json) for the level of each permission your `module.json5` requests, and make sure your signing profile grants it.
 
 ### A Practical Checklist Before Distributing a Build
@@ -205,7 +205,7 @@ Two errors are common enough to call out specifically (both also covered in [Com
 
 ### Cannot Find a Phone Emulator
 
-Open the module configuration file at `entry\src\main\module.json5`. Check `deviceTypes` and add `phone` if it is missing.
+Open the module configuration file at `entry\src\main\module.json5` and check `deviceTypes`. A HarmonyOS phone target requires `phone`. For an OpenHarmony/Oniro target, keep `default` and use the Oniro emulator rather than changing the runtime's device type to `phone`.
 
 ![alt text](images/SDK-11.png)
 
@@ -227,15 +227,15 @@ Change the USB power-management settings as follows:
     </figure>
 </div>
 
-### Application `compileSdkVersion` and `releaseType` Do Not Match the Device's `apiVersion` and `releaseType`
+### Application `compatibleSdkVersion` and `releaseType` Do Not Match the Device's `apiVersion` and `releaseType`
 
-**Cause:** The compiled SDK version is higher than the version supported by the device.
+**Cause:** The application's minimum compatible SDK version is higher than the device API version, or the release types differ.
 
 **Solution:**
 
-1. Modify `build_profile.json5` under `entry` and set `apiType` to `faMode`.
-2. Modify the project-level `build_profile.json5` and set the compiled version to a lower version.
-3. Run the application again.
+1. Open the project-level `build-profile.json5` file.
+2. Set `compatibleSdkVersion` to an API level supported by the device, provided that the application does not require newer APIs. Ensure that `runtimeOS` and the SDK release type match the device.
+3. Synchronize the project and run the application again.
    <img title="" src="../images/SDK-14.png" alt="" width="294">
 
 ### Install Failed
@@ -254,7 +254,7 @@ OpenHarmony request permissions have three levels, from lowest to highest: `norm
 
 If `availableLevel` is set to `system_basic`, configure the `acls` field in `UnsignedReleasedProfileTemplate.json` and add the required high-level permissions.
 
-In `build-profile.json5`, set `profile` to the `.p7b` file generated with the `java -c` commands.
+Use a signing profile that grants the required ACLs and reference its `.p7b` file from the signing configuration in `build-profile.json5`. The automatically generated normal-application profile cannot grant `system_basic` or `system_core` permissions.
 
 <img title="" src="../images/SDK-16.png" >
 

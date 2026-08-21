@@ -21,8 +21,8 @@ Use the following commands for the basic workflow:
 - `oniro-app sign`
 - `oniro-app build`
 - `oniro-app emulator connect`
-- `oniro-app install`
-- `oniro-app launch`
+- `oniro-app app install`
+- `oniro-app app launch`
 
 # Additional App Builder Commands
 

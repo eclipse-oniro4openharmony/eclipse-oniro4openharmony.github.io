@@ -4,7 +4,7 @@
 
 When a user opens or switches to and from an application, the UIAbility instances in the application transit in their different states. The UIAbility class provides a series of callbacks. Through these callbacks, you can know the state changes of the UIAbility instance.
 
-The lifecycle of UIAbility has the following states: **Create**, **Foreground**, **Background**, **Destroy**, **onWindowStageCrate** and **onWindowStageDestory** as shown in the figure below.
+The UIAbility lifecycle has four main states: **Create**, **Foreground**, **Background**, and **Destroy**. Window-stage creation and destruction are reported separately through the `onWindowStageCreate()` and `onWindowStageDestroy()` callbacks, as shown in the figure below.
 
 **Figure 1** UIAbility lifecycle states
 

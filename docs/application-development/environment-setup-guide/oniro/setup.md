@@ -4,7 +4,7 @@ Install Oniro IDE from either the [Visual Studio Marketplace](https://marketplac
 
 To install Oniro App Builder, follow the instructions on [GitHub](https://github.com/eclipse-oniro4openharmony/oniro-app-builder).
 
-> Ensure that you have a Java Runtime Environment (JRE) installed; application signing requires it.
+Oniro App Builder requires Node.js 20 or later. Install it with `npm install -g @oniroproject/oniro-app`. The `oniro-app sign` command also requires a JDK on `PATH` because it uses both `java` and `keytool`.
 
 # Downloading the SDK and Command-Line Tools
 
@@ -21,10 +21,11 @@ In Oniro IDE, open the **SDK Manager** tab.
     <img src='../images/download-sdk.png'>
 </div> 
 
-For Oniro App Builder, run:
+For Oniro App Builder, install the SDK with:
 
-- `oniro-app cmdtools install`
 - `oniro-app sdk install 6.1` (or another version)
+
+On Linux, install the command-line tools with `oniro-app cmdtools install`. On Windows and macOS, use the ZIP procedure below.
 
 ## Command-Line Tools on Windows and macOS
 
@@ -44,11 +45,15 @@ With Oniro App Builder, run `oniro-app cmdtools install --from-zip <path to your
 
 # Downloading the Emulator
 
-> Your machine must have [KVM](https://linux-kvm.org/page/Main_Page) enabled.
+The emulator requires QEMU and uses a host-specific accelerator:
+
+- Linux: KVM must be enabled and accessible to the current user.
+- Windows: enable Windows Hypervisor Platform. The launcher also requires Git Bash, MSYS2, or Cygwin.
+- macOS: Intel Macs use Hypervisor.framework; Apple Silicon Macs use TCG emulation, which is slower.
 
 > A window manager that forces the QEMU window to a fixed size can cause display problems. If you encounter problems, ensure that the QEMU window is floating and is not being resized automatically.
 
-First, install [QEMU](https://www.qemu.org/download/#linux).
+First, install [QEMU](https://www.qemu.org/download/) and ensure that `qemu-system-x86_64` is on `PATH`.
 
 ## Inside IDE or App Builder
 
@@ -66,4 +71,4 @@ With Oniro App Builder, use the following commands:
 
 ## Standalone
 
-You can also [download the emulator directly](https://github.com/eclipse-oniro4openharmony/device_board_oniro/releases/latest/download/oniro_emulator.zip). After extracting the ZIP archive, run the included `run.sh` script to start the emulator.
+You can also [download the emulator directly](https://github.com/eclipse-oniro4openharmony/device_board_oniro/releases/latest/download/oniro_emulator.zip). After extracting the ZIP archive, run `run.sh` on Linux or macOS, or `run.bat` on Windows.

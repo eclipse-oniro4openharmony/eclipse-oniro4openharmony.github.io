@@ -2,6 +2,8 @@
 
 After verifying the UI in the Previewer (see [First App](first-app.md)), run the application on an emulator or physical hardware. The emulator works the same way on Windows and macOS.
 
+The virtual devices downloaded in DevEco Studio's Device Manager are HarmonyOS images. Use them for a HarmonyOS project with a matching API and release type. To run a project configured with `runtimeOS: "OpenHarmony"`, use the [Oniro emulator](../oniro/setup.md#downloading-the-emulator) or an OpenHarmony device instead.
+
 ## Prerequisites
 
 * **Hardware virtualization** must be enabled — Intel VT-x / AMD-V on Windows (usually a BIOS/UEFI setting). Apple Silicon Macs run the emulator natively; Intel-based Macs do not support emulation in DevEco Studio.
@@ -32,10 +34,7 @@ Device Manager's **Your Devices** page lists existing emulators under the **Loca
 <img src='../images/emulator_device_configuration.png' alt="Virtual Device Configure screen with name, screen profile, boot options, RAM and ROM fields">
 
 !!! tip "Match the API level to your project"
-    If the emulator's API level is lower than your module's `compatibleSdkVersion`/`compileSdkVersion`, install/run can fail or behave inconsistently. Keep at least one emulator matching your project's target API.
-
-!!! note "Limited device types available?"
-    If Device Manager only offers a narrow set of device types, your DevEco Studio region setting may be restricting them — see [Enabling Additional Device Types](installation/process.md#enabling-additional-device-types).
+    The emulator's API level must be at least the project's `compatibleSdkVersion`, and its release type must match the project. `compileSdkVersion` can be newer than the device when the application does not use unavailable APIs.
 
 ### Boot Modes
 
@@ -84,13 +83,13 @@ hdc install ./entry-default-signed.hap
 ```
 
 !!! note "Multiple targets connected"
-    If more than one device/emulator is connected, most `hdc` subcommands need a `-t <target-id>` (or `-s <serial>`, depending on version) flag — run `hdc list targets` first to get the identifier.
+    If more than one device or emulator is connected, use `hdc -t <target-id> <command>`. Run `hdc list targets` first to get the identifier. The `-s` option selects an HDC server endpoint; it does not select a device serial number.
 
 ## Troubleshooting
 
 * **Emulator does not start or displays a black screen** — confirm that virtualization is enabled in the BIOS or UEFI settings on Windows. Check whether other virtualization software, such as Hyper-V or VirtualBox, conflicts with it.
 * **Slow performance** — close unused emulators, allocate more RAM/CPU cores to the virtual device in its configuration, and prefer a lower-resolution device profile for quick UI checks.
-* **System image download stuck or failing** — check the region setting from [Enabling Additional Device Types](installation/process.md#enabling-additional-device-types) (some system images are region-restricted) and verify your network/proxy configuration.
+* **System image download stuck or failing** — verify your network/proxy configuration and that the selected image is available for your host platform and account region.
 * **App fails to install on the emulator** — see the `compileSdkVersion`/permission-related entries in [Common Issues and Solutions](first-app.md#common-issues-and-solutions).
 
 Next: run the app and diagnose problems in [First App](first-app.md#debugging-and-profiling).
