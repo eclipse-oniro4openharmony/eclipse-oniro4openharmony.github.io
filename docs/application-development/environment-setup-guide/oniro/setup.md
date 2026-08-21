@@ -14,7 +14,9 @@ To get the full functionality you need to install command-line tools and SDK ver
 
 In IDE use the "SDK manager" tab. 
 
-> ADD IMAGE HERE
+<div style="text-align:center">
+    <img src='../images/download-sdk.png'>
+</div> 
 
 For App Builder run:
 
@@ -23,7 +25,7 @@ For App Builder run:
 
 # Downloading the emulator
 
-> Your machine needs to have [KVM](https://wiki.archlinux.org/title/KVM) enabled
+> Your machine needs to have [KVM](https://linux-kvm.org/page/Main_Page) enabled
 
 > It can cause some issues if your window manager forces the QEMU window into a certain size. If you're having trouble, make sure that QEMU window is floating and isn't being rescaled.
 
@@ -33,7 +35,9 @@ First, install [QEMU](https://www.qemu.org/download/#linux)
 
 You can download the emulator inside the "SDK manager" tab in IDE, and manage it using the "Start Emulator" and "Stop Emulator" buttons.
 
-> ADD IMAGE HERE
+<div style="text-align:center">
+    <img src='../images/download-emulator.png'>
+</div> 
 
 With App Builder, you'll need the following commands:
 

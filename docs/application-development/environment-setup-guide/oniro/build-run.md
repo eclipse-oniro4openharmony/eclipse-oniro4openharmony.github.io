@@ -10,7 +10,9 @@ After that, the main workflow loop looks like this:
 
 # Oniro IDE
 
-> ADD IMAGE HERE
+<div style="text-align:center">
+    <img src='../images/build.png'>
+</div> 
 
 # Oniro App Builder
 
