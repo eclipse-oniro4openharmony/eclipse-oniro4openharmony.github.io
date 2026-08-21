@@ -10,6 +10,9 @@ For Oniro App Builder follow the instructions on [github](https://github.com/ecl
 
 To get the full functionality you need to install command-line tools and SDK version compatible with your target device.
 
+!!! note
+    On Windows or MacOS only dowload SDK for now, downloading command-line tools for these systems is covered in the next section.
+
 > the emulator runs OpenHarmony 6.1 (API level 23)
 
 In IDE use the "SDK manager" tab. 
@@ -22,6 +25,22 @@ For App Builder run:
 
 - `oniro-app cmdtools install`
 - `oniro-app sdk install 6.1` (or another version)
+
+## Command-line Tools on Windows and MacOS
+
+Command-line tools for Windows and MacOS can't be downloaded automatically. You'll need to download them yourself from [Huawei developer portal](https://developer.huawei.com/consumer/en/download/).
+
+In IDE click `Install` in the command-line tools box in `SDK manager` tab, and you'll be prompted to provide the zip file downloaded from Huawei developer portal.
+
+<div style="text-align:center">
+    <img src='../images/cmd-tools-install.png'>
+</div> 
+
+<div style="text-align:center">
+    <img src='../images/cmd-tools-prompt.png'>
+</div> 
+
+With Oniro App Builder, run `oniro-app cmdtools install --from-zip <path to your zip>`.
 
 # Downloading the emulator
 
