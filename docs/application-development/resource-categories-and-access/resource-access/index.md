@@ -29,17 +29,17 @@ The usage is as follows:
 - Obtain a **ResourceManager** object through the application context, and then call resource management APIs to access different resources.<br>For example, call **getContext.resourceManager.getStringByNameSync('app.string.XXX')** to obtain string resources; call **getContext.resourceManager.getRawFd('rawfilepath')** to obtain the descriptor of the HAP where the raw file is located, and then use the descriptor ({fd, offset, length}) to access the raw file.
 
 ### Cross-HAP/HSP Resources
-For cross-HAP/HSP resources, we have different scenarios as following:
+The following scenarios apply to cross-HAP and cross-HSP resources:
 - Cross-bundle access (for system applications only)
 - Inter-bundle, cross-module access  
 
-For detailed information please reference [Inter-Bundle, Cross-Module Access](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/quick-start/resource-categories-and-access.md#cross-bundle-access-for-system-applications-only)
+For details, see [Inter-Bundle, Cross-Module Access](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/quick-start/resource-categories-and-access.md#cross-bundle-access-for-system-applications-only).
 
 ### System Resources
 
 Apart from custom resources, developers can obtain the ID and configuration-specific values of colors, fonts, or other resources in [Resources](https://gitcode.com/openharmony/docs/blob/master/en/design/ux-design/design-resources.md) and system icons in [HarmonyOS Symbol](https://developer.huawei.com/consumer/cn/design/harmonyos-symbol/).
 
-During development, the usage of layered parameters is basically the same as that of qualifiers. To reference a system resource, use the "$r('sys.type.resource_id')" format. Wherein: **sys** indicates a system resource; **type** indicates the resource type, which can be **color**, **float**, **string**, or **media**; **resource_id** indicates the resource ID.
+Layered parameters work similarly to qualifiers. To reference a system resource, use the `$r('sys.type.resource_id')` format. In this format, **sys** indicates a system resource, **type** indicates the resource type (`color`, `float`, `string`, or `media`), and **resource_id** indicates the resource ID.
 
 !!! note
     - The use of system resources is only supported in the declarative development paradigm.

@@ -1,15 +1,15 @@
-To preview the UI display effect of a file in real-time using DevEco Studio's Previewer, click on the **Previewer** tab located on the right side of the DevEco Studio interface.   
-During UI code development, if you add or remove UI components, simply save your changes by pressing **Ctrl+S** or click **Reload**. The Previewer will then immediately refresh to reflect the updated UI.
+To preview a file's UI in real time, click the **Previewer** tab on the right side of the DevEco Studio window.
+After adding or removing UI components, save your changes with **Ctrl+S** or click **Reload**. The Previewer refreshes to display the updated UI.
 
 !!! note
-    For .ets file, Previewer only works with components which decorated with **@Entry** or **@Preview** decorator.
+    For `.ets` files, the Previewer works only with components decorated with `@Entry` or `@Preview`.
 
 <div style="text-align:center">
     <img src='../images_common/image12.png'>
 </div> 
 <br>
 
-DevEco Studio's **Previewer** offers several essential features to enhance the UI development experience:
+DevEco Studio's **Previewer** provides the following UI-development features:
 
 - **Screen Rotation**: You can switch between portrait and landscape orientations by clicking the **Orientation** button within the Previewer. 
 <div style="text-align:center">
@@ -17,7 +17,7 @@ DevEco Studio's **Previewer** offers several essential features to enhance the U
 </div> 
 <br>
 
-- **Device Switching**: The Previewer allows you to switch between different device profiles to see how your application appears on various devices. 
+- **Device Switching**: Switch between device profiles to see how the application appears on different devices.
 <div style="text-align:center">
     <img src='../images_common/image14.png'>
     <img src='../images_common/image15.png'>
@@ -26,14 +26,14 @@ DevEco Studio's **Previewer** offers several essential features to enhance the U
 <br>
 
 
-- **Multi-Device Preview**: By enabling the multi-device preview feature, you can simultaneously view your application's UI across multiple devices.
+- **Multi-Device Preview**: View the application's UI on several devices at the same time.
 <div style="text-align:center">
     <img src='../images_common/image17.png'>
     <img src='../images_common/image18.png'>
 </div> 
 <br>
 
-- **Code Inspection**: ​DevEco Studio's **Inspector** feature enables bidirectional interaction between the `code editor`, `UI preview`, and `component tree`.  
+- **Code Inspection**: DevEco Studio's **Inspector** provides bidirectional interaction among the code editor, UI preview, and component tree.
 <div style="text-align:center">
     <img src='../images_common/image19.png'>
     <img src='../images_common/image20.png'>
@@ -41,4 +41,4 @@ DevEco Studio's **Previewer** offers several essential features to enhance the U
 <br>
 
 
-These features collectively provide a comprehensive environment to visualize and fine-tune your application's user interface across different devices and orientations.
+These features help you visualize and refine the application's UI across different devices and orientations.

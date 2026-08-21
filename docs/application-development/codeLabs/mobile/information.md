@@ -2,7 +2,7 @@
 An App to explore and download free games.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-PlayScout)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-PlayScout).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -21,10 +21,10 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 </div>
 
 ### Pokemon List  
-Pokemon List: A application to explore Pokémon types, attributes, and skill effects with ease.
+Pokémon List: An application for exploring Pokémon types, attributes, and skill effects.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-PokemonList)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-PokemonList).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -46,7 +46,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 A personalized news app where users can browse and collect their favorite news content.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-OniroNews)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-OniroNews).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

@@ -1,6 +1,6 @@
 # @State Decorator
 
-Variables decorated with `@State`, also known as state variable, are used in our development to declare internal component states. When a property is decorated with `@State`, it becomes a reactive state of the component. This means that whenever the property's value changes, the component will automatically re-render to reflect the updated state.
+Variables decorated with `@State`, also known as state variables, declare a component's internal state. A property decorated with `@State` becomes reactive: when its value changes, the component automatically re-renders to reflect the updated state.
 
 ## Features
 - A one-way synchronization relationship can be set up from an `@State` decorated variable to an `@Prop` decorated variable in a child component, and a two-way synchronization relationship to an `@Link` or `@ObjectLink` decorated variable.
@@ -101,4 +101,4 @@ struct MyComponent {
 </div>
 
 ### Additional Information
-For additional information please refer to the [ArkTS State Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-state.md)
+For more information, see the [ArkTS State Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-state.md).

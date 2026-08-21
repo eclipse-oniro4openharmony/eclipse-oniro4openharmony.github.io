@@ -217,4 +217,4 @@ The display is previewed as the following:
 </div>
 
 ### Additional Information
-For additional information please refer to the [ArkTS Prop Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-prop.md)
+For more information, see the [ArkTS Prop Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-prop.md).

@@ -2,7 +2,7 @@
 Discord application for Oniro
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-discord)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-discord).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -21,7 +21,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 Gmail application for Oniro
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-gmail)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-gmail).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 3.1 Release or higher version

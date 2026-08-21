@@ -1,4 +1,4 @@
-This topic explores the structure of an application package in the phase of application development.
+This topic describes the structure of an application package during application development.
 
 ## Application Model Overview
 
@@ -31,7 +31,7 @@ The table below lists the main file types in the project structure.
 ## Selecting a File Type
 There are two types of modules by usage scenario:
 
-- **Modules of the ability type**: used to implement application functionality. Each module of the ability type is built into a Harmony Ability Package (HAP), in .hap format. As a basic unit for application installation, a HAP can be installed and run separately. An application contains one or more HAPs. Depending on the module from each it is built, a HAP is of the entry or feature type.
+- **Modules of the ability type**: Used to implement application functionality. Each ability module is built as a Harmony Ability Package (HAP) in `.hap` format. A HAP is a basic unit of application installation and can be installed and run separately. An application contains one or more HAPs. Depending on the module from which it is built, a HAP has either the entry or feature type.
   - Entry HAP: built from an entry module, which serves as the application's main module and implements the application's entry screen, entry icon, or headline feature. Each application package distributed to devices of the same type may contain either zero or one entry HAP.
   - Feature HAP: built from a dynamic feature module. An application can contain zero, one, or more feature HAPs.
 
@@ -40,7 +40,7 @@ There are two types of modules by usage scenario:
   - Shared: dynamic shared library. This type of library is built into a Harmony Shared Package (HSP), in .hsp format.
   
 !!! note
-    Actually, a build of the shared library generates a HAR as well as an HSP. The HAR contains the interfaces exported from the HSP and is used by other modules in the application to reference the features of the HSP. For convenience purposes, it is usually considered that a shared library is built into an HSP.
+    Building a shared library generates both a HAR and an HSP. The HAR contains the interfaces exported from the HSP and allows other application modules to reference HSP features. For convenience, documentation generally describes a shared library as being built into an HSP.
   
   The table below lists the differences between the HAR and HSP.
   
@@ -56,4 +56,4 @@ There are two types of modules by usage scenario:
 
 
 ## Reference
-For additional information please refer to [Overview of Application Configuration Files in Stage Model](https://gitcode.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-configuration-file-overview-stage.md) and [Application Models](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/application-models/application-models.md)
+For more information, see [Overview of Application Configuration Files in the Stage Model](https://gitcode.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-configuration-file-overview-stage.md) and [Application Models](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/application-models/application-models.md).

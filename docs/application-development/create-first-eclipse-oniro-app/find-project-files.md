@@ -1,11 +1,11 @@
 
-- In DevEco Studio, take a look at the **Project** tab. The **Project** tab shows the actual file directory structure of the project as well as all project items and their dependencies (including SDKs and libraries)  
+- In DevEco Studio, open the **Project** tab. It displays the project's directory structure, items, and dependencies, including SDKs and libraries.
 <div style="text-align:center">
     <img src='../images_common/image8.png'>
 </div> 
 <br>
 
-- Select **Project Files** from the drop-down menu. You can browse all the files in the project content root directory, but does not display external libraries and frameworks.
+- Select **Project Files** from the menu. This view displays all files in the project's content-root directory but excludes external libraries and frameworks.
 <div style="text-align:center">
     <img src='../images_common/image9.png'>
 </div> 
@@ -17,10 +17,10 @@
 </div> 
 <br>
 
-- Select **Ohos** from the drop-down menu. This optimized view clearly presents essential files required for development, making it easier for developers to quickly locate core code and resources related to application development.
+- Select **Ohos** from the menu. This view presents the files required for development and helps you locate the application's core code and resources.
 <div style="text-align:center">
     <img src='../images_common/image11.png'>
 </div> 
 <br>
 
-For our application development, the **Ohos** view is usually the best choice, we will use **Ohos** tab in this course.
+This tutorial uses the **Ohos** view because it is usually the most convenient view for application development.

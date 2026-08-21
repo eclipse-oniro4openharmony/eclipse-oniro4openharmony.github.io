@@ -1,21 +1,21 @@
-# Full SDK & Public SDK
+# Full SDK and Public SDK
 
-There are two types of SDKs:
+OpenHarmony provides two types of SDK:
 
-* Public-SDK: A toolkit provided for application development. It is available to download with DevEco Studio and does not include **high-permission APIs** required for system applications.  
-* Full-SDK: A toolkit provided for OEM manufacturers to develop applications. It cannot be downloaded with DevEco Studio and includes **high-permission APIs** required for system applications.
+* **Public SDK**: A toolkit for application development. You can download it with DevEco Studio. It does not include the **high-permission APIs** required by system applications.
+* **Full SDK**: A toolkit for OEM manufacturers that includes the **high-permission APIs** required by system applications. You cannot download it with DevEco Studio.
 
-## How to get the Full SDK?
+## Obtaining the Full SDK
 
-### **Approach 1: From CICD pipeline (Recommended)**
+### **Approach 1: Download from the CI/CD Pipeline (Recommended)**
 
 #### Get the Full SDK
 
-1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipeline [Daily Build - OpenHarmony CI](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/release-notes/OpenHarmony-v5.1.0-release.md). The daily build pipeline builds system images, SDKs, etc.  
+1. Obtain the latest OpenHarmony SDK from the [OpenHarmony daily build pipeline](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/release-notes/OpenHarmony-v5.1.0-release.md). The pipeline builds system images, SDKs, and other artifacts.
    
-   Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-5.1.0-Release, selecting a date from the previous month, or manually choosing a range.  
+   Use the filters to select the `openharmony` project, the `OpenHarmony-5.1.0-Release` target branch, and a date or date range.
    
-   In the daily build or rolling build, find **ohos-sdk-full_5.1.0-Release**, and click on the download link to choose and download the full package, which includes Full-SDK for Windows and Linux.  (If daily build SDK is not compatible with your version of DevEco Studio, try to use rolling build SDK instead).  
+   In the daily or rolling build, find **ohos-sdk-full_5.1.0-Release** and download the full package, which includes the Full SDK for Windows and Linux. If the daily-build SDK is incompatible with your version of DevEco Studio, use the rolling-build SDK instead.
    
 !!! note "SDK Version Notice"
 
@@ -26,34 +26,31 @@ There are two types of SDKs:
 <img src='../deveco-studio/images/image19.png'>  
  
 
-| pipeline        | description                                                                                          | remark                                                                                                           |
+| Pipeline        | Description                                                                                          | Remarks                                                                                                          |
 | --------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | ohos-sdk-public | The public SDK is available for Linux and Windows platforms                                          | It is provided for application developers and does not include system interfaces that require system permissions |
 | mac-sdk-public  | The public SDK for macOS is available                                                                | It is provided for application developers and does not include system interfaces that require system permissions |
 | ohos-sdk-full   | Applicable to Linux and Windows platforms. If you want to use system APIs, you need to use this SDK. | Available to OEMs, including system interfaces that require access to the system                                 |
 | mac-sdk-full    | Full SDK for macOS. If you want to use system APIs, you need to use this SDK.                        | Available to OEMs, including system interfaces that require access to the system                                 |
 
-2. Make sure that the downloaded SDK is the full SDK.  
-- Check whether the downloaded file name contains "full-SDK."  
-- Check if the API includes system APIs such as `@ohos.app.ability.abilityManager.d.ts`, `@ohos.app.form.formInfo.d.ts`, and `@ohos.bluetooth.d.ts` 
+2. Confirm that you downloaded the Full SDK:
+    - Check whether the filename contains `full-SDK`.
+    - Check whether the API includes system APIs such as `@ohos.app.ability.abilityManager.d.ts`, `@ohos.app.form.formInfo.d.ts`, and `@ohos.bluetooth.d.ts`.
 
 #### Replace the Full SDK
 
-Take the replacement of the full SDK of DevEco Studio 5.1.0, API 18 on Windows OS as an example.
+The following example replaces the Full SDK for DevEco Studio 5.1.0, API 18, on Windows.
 
-3. Backup and remove the local SDK:  
-   Make sure to select OpenHarmony then navigate to the directory where the original SDK is installed.
+3. Back up and remove the local SDK. Select OpenHarmony, then navigate to the directory where the original SDK is installed.
 <img src='../deveco-studio/images/image20.png'>  
 
 
 
-Copy the entire SDK directory (e.g., 18) to another location on your system where you want to keep the backup.
+Copy the entire SDK directory, such as `18`, to a backup location.
 
 Now you can remove the original SDK from its directory.
 
-1. The SDK you have acquired needs to be recognized by DevEco Studio in order to be used. 
-For example, with the daily build SDK: `version-Master_Version-OpenHarmony_5.1.0.103-20250415_020044-ohos-sdk-full_5.1.0-Release.tar.gz`, the compressed file has the following directory structure. 
-You can see that it contains SDK files for both Linux and Windows platforms. Each platform's SDK includes directories such as ets, js, native, previewer, and toolchains.
+4. Prepare the downloaded SDK so that DevEco Studio can recognize it. For example, the daily-build archive `version-Master_Version-OpenHarmony_5.1.0.103-20250415_020044-ohos-sdk-full_5.1.0-Release.tar.gz` has the following directory structure. It contains SDK files for Linux and Windows, with archives for ETS, JavaScript, native development, the Previewer, and toolchains.
 ```
 ├── version-Master_Version-OpenHarmony_5.1.0.103-20250415_020044-ohos-sdk-full_5.1.0-Release
 │   ├── manifest_tag.xml
@@ -71,17 +68,16 @@ You can see that it contains SDK files for both Linux and Windows platforms. Eac
 │           ├── previewer-windows-x64-5.1.0.103-Beta1.zip
 │           └── toolchains-windows-x64-5.1.0.103-Beta1.zip
 ```
-2. Create a new directory with the API version 18 as the file name in dir path: xxx\\Sdk\\ , unzip the compressed files  into this directory to form a structure below:
+5. Under `xxx\\Sdk\\`, create a directory named after the API version, such as `18`. Extract the compressed files into this directory to produce the structure shown below.
 <img src='../deveco-studio/images/image21.png'>  
 
-3. Verify in the IDE:  
-   Full API will be loaded in IDE and you can now rebuild the project.  
+6. Verify the SDK in the IDE. After the IDE loads the Full API, rebuild the project.
 <img src='../deveco-studio/images/image24.png'>  
 
-### **Approach 2: From Compiled Source Files**
+### **Approach 2: Build from Source**
 
-The Full-SDK is not available directly. It can be compiled from the source code of OpenHarmony and manually replaced in DevEco Studio. The method of replacing the SDK is the same as the one mentioned in [**Approach 1**](#approach-1-from-cicd-pipeline-recommended).
+You can also compile the Full SDK from the OpenHarmony source code and install it manually in DevEco Studio. Replace the SDK as described in [**Approach 1**](#approach-1-download-from-the-cicd-pipeline-recommended).
 
-You can find the guide  of compilation of source code here: [How to compile Full SDK](https://github.com/eclipse-oniro-mirrors/docs/blob/master/en/application-dev/faqs/full-sdk-compile-guide.md)
+For instructions, see [How to Compile the Full SDK](https://github.com/eclipse-oniro-mirrors/docs/blob/master/en/application-dev/faqs/full-sdk-compile-guide.md).
 
 <div style="margin-top: 50px;"></div>

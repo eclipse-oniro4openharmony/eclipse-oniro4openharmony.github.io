@@ -1090,7 +1090,7 @@ In the preceding figure, the decorators in the components area are used for stat
 ### Event Binding
 #### Universal Events
 
-This tutorial will introduce **Touchscreen Event** only, you can redirect the link to learn more like **[Focus Event](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-common-events-focus-event.md)** and **[Keyboard and Mouse Event](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-common-events-device-input-event.md)**.
+This tutorial introduces only **touchscreen events**. To learn about other events, see [Focus Events](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-common-events-focus-event.md) and [Keyboard and Mouse Events](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-common-events-device-input-event.md).
 
 **Touchscreen events** are events triggered when a finger or stylus is placed on, moved along, or lifted from a component. Events like [click event](#click-event), [touch event](#touch-event) are most often used.
 
@@ -1224,7 +1224,7 @@ You can bind to each component different gesture events and design the logic for
 
 **gesture** is a frequently used API for binding a gesture to a component.
 
-We don't expand it in this tutorial but you can check some examples [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-gesture-events-binding.md) if interested.
+This tutorial does not cover the topic in detail. See the [gesture-event examples](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-gesture-events-binding.md) for more information.
 
 
 ### Rendering Control

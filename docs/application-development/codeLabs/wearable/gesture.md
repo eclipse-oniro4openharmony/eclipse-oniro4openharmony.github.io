@@ -3,7 +3,7 @@ This app demonstrates and tests various gesture and crown smartGesture is a ligh
 It helps developers verify the system’s response to different operations such as taps, swipes, button clicks, and long presses.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-smartGesture) 
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-smartGesture).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

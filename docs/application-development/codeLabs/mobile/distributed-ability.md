@@ -2,7 +2,7 @@
 Cross-device sync demo using OpenHarmony distributed KV store.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-SuperDeviceDemo)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-SuperDeviceDemo).
  
 
 #### Software requirements

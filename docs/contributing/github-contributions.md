@@ -1,17 +1,17 @@
 
-GitHub handles contributions as [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to relevant repositories part of the [Eclipse Oniro for OpenHarmony organization](https://github.com/eclipse-oniro4openharmony).
-The flow for handling that is classic: fork-based pull requests. This means that once you have an account, you can fork any repository, create a branch with proposed changes and raise a pull request against the forked repository. More generic information you can find on the GitHub's documentation as part of ["Working with forks"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
+Submit contributions as [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to the relevant repository in the [Eclipse Oniro for OpenHarmony organization](https://github.com/eclipse-oniro4openharmony).
+The project uses a fork-based pull-request workflow. After creating an account, fork the repository, create a branch for your changes, and open a pull request against the original repository. For general instructions, see GitHub's documentation on [working with forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
 
-## Git setup
+## Git Setup
 
-Clone your fork locally, enter its directory and set:
+Clone your fork locally, enter its directory, and configure your identity:
 
 ```bash
 $ git config --local user.email <your_eclipse_account_email>
 $ git config --local user.name <your_eclipse_full_name>
 ```
 
-If you want to push or pull repositories using SSH, you have to [add a
+To push or pull repositories using SSH, [add an
 SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to your profile.
 
 ## Commit Guidelines
@@ -29,31 +29,28 @@ To achieve this, we maintain the following commit guidelines:
 - Each commit should be able to stand by itself providing a building
   block as part of the pull request (PR).
   - A good balance of granularity with scoped commits helps to
-    handle backports (e.g. cherry-picks) and also improves the
-    ability to review smaller chunks of code taking commit by
-    commit.
+    handle backports (for example, cherry-picks) and improves the
+    ability to review smaller chunks of code one commit at a time.
 - Changes that were added on top of changes introduced in the PR,
   should be squashed into the initial commit.
   - For example, a PR that introduced a new feature and, as a separate
     commit, fixed a build error.
     The latter commit should be squashed into the initial commit.
-  - For example, a PR introducing a new docs chapter and also
+  - For example, a PR introducing a new documentation chapter and
     adding, as a separate commit, some typo fixes. The latter
     commits should be squashed into the initial commit.
   - There is a small set of exceptions to this rule. All these
-    exceptions gravitate around the case where an PR, even if it
+    exceptions apply when a PR, even if it
     provides multiple commits in the same scope (for example, to the
-    same new feature), each of the commits has a very specific
-    purpose.
-    - For example, a line formating change followed by a chapter
+    same new feature), each commit has a specific purpose.
+    - For example, a line-formatting change followed by a chapter
       addition change in the same documentation file.
     - Also, it can be the case of two functional changes that are
       building blocks in the same scope.
     - Another example where commits are not to be squashed is when
       having a commit moving the code and a commit modifying the
       code in the new location.
-- Make sure you clean your code of trailing white spaces/tabs and that
-  each file ends with a new line.
+- Remove trailing spaces and tabs, and ensure that each file ends with a newline.
 - Avoid _merge_ commits as part of your PR. Your commits should be
   rebased on top of the _HEAD_ of the destination branch.
 
@@ -73,7 +70,7 @@ achieve this, we also require the following commit message guidelines:
     letter.
   - The entire _subject_ line shouldn't exceed 80 characters (same
     text wrapping rule for the commit body).
-- The commit _body_ separated by an empty line from the _subject_
+- Separate the commit _body_ from the _subject_ with an empty line.
   line.
   - The commit _body_ is optional but highly recommended. Provide a
     clear, descriptive text block that accounts for all the changes
@@ -92,8 +89,8 @@ Additional commit message notes:
 - Avoid using special characters anywhere in the commit message.
 - Be succinct but descriptive.
 - Have at least one _trailer_ as part of each commit: _Signed-off-by_.
-- You can automatically let `git` add the _Signed-off-by_ by taking
-  advantage of its `-s` argument.
+- You can have Git add the _Signed-off-by_ trailer automatically by using
+  its `-s` argument.
 - Whenever in doubt, check the existing log on the file (`<FILE>`) you
   are about to commit changes, using something similar to:
   `git log <FILE>`.
@@ -114,18 +111,16 @@ Signed-off-by: Joe Developer <joe.developer@example.com>
 Once your changes have been pushed to your fork, you are ready to
 prepare a pull request.
 
-1.  Go to your repository in an internet browser.
-2.  Create a pull request by clicking `Contribute` and press `Open pull request`.
-    Add an explainable description and
-    create a pull request. Alternatively, you can enter the website of
-    your fork. You should see a message that you pushed your branch to
-    the repository. In the same section you can press
-    `Open pull request`.
+1.  Open your repository in a web browser.
+2.  Click **Contribute**, then **Open pull request**. Add a clear description and
+    create the pull request. Alternatively, open your fork's webpage. A message
+    should indicate that you recently pushed a branch and provide an **Open pull
+    request** button.
 3.  Before merging, it has to be reviewed and approved by repository
     maintainers. Read their review and add any required changes to your
     pull request.
-4.  After you polish your pull request, the maintainers will run the
-    pipelines which check if your changes do not break the project and
-    approve them. If everything is correct, your work is merged to the
+4.  After you update your pull request, the maintainers will run pipelines to
+    verify that your changes do not break the project. If the checks pass and the
+    maintainers approve the changes, your work is merged into the
     main project. Remember that each commit of the pull request should
     be a minimum, self-contained building block.

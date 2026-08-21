@@ -1,5 +1,5 @@
 # System Requirements  
-DevEco Studio is available for both Windows and macOS. It is recommended to meet the following requirements:
+DevEco Studio is available for Windows and macOS. Your system should meet the following requirements:
 
 | Item             | Windows                  | macOS                                             |
 |------------------|---------------------------|----------------------------------------------------|

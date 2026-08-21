@@ -2,7 +2,7 @@
 YouTube application for Oniro
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-youtube)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-youtube).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

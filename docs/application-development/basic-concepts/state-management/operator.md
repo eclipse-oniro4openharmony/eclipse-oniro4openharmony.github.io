@@ -35,4 +35,4 @@ struct TextInputExample {
 </div>
 
 ### Additional Information
-For additional information please refer to the [ArkTS Two Way Sync](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-two-way-sync.md)
+For more information, see [ArkTS Two-Way Synchronization](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-two-way-sync.md).

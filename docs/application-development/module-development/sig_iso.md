@@ -34,7 +34,7 @@ Also executing the following points:
 </div>
 
 !!!note
-    Here I modified both modules (`mobile` and `shared_library`) since `shared_library` is also used.
+    Modify both modules, `mobile` and `shared_library`, because this example uses `shared_library` as well.
 
 ### Step 3: Configure the entry target
 Adding a target under both module's `build-profile.json5 → targets`  

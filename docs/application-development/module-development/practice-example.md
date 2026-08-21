@@ -1,16 +1,16 @@
-Perfect! You are already familar with basic knowledge about module development, let's jump into a step-by-step module development tutorial. In this example, you'll see why module development is so useful.
+Now that you understand the basics of module development, follow this step-by-step tutorial. The example demonstrates the benefits of modular development.
 
 ### Step 1: Initialize new project
 
-Let's create a new project and select `Phone` as device type.
+Create a project and select `Phone` as the device type.
 
 <div style="text-align:center">
     <img src='../images/image26.png'>
 </div> 
 
-Then, right click project root directory and select create new module.
+Then, right-click the project root directory and select the option to create a module.
 
-We create 2 modules in this tutorial.
+This tutorial creates two modules:
 - Select `Empty Ability` and create **wearable** application.  
 <div style="text-align:center">
     <img src='../images/image27.png'>
@@ -32,7 +32,7 @@ We define a simple **Log** class in `shared_library` module, and export **Log** 
     <img src='../images/image29.png'>
 </div>   
 
-And also, we can also use resources under `AppScope`.
+You can also use resources under `AppScope`.
 <div style="text-align:center">
     <img src='../images/image30.png'>
 </div>   
@@ -40,7 +40,7 @@ And also, we can also use resources under `AppScope`.
 ### Step 3: Add HSP dependency
 Navigate to your application `entry` level folder in terminal and run the following command:  
 
-*Here I rename `entry` module into `mobile`*
+*This tutorial renames the `entry` module to `mobile`.*
 
 ```bash
 ohpm install ../shared_library

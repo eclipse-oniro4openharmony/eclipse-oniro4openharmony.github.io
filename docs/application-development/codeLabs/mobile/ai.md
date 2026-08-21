@@ -2,7 +2,7 @@
 A GPT client for the Oniro platform, enabling users to interact with large language models within the Oniro ecosystem.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-oniroGPT) 
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-oniroGPT).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

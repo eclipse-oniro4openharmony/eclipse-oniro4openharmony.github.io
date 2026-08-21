@@ -5,8 +5,8 @@ With DevEco Studio installed and its layout, project structure, and tooling cove
 ## Creating Your First Project
 
 1. On the **Welcome** screen, click **New Project** (or, with a project already open, **File → New → New Project**).
-2. Pick a template. **Empty Ability** is the simplest starting point for a Stage-model app and is the best choice for a first project — other templates add extra sample UI you don't need yet.
-3. Choose the device types your app should target (Phone, Tablet, Wearable, ...). This sets the initial `deviceTypes` list in `module.json5`, which you can adjust later (see [Project Structure](workflow.md#project-structure)).
+2. Select a template. **Empty Ability** is the simplest starting point for a Stage-model application and is the best choice for a first project. Other templates add sample UI that is not needed at this stage.
+3. Choose the device types that your application should target, such as Phone, Tablet, or Wearable. This sets the initial `deviceTypes` list in `module.json5`, which you can adjust later (see [Project Structure](workflow.md#project-structure)).
 4. Fill in the project details:
     * **Project name** and **Bundle name** (reverse-domain style, e.g. `com.example.myapplication`).
     * **Save location** on disk.
@@ -14,17 +14,17 @@ With DevEco Studio installed and its layout, project structure, and tooling cove
 5. Click **Finish**. DevEco Studio generates the project and opens it; the first indexing pass can take a minute or two on a new machine.
 
 !!! tip "Start from Empty Ability"
-    Even if your real app will need more structure, starting from **Empty Ability** and adding pages/modules yourself builds a much clearer mental model of the project than trimming down a fuller template.
+    Even if your application will need more structure, starting with **Empty Ability** and adding pages and modules yourself provides a clearer understanding of the project than removing content from a more comprehensive template.
 
-Once the project is open, `entry/src/main/ets/pages/Index.ets` is the default page you'll see rendered first — open it to continue.
+Once the project is open, `entry/src/main/ets/pages/Index.ets` is the default page rendered first. Open it to continue.
 
 ## Using the Previewer
 
-The **Previewer** renders your ArkUI pages without needing an emulator or a physical device, which makes it the fastest feedback loop while building UI.
+The **Previewer** renders ArkUI pages without an emulator or physical device, providing rapid feedback while you build the UI.
 
 ### Opening the Previewer
 
-Open any page under `entry/src/main/ets/pages/` (a file with an `@Entry @Component struct` declaration). The Previewer panel should appear automatically, usually docked to the right of the editor. If it doesn't:
+Open any page under `entry/src/main/ets/pages/` that contains an `@Entry @Component struct` declaration. The Previewer panel should appear automatically, usually docked to the right of the editor. If it does not:
 
 1. Click inside the `.ets` file so it has focus.
 2. Look for the **Previewer** tab along the tool window bar, or use **View → Tool Windows → Previewer**.
@@ -48,10 +48,10 @@ It does **not** reliably reflect:
 
 ### Multi-Device Preview
 
-Click the device selector above the Previewer canvas to render the same page across several device profiles at once — phone, tablet, foldable, and wearable, for instance. This is the fastest way to catch layout breakage on smaller or larger screens before you ever touch an emulator.
+Click the device selector above the Previewer canvas to render the same page across several device profiles at once, such as phone, tablet, foldable, and wearable profiles. This helps you identify layout problems on smaller or larger screens before using an emulator.
 
 !!! tip
-    Keep at least one small-screen and one large-screen profile enabled by default for any page with non-trivial layout — most responsive-layout bugs show up immediately in this comparison view.
+    Keep at least one small-screen and one large-screen profile enabled for any page with a complex layout. Most responsive-layout problems appear immediately in this comparison view.
 
 ### Interactive Preview
 
@@ -71,11 +71,11 @@ The Previewer is a productivity tool, not a substitute for testing on a real tar
 
 ## Running Your App
 
-Once the page looks right in the Previewer, pick a run target from the dropdown in the navigation bar and click **Run**. If no emulator or device is listed yet, set one up first in [Emulator](emulator.md) — that page covers creating an emulator with Device Manager and connecting real hardware in detail.
+After verifying the page in the Previewer, select a run target from the menu in the navigation bar and click **Run**. If no emulator or device is listed, follow [Emulator](emulator.md) to create an emulator with Device Manager or connect physical hardware.
 
 ## Debugging and Profiling
 
-Running your app is only half the job — DevEco Studio's debugger and profiler are what let you find out *why* something is wrong.
+DevEco Studio's debugger and profiler help you determine why an application behaves incorrectly.
 
 ### Starting a Debug Session
 
@@ -85,8 +85,8 @@ Select a run target (see [Emulator](emulator.md)), then click the **Debug** icon
 
 * Click in the gutter to the left of a line number to set a line breakpoint (a red dot appears).
 * Right-click a breakpoint to configure it further:
-    * **Condition** — only stop when an expression evaluates to true, e.g. `index == 3`. Useful inside loops where you only care about one iteration.
-    * **Log message** — print a message (optionally including expression values) without actually pausing execution. This effectively gives you a temporary, zero-recompile `console.log` you can remove later without touching source.
+    * **Condition** — stop only when an expression evaluates to true, for example, `index == 3`. This is useful inside loops when you need to inspect one iteration.
+    * **Log message** — print a message, optionally including expression values, without pausing execution. This provides temporary logging without recompiling or modifying the source.
     * **Suspend policy** — stop only the current thread or the whole process.
 
 ### While Paused
@@ -109,17 +109,17 @@ Step controls:
 | Step out | `Shift+F8` |
 | Resume program | `F9` |
 
-!!! tip "Evaluate Expression is underused"
-    Instead of adding a temporary variable just to inspect a computed value, pause on a breakpoint and use **Evaluate Expression** (`Alt+F8`) — it can call methods and index into objects live, which is often faster than editing code and restarting.
+!!! tip "Evaluate computed values"
+    Instead of adding a temporary variable to inspect a computed value, pause at a breakpoint and use **Evaluate Expression** (`Alt+F8`). It can call methods and index into objects in the paused process, avoiding a source edit and restart.
 
 ### HiLog
 
 The **Log** (HiLog) tool window streams the device/emulator's system log. Two filters make it usable on a busy device:
 
 * **Tag filter** — match the tag used in your `hilog` calls (e.g. a per-module tag you define).
-* **Log level** — restrict to `WARN`/`ERROR` when hunting a crash, or `DEBUG`/`INFO` during normal iteration.
+* **Log level** — restrict output to `WARN` and `ERROR` when diagnosing a crash, or `DEBUG` and `INFO` during normal development.
 
-You can also save a filter configuration so you don't have to re-type it every session.
+You can save a filter configuration instead of re-entering it in every session.
 
 ### Profiler
 
@@ -137,20 +137,20 @@ Open **View → Tool Windows → Profiler** (or the toolbar icon) while the app 
 
 ### A Practical Workflow
 
-1. Reproduce the issue once without any tooling attached, so you know what "broken" looks like.
-2. If it's a logic bug, set a conditional breakpoint close to the suspected cause and step from there.
-3. If it's a performance issue, record a CPU trace covering just the slow interaction, not the whole session — shorter traces are far easier to read.
-4. If it's a crash under load or over time, check Memory for steadily growing retained size across repeated actions — a classic leak signature.
+1. Reproduce the issue once without diagnostic tools attached to establish its symptoms.
+2. For a logic bug, set a conditional breakpoint near the suspected cause and step through the relevant code.
+3. For a performance problem, record a CPU trace that covers only the slow interaction. Shorter traces are easier to read than a trace of the entire session.
+4. For a crash under load or after prolonged use, check the Memory view for retained size that grows steadily across repeated actions. This pattern commonly indicates a leak.
 
 ## Build Variants and Signing
 
-Sooner or later you need a package you can hand to someone else — a `.hap`/`.app` file installable outside of DevEco Studio's own Run/Debug flow. That requires understanding build products and signing.
+To distribute an application outside DevEco Studio's Run and Debug workflow, you need an installable `.hap` or `.app` package. Creating one requires an understanding of build products and signing.
 
 ### Debug vs. Release
 
 By default, running or debugging from the IDE produces a **debug** build: automatically signed with a debug certificate so it can be installed on your own emulator/device, but not meant for distribution.
 
-A **release** build is what you'd hand off or publish — optimized, and signed with a certificate meant to persist across builds (so updates are trusted as coming from the same source).
+A **release** build is suitable for distribution or publication. It is optimized and signed with a certificate that persists across builds so that updates are trusted as coming from the same source.
 
 Which variant gets built is controlled by the **Build Variant** selector, plus the products/targets declared in the project's `build-profile.json5` files (see [Project Structure](workflow.md#project-structure)).
 
@@ -196,32 +196,30 @@ Two errors are common enough to call out specifically (both also covered in [Com
 
 ### A Practical Checklist Before Distributing a Build
 
-1. Confirm you're building the **release** variant, not debug.
+1. Confirm that you are building the **release** variant, not the debug variant.
 2. Confirm the signing config references a certificate meant for distribution, not the auto-generated debug one.
 3. Bump `versionCode`/`versionName` in `AppScope/app.json5` if this is an update to a previously distributed build.
 4. Do a clean install test on a device that was never used for debug builds of this app, to rule out state left over from development.
 
 ## Common Issues and Solutions
 
-### Cannot find the emulator of a phone device
+### Cannot Find a Phone Emulator
 
-`entry\src\main\module.json5` is the configuration file for the module, check `deviceTypes`, add `phone` if it is missing.
+Open the module configuration file at `entry\src\main\module.json5`. Check `deviceTypes` and add `phone` if it is missing.
 
 ![alt text](images/SDK-11.png)
 
-### Unable to find BMS Service when running on Emulator
+### Unable to Find the BMS Service When Running on an Emulator
 
-Just wait for an extended period, or try clearing data of this device or creating a new device.
+Wait for the emulator to finish starting. If the problem persists, clear the virtual device's data or create a new virtual device.
 
-### Unstable USB connection, dev board not detected by IDE
+### Unstable USB Connection or Development Board Not Detected by the IDE
 
-solution worked for me:
-
-Change USB Power Management Settings
+Change the USB power-management settings as follows:
 
 1. Search for and open *Device Manager*.
 2. Click to expand *Universal Serial Bus Controllers*.
-3. Right-click on *USB Root Hub* and select *Properties*.
+3. Right-click *USB Root Hub* and select *Properties*.
 4. Uncheck *Power Management* and click *OK*.
 <div>
     <figure >
@@ -229,33 +227,35 @@ Change USB Power Management Settings
     </figure>
 </div>
 
-### compileSdkVersion and releaseType of the app do not match the apiVersion and releaseType on the device
+### Application `compileSdkVersion` and `releaseType` Do Not Match the Device's `apiVersion` and `releaseType`
 
-Reason: The compiled SDK version is higher than the actual device.
+**Cause:** The compiled SDK version is higher than the version supported by the device.
 
-Solution:
-Step 1: Modify build\_profile.json5 under entry and set apiType to faMode.
-Step 2: Modify build\_profile.json5 under the project, change the compiled version to a lower version.
-Run again, and the problem will be resolved.
+**Solution:**
+
+1. Modify `build_profile.json5` under `entry` and set `apiType` to `faMode`.
+2. Modify the project-level `build_profile.json5` and set the compiled version to a lower version.
+3. Run the application again.
    <img title="" src="../images/SDK-14.png" alt="" width="294">
 
 ### Install Failed
 
-Have the device connected and detected by IDE, click on "run", the IDE gives the error messages:
-"Install Failed : failed to install bundle. code: 9568289, error: install failed due to grant request permissions failed."
+When you click **Run** with a device connected and detected by the IDE, the IDE may display the following message:
+
+"Install Failed: failed to install bundle. code: 9568289, error: install failed due to grant request permissions failed."
 
 <img title="" src="../images/SDK-15.png" alt="" width="467">
 
-It should be a permission issue, and now we need to identify the permissions causing the problem.
+This message indicates a permissions problem. Identify the permission that caused it.
 
 [This documentation](https://gitcode.com/openharmony/resources/blob/master/systemres/main/config.json) lists all permissions and their levels in OpenHarmony.
 
-There are three types of permissions used in OpenHarmony for requests, ordered from low to high: normal, system\_basic, system\_core.
+OpenHarmony request permissions have three levels, from lowest to highest: `normal`, `system_basic`, and `system_core`.
 
-If the permission level is set to "availableLevel": "system\_basic", then you need to configure the acls field in the UnsignedReleasedProfileTemplate.json file and include the required high-level permissions in acls. The specific steps are as follows:
+If `availableLevel` is set to `system_basic`, configure the `acls` field in `UnsignedReleasedProfileTemplate.json` and add the required high-level permissions.
 
-set the "profile" with p7b file generated from java \-c commands in build-profile.json5
+In `build-profile.json5`, set `profile` to the `.p7b` file generated with the `java -c` commands.
 
 <img title="" src="../images/SDK-16.png" >
 
-With your first app created, previewed, run, debugged, and packaged, head to [Emulator](emulator.md) if you haven't already set one up, or back to [Workflow](workflow.md) for a closer look at the IDE itself.
+After creating, previewing, running, debugging, and packaging the application, continue to [Emulator](emulator.md) if you have not configured one, or return to [Workflow](workflow.md) for a closer look at the IDE.

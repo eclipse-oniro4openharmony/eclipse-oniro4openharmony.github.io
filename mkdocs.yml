@@ -53,10 +53,10 @@ nav:
       - Development Overview: application-development/index.md
       - Environment Setup Guide: 
         - Overview: application-development/environment-setup-guide/index.md
-        - DevEcoStudio:
+        - DevEco Studio:
           - Installation:
             - System Requirements: application-development/environment-setup-guide/deveco-studio/installation/system-requirements.md
-            - Process of Installation: application-development/environment-setup-guide/deveco-studio/installation/process.md
+            - Installation Process: application-development/environment-setup-guide/deveco-studio/installation/process.md
           - Workflow: application-development/environment-setup-guide/deveco-studio/workflow.md
           - First App: application-development/environment-setup-guide/deveco-studio/first-app.md
           - Emulator: application-development/environment-setup-guide/deveco-studio/emulator.md
@@ -68,9 +68,9 @@ nav:
 
       - Create Your First Eclipse Oniro Application:
         - Overview: application-development/create-first-eclipse-oniro-app/index.md
-        - Create an Eclipse Oniro app using OpenHarmony Template: application-development/create-first-eclipse-oniro-app/create-template.md
+        - Create an Eclipse Oniro App Using an OpenHarmony Template: application-development/create-first-eclipse-oniro-app/create-template.md
         - Find Project Files: application-development/create-first-eclipse-oniro-app/find-project-files.md
-        - Usage of Previewer: application-development/create-first-eclipse-oniro-app/use-previewer.md
+        - Use the Previewer: application-development/create-first-eclipse-oniro-app/use-previewer.md
         - Build the First Page: application-development/create-first-eclipse-oniro-app/build-first-page.md
         - Build the Second Page: application-development/create-first-eclipse-oniro-app/build-second-page.md
         - Implementing Page Redirection: application-development/create-first-eclipse-oniro-app/page-redirect.md
@@ -80,7 +80,7 @@ nav:
         - Application Package Structure in Stage Model: application-development/basic-concepts/app-pack-structure.md
         - Introduction to ArkTS: application-development/basic-concepts/introduction-to-arkts.md
         - ArkTS Language Reference: application-development/basic-concepts/arkts-language-reference.md
-        - ArkTS-Based declarative UI Development: 
+        - ArkTS-Based Declarative UI Development:
           - Overview: application-development/basic-concepts/ui-development/index.md
           - Component: application-development/basic-concepts/ui-development/component.md
           - Layout: application-development/basic-concepts/ui-development/layout.md
@@ -114,9 +114,9 @@ nav:
         - Overview: application-development/module-development/index.md
         - Create a Module Project: application-development/module-development/create-module-project.md
         - Add HSP Dependency: application-development/module-development/add-hsp-dependency.md
-        - How to use shared packages: application-development/module-development/how-to-use-shared-packages.md
+        - How to Use Shared Packages: application-development/module-development/how-to-use-shared-packages.md
         - Best Practice: application-development/module-development/practice-example.md
-        - Environment signature isolation: application-development/module-development/sig_iso.md
+        - Environment Signature Isolation: application-development/module-development/sig_iso.md
 
       - Code Labs: 
         - Overview: application-development/codeLabs/index.md
@@ -140,10 +140,10 @@ nav:
           - React Native Example:
             - Overview: application-development/codeLabs/cross-platform/rn-example/index.md
             - Prerequisites: application-development/codeLabs/cross-platform/rn-example/prerequisites.md
-            - Development environment configuration: application-development/codeLabs/cross-platform/rn-example/development-environment-configuration.md
-            - Preparation of the React Native application code: application-development/codeLabs/cross-platform/rn-example/react-native-application-code.md
-            - Preparation of the OpenHarmony application code: application-development/codeLabs/cross-platform/rn-example/open-harmony-application-code.md
-            - Compilation of the app: application-development/codeLabs/cross-platform/rn-example/compilation.md
+            - Development Environment Configuration: application-development/codeLabs/cross-platform/rn-example/development-environment-configuration.md
+            - Prepare the React Native Application Code: application-development/codeLabs/cross-platform/rn-example/react-native-application-code.md
+            - Prepare the OpenHarmony Application Code: application-development/codeLabs/cross-platform/rn-example/open-harmony-application-code.md
+            - Compile the App: application-development/codeLabs/cross-platform/rn-example/compilation.md
             - Troubleshooting: application-development/codeLabs/cross-platform/rn-example/troubleshooting.md
           - Ionic Capacitor Tutorial: application-development/codeLabs/cross-platform/ionic-capacitor-tutorial/index.md
         - Common Questions: application-development/codeLabs/common-problems.md 
@@ -157,13 +157,13 @@ nav:
           - Oniro Emulator: device-development/developer-boards/emulator.md
   - Contributing:
       - Overview: contributing/index.md
-      - Quick Start Guide for New Developer: contributing/quick-start-guide-for-new-developers.md
+      - Quick Start Guide for New Developers: contributing/quick-start-guide-for-new-developers.md
       - Eclipse Contributor Agreement: contributing/eclipse-contributor-agreement.md
-      - DCO-signoff: contributing/dco-signoff.md
+      - DCO Sign-Off: contributing/dco-signoff.md
       - GitHub Contributions: contributing/github-contributions.md
       - Bug Handling Process: contributing/bug-handling-process.md
       - REUSE Compliance: contributing/reuse-compliance.md
-      - Contributing to Projects not Maintained by Team: contributing/contributing-to-projects-not-maintained-by-team.md
+      - Contributing to Projects Not Maintained by the Team: contributing/contributing-to-projects-not-maintained-by-team.md
 extra_css:
   - stylesheets/extra.css
 

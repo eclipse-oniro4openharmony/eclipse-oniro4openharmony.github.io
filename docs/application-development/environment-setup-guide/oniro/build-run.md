@@ -1,12 +1,12 @@
 # Core Workflow
 
-After that, the main workflow loop looks like this:
+The main development workflow consists of the following steps:
 
-- Generate a signing config if you haven't done so already.
-- Build your app.
-- Connect to the emulator if you aren't connected already.
-- Install your app.
-- Optionally you can launch it remotely.
+- Generate a signing configuration if you have not already done so.
+- Build your application.
+- Connect to the emulator if it is not already connected.
+- Install your application.
+- Optionally, launch it remotely.
 
 # Oniro IDE
 
@@ -16,7 +16,7 @@ After that, the main workflow loop looks like this:
 
 # Oniro App Builder
 
-The basic commands that you'll need are the following:
+Use the following commands for the basic workflow:
 
 - `oniro-app sign`
 - `oniro-app build`
@@ -26,9 +26,9 @@ The basic commands that you'll need are the following:
 
 # Additional App Builder Commands
 
-Oniro App Builder provides some additional tools that are useful for debugging and work with AI agents.
+Oniro App Builder provides other tools for debugging and working with AI agents:
 
 - `oniro-app screenshot` takes a screenshot.
 - `oniro-app dump` dumps the device state as JSON.
-- `oniro-app lint` an OpenHarmony code linter.
-- `oniro-app gesture` and `oniro-app input` to simulate touch.
+- `oniro-app lint` runs the OpenHarmony code linter.
+- `oniro-app gesture` and `oniro-app input` simulate touch input.

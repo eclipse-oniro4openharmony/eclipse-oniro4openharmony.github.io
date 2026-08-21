@@ -17,9 +17,9 @@ LocalStorage is an in-memory "database" that ArkTS provides for storing state va
 
 - An application can create multiple LocalStorage instances. These instances can be shared on a page or, by using the **GetShared** API, across pages in a UIAbility instance.
 
-- The root node of a component tree, that is, the @Component decorated by @Entry, can be assigned to a LocalStorage instance. All child instances of this custom component automatically gain access to the same LocalStorage instance.
+- The root node of a component tree, meaning the `@Component` decorated with `@Entry`, can be assigned a LocalStorage instance. All child instances of this custom component automatically gain access to the same LocalStorage instance.
 
-- An @Component decorated component has access to at most one LocalStorage instance and to `AppStorage`. A component not decorated with @Entry cannot be assigned a LocalStorage instance. It can only accept a LocalStorage instance passed from its parent component through @Entry. A LocalStorage instance can be assigned to multiple components in the component tree.
+- A component decorated with `@Component` has access to at most one LocalStorage instance and to `AppStorage`. A component not decorated with `@Entry` cannot be assigned a LocalStorage instance. It can only receive a LocalStorage instance passed from its parent component through `@Entry`. A LocalStorage instance can be assigned to several components in the component tree.
 
 - All attributes in LocalStorage are mutable.
 
@@ -198,5 +198,5 @@ struct Child {
 
 
 ### Additional Information
-For additional information please refer to the [ArkTS LocalStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-localstorage.md#localstorageprop)
+For more information, see [ArkTS LocalStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-localstorage.md#localstorageprop).
 

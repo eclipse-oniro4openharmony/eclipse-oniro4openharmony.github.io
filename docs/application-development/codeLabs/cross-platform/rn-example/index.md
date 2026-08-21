@@ -2,7 +2,7 @@
 
 Example React Native application for Oniro/OpenHarmony.
 
-The aim of this project is to create a template for new React Native applications for Open Harmony, as well as to present the fundamentals of building cross-platform applications in React Native.
+This project provides a template for React Native applications on OpenHarmony and introduces the fundamentals of building cross-platform applications with React Native.
 
 The code is divided into two directories:
 
@@ -69,6 +69,6 @@ oh-app/entry/src/main/src/main/resources/rawfile
 
 ## Detailed instructions
 
-The project in this repository is already properly configured and adapted. You can use it as a template for your application. However, if you want to create an RNOH application from scratch, you must follow certain steps to embed the React Native application within an Open Harmony application that will serve as a container and bridge between the system and the RN application.
+The project in this repository is already configured and adapted for use as an application template. To create an RNOH application from scratch, embed the React Native application in an OpenHarmony application that acts as a container and bridge between the system and the React Native application.
 
 In case of project compilation issues, go directly to the [Troubleshooting](troubleshooting.md) section.

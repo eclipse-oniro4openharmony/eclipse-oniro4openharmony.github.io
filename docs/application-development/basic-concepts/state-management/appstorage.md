@@ -128,4 +128,4 @@ struct CompA {
 </div>
 
 ### Additional Information
-For additional information please refer to the [ArkTS AppStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-appstorage.md)
+For more information, see [ArkTS AppStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-appstorage.md).

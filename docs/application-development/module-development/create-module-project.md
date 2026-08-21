@@ -23,13 +23,13 @@ By default, there are two shared package templates available: one for dynamic sh
 </div> 
 
 
-Set the shared package name and click **Finish**. Here I choose `Shared Library` in this tutorial.  
+Set the shared-package name and click **Finish**. This tutorial uses `Shared Library`.
 <div style="text-align:center">
     <img src='../images/image6.png'>
 </div> 
 
 After the dynamic shared package is created, its structure is shown below, with the **type** set to `shared`.
-If you create a static shared package, the **type** here will be `har`.  
+For a static shared package, **type** is set to `har`.
 <div style="text-align:center">
     <img src='../images/image7.png'>
-</div> 
+</div>

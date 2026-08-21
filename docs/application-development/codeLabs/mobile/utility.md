@@ -2,7 +2,7 @@
 Time Around The World shows the time of different timezone cities.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-TimeAroundWorld)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-TimeAroundWorld).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -25,7 +25,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 Oniro flashlight application
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-SuperBrightFlashlight)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-SuperBrightFlashlight).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -46,7 +46,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 A straightforward application that calculates Body Mass Index (BMI) based on user-input height and weight. This tool provides instant BMI results along with corresponding weight status categories, making it a handy resource for health and fitness tracking.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-bmicalculator)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-bmicalculator).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -65,7 +65,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 Get an inspirational quote with the push of a button
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-QuoteOfTheDay)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-QuoteOfTheDay).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 4.1 Release or higher version
@@ -84,7 +84,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 A simple, user-friendly application designed to convert between various units of measurement. This tool supports a wide range of unit categories, including length, weight, volume, and temperature, providing quick and accurate conversions for everyday use.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-unitconverter)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-unitconverter).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -103,7 +103,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 An application to help you quickly organize and track items to buy or bring, so you never forget anything.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-MyList)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-MyList).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

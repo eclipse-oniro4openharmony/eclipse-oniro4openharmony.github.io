@@ -5,29 +5,29 @@ To create a project in DevEco Studio:
     <img src='../images_common/image1.png' width='30%'>
 </div>
 
-**2.** In welcome page click `Create Project`.
+**2.** On the welcome page, click **Create Project**.
 <div style="text-align:center">
     <img src='../images_common/image2.png'>
 </div>
 
-The **Create Project** window opens with template market provided by DevEco Studio.
+The **Create Project** window displays the templates provided by DevEco Studio.
 <div style="text-align:center">
     <img src='../images_common/image3.png'>
 </div>
 
-In DevEco Studio, a project template serves as a blueprint for building specific types of apps. It defines the project structure and essential files, providing starter code to help you get started quickly.
+In DevEco Studio, a project template provides the structure, essential files, and starter code for a specific type of application.
 
-**3.** Make sure the `Application` tab is selected on the left bar, then choose `Empty Ability` as project template and click `Next`.
+**3.** Select the **Application** tab in the left sidebar, choose **Empty Ability** as the project template, and click **Next**.
 
-**4.** Configure your project with following information:  
+**4.** Configure the project with the following information:
 
 - The **Project name** field is used to enter the name of your project.
 
-- The **Bundle name** field represents the package name, which also serves as the default application ID. Keep it as default to maintain the file organization.
+- The **Bundle name** field contains the package name, which also serves as the default application ID. Keep the default value to retain the generated file organization.
 
-- The **Save location** field specifies where all project files are stored, you can leave it as default.  
+- The **Save location** field specifies where the project files are stored. You can keep the default value.
 
-- The **Compile SDK** specifies the API version used for compilation. By default, **API 18** is selected in our case, which also sets **ArkTS** as the development language.  
+- The **Compile SDK** field specifies the API version used for compilation. In this example, the default is **API 18**, which also sets **ArkTS** as the development language.
 
 - Select **Stage** for **Model** and keep the default values for all other parameters.
 
@@ -38,7 +38,7 @@ In DevEco Studio, a project template serves as a blueprint for building specific
     <img src='../images_common/image5.png'>
 </div>  
 
-**5.** Click `Finish` and wait for the project creation.
+**5.** Click **Finish** and wait for DevEco Studio to create the project.
 
 <div style="text-align:center">
     <img src='../images_common/image6.png'>
@@ -50,6 +50,6 @@ In DevEco Studio, a project template serves as a blueprint for building specific
     <img src='../images_mobile/image7.png'>
 </div> 
 
-- **Project View**(Part 1): Displays all files and folders in your project.  
-- **Code View**(Part 2): The workspace for editing code.  
-- **Design View**(Part 3): Allows you to preview your app’s design.
+- **Project view** (Part 1): Displays all files and folders in your project.
+- **Code view** (Part 2): Provides the workspace for editing code.
+- **Design view** (Part 3): Displays a preview of the application's design.

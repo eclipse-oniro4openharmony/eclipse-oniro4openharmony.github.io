@@ -8,9 +8,9 @@ layout: default
 # Raspberry Pi 4 Model B Development Kit
 
 ## Introduction
-The Raspberry Pi 4B is powered by the Broadcom BCM2711, a quad-core Cortex-A72 (ARM v8) 64-bit SoC clocked at 1.8GHz. It offers significant performance improvements over previous models, making it an ideal choice for projects requiring higher processing power. The board also supports a variety of peripherals including high-speed USB 3.0, dual HDMI outputs, and Gigabit Ethernet.
+The Raspberry Pi 4B uses the Broadcom BCM2711, a quad-core Cortex-A72 (Arm v8), 64-bit SoC clocked at 1.8 GHz. It offers better performance than previous models and supports peripherals such as high-speed USB 3.0, two HDMI outputs, and Gigabit Ethernet.
 
-The onboard wireless capabilities (Wi-Fi and Bluetooth) and the Raspberry Pi's standard 40-pin GPIO header ensure a wide range of expansion possibilities. It’s an excellent platform for IoT, media centers, and general-purpose computing projects.
+Its Wi-Fi, Bluetooth, and standard 40-pin GPIO header provide many expansion options. The board is suitable for IoT, media-center, and general-purpose computing projects.
 
 The Oniro Project supports the Raspberry Pi 4B, and the following features have been verified to be working:  
 
@@ -21,7 +21,7 @@ The Oniro Project supports the Raspberry Pi 4B, and the following features have 
 - Mouse input  
 
 ![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](images/raspberry-po-4-model-b/rpi4b-waveshare-oniro.png)  
-*Oniro on Raspberry Pi 4b and waveshare 7inch touch screen*
+*Oniro on a Raspberry Pi 4B with a Waveshare 7-inch touchscreen*
 
 ## Specification
 
@@ -80,7 +80,7 @@ Once the compilation is complete, package the image using this command:
 ./build.sh --product-name rpi4 --ccache --build-target rpi_image
 ```
 
-The compiled files will be archived in the `out/rpi4/` directory, and the final image will be located at:
+The build places its files in the `out/rpi4/` directory and the final image in:
 
 ```
 out/rpi4/packages/phone/images/
@@ -128,7 +128,7 @@ Now, use the `dd` command to write the image file to the SD card. Replace `/dev/
 sudo dd if=out/rpi4/packages/phone/images/rpi_image.img of=/dev/sdX bs=4M conv=fsync status=progress
 ```
 
-This will begin the flashing process. The `status=progress` option will display the progress of the flashing process.
+This command begins flashing the image. The `status=progress` option displays its progress.
 
 #### Step 5: Eject the SD Card
 
@@ -160,7 +160,7 @@ Make sure to replace `/dev/ttyUSB0` with the appropriate serial port for your se
 
 ### 2. Using the HDC Tool
 
-The HDC tool can be used for various debugging tasks. To connect, first connect the device via Ethernet to obtain the IP address, and then run the following command:
+Use HDC for device communication and debugging. Connect the device through Ethernet, determine its IP address, and run the following command:
 
 ```bash
 hdc tconn <device-ip>:5555

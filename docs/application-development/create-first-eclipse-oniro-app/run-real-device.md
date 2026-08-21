@@ -6,13 +6,13 @@
    *(If daily build SDK is not compatible with your DevEco Studio, try the rolling build SDK.)*
    ![Download SDK](images_common/image39.png){: .center}
 
-2. Under the `toolchain` folder, locate `hdc.exe` and `libusb_shared.ddl`.  
+2. In the `toolchain` folder, locate `hdc.exe` and `libusb_shared.dll`.
    ![Toolchain](images_common/image29.png){: .center}
 
 3. Create a folder called `hdc_bin`, and copy `hdc.exe` and `libusb_shared.dll` into it.  
    ![hdc_bin](images_common/image30.png){: .center}
 
-4. Add **Environment Variable** to your system:
+4. Add the directory to the system `Path` environment variable:
    - Open `Settings` on Windows → search for `Edit the system environment variables`.
      ![Env Settings](images_common/image31.png){: .center}
    - In the `Advanced` tab, click `Environment Variables...`.
@@ -24,15 +24,15 @@
 
 ---
 
-### Use Real Machine to Run Application with USB  
+### Run the Application on a Physical Device over USB
 
-1. Connect a development board (e.g., `HiHope HH-SCDAYU200`) running OpenHarmony standard system to your PC.  
+1. Connect a development board, such as the `HiHope HH-SCDAYU200`, running the OpenHarmony standard system to your computer.
    The device will appear at the top of DevEco Studio.  
    ![Device](images_mobile/image36.png){: .center}
 
-2. Generate signature:
-   - Click `Project Structure...` → `Project > Signing Configs` → check `Automatically generate signature`.
-   - Click `Apply` and wait until signature is generated.
+2. Generate a signature:
+   - Click **Project Structure... → Project → Signing Configs** and select **Automatically generate signature**.
+   - Click **Apply** and wait for DevEco Studio to generate the signature.
      ![Signature Settings](images_common/image28.png){: .center}
    - You will find it in the `configuration` folder under `build-profile.json5`.  
      ![Signature File](images_common/image35.png){: .center}
@@ -45,40 +45,40 @@
 
 ---
 
-### Run the application on watch
+### Run the Application on a Watch
 
 !!! note
-    We are using Huawei Watch 5 in this tutorial.
+    This tutorial uses a Huawei Watch 5.
 
 
-1. Make sure you watch connects the same network with your PC.
+1. Connect the watch and your computer to the same network.
 
-2. Check the IP address on your watch and click `Tools` → `IP Connection` on the navbar.
+2. Find the watch's IP address, then click **Tools → IP Connection** in the navigation bar.
 !!! note
-    To find IP address on your watch, you need to enable `Developer Option` first. (Go to `Settings` → `HUAWEI WATCH 5`, find `Software Version` and continuously click 5 times)
+    To find the watch's IP address, first enable **Developer options**. Go to **Settings → HUAWEI WATCH 5**, find **Software Version**, and tap it five times.
 
-   Put the watch IP address into the following field, you can find the device at the top of DevEco Studio after clicking the green `start` buttion:
+   Enter the watch's IP address in the following field. After clicking the green **Start** button, the device appears at the top of DevEco Studio:
    ![Device](images_wearable/image36.png){: .center}
    ![Device](images_wearable/image39.png){: .center}
 
-2. Generate signature:
-   - Click `Project Structure...` → `Project > Signing Configs` → check `Automatically generate signature`.
-   - Click `Apply` and wait until signature is generated.
+3. Generate a signature:
+   - Click **Project Structure... → Project → Signing Configs** and select **Automatically generate signature**.
+   - Click **Apply** and wait for DevEco Studio to generate the signature.
      ![Signature Settings](images_common/image28.png){: .center}
    - You will find it in the `configuration` folder under `build-profile.json5`.  
      ![Signature File](images_common/image35.png){: .center}
 
-3. Click the `Run 'entry'` triangle button in the IDE.  
+4. Click the **Run 'entry'** triangle button in the IDE.
    ![Run App](images_wearable/image37.png){: .center}
 
-4. Your application will now run on the development board.  
+5. The application now runs on the watch.
    ![App Running](images_wearable/image38.png){: .center width="50%"}
 
 ---
 
-🎉 You’ve successfully installed HDC and deployed your first mobile application using DevEco Studio!
+You have now installed HDC and deployed your first application with DevEco Studio.
 
-If you’re interested, this video takes you deeper into wearable development with practical sensor usage.
+The following video provides a more detailed introduction to wearable development and practical sensor use.
 <iframe
   width="100%"
   height="420"

@@ -2,7 +2,7 @@
 An interactive number guessing game application
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-GuessNumber)   
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-GuessNumber).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -22,7 +22,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 Throw the dice is a simple example of helper app for RPG / boardgames
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-ThrowTheDice)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-ThrowTheDice).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -41,7 +41,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 A fun and interactive application that simulates a pinwheel spinning based on your breath!
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-Pinwheel)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-Pinwheel).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

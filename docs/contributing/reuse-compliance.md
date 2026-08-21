@@ -1,30 +1,30 @@
 # SPDX Information and REUSE Standard
 
-All projects and files for an hosted project **MUST** be
+All projects and files in a hosted project **MUST** be
 [REUSE](https://reuse.software/) compliant. REUSE requires SPDX
 information for each file, rules for which are as follows:
 
-- for files copyrighted by projects contributors (**"First Party
+- for files copyrighted by project contributors (**"First-Party
   Files"**):
-  - any new file MUST have a SPDX header (copyright and license);
+  - any new file MUST have an SPDX header (copyright and license);
   - for files that don't support headers (for example binaries,
     patches etc.) an associated `.license` file MUST be included
     with the relevant SPDX information;
-  - do not add Copyright Year as part of the SPDX header
+  - do not add a copyright year as part of the SPDX header
     information;
   - the general rule for patch files is to use the MIT license and
     _not_ the license of the component for which the patch applies -
     the latter solution would be error-prone and hard to manage and
     maintain in the long run, and there may be difficult-to-handle
-    cases (what if the patches modifies multiple files in the same
-    component - eg. gcc - which are subject to different licenses);
+    cases (for example, a patch may modify multiple files in the same
+    component, such as GCC, that are subject to different licenses);
   - when modifying a file through this contribution process, you may
     (but don't have to) claim copyright by adding a copyright line;
   - you MUST NOT alter copyright statements made by others, but only
     add your own;
 - for files copyrighted by third parties and just added to the project
   by contributors, eg. files copied from other projects or back-ported
-  patches (**"Third Party Files"**):
+  patches (**"Third-Party Files"**):
   - if upstream files already have SPDX headers, they MUST be left
     unchanged;
   - if upstream files do _not_ have SPDX headers:
@@ -43,13 +43,13 @@ information for each file, rules for which are as follows:
       have a different license;
     - in case of doubts or problems in finding the correct license
       and copyright information for Third Party Files,
-      contributors may ask the project's Legal Team in the
+      contributors may ask the project's legal team on the
       project mailing list <oniro-dev@eclipse.org>;
 
 ## SPDX Header Example
 
-Make sure all of your submitted new files have a licensing statement in
-the headers. Please make sure that the license for your file is
+Ensure that all submitted files have a licensing statement in their headers.
+The license for each file must be
 consistent with the licensing choice at project level and that you
 select the correct SPDX identifier, as in the following example for
 Apache 2.0 license:
@@ -84,10 +84,10 @@ Comment: Patch for ninja backported from Ninja project at
 
 ## Substantial Contributions
 
-Therefore, if your contribution is only a patch directly applied to an
-existing file, then you are not required to do anything. If your
-contribution is an entire new project, or a substantial, copyrighted
+If your contribution is only a patch applied directly to an existing file,
+no further action is required. If your contribution is an entirely new project
+or a substantial copyrighted
 contribution, you **MUST** make sure that you do that following the [IP
 Policy](https://www.eclipse.org/org/documents/eclipse-ip-policy.pdf) and that you
-comply with REUSE standard to include the licensing information where
-they are required.
+comply with the REUSE standard by including licensing information where
+required.

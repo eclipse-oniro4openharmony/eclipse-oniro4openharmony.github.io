@@ -1,6 +1,6 @@
-​Now that you're familiar with DevEco Studio, let's create a simple application that demonstrates page navigation.
+Now that you are familiar with DevEco Studio, create a simple application that demonstrates page navigation.
 ### Use the `Text` Component
-​After the project synchronization completes, navigate to `entry > ets > pages` in the **Ohos** window and open the `Index.ets` file. This file contains a Text component. The sample code in the `Index.ets` file is shown below:​
+After project synchronization finishes, navigate to `entry > ets > pages` in the **Ohos** view and open `Index.ets`. This file contains a `Text` component, as shown below:
 ```typescript
 // Index.ets
 @Entry
@@ -57,8 +57,8 @@ struct Index {
   }
 }
 ```
-Now you can observe how the first page looks like in the `Previewer`
+The Previewer displays the first page as follows:
 <div style="text-align:center">
     <img src='../images_mobile/image21.png'>
     <img src='../images_wearable/image21.png' width='30%'>
-</div> 
+</div>

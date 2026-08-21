@@ -1,10 +1,10 @@
 # Oniro Documentation
 
-Welcome to the Oniro Project documentation repository. This repository hosts the documentation for the Oniro Project, an Eclipse Foundation initiative dedicated to developing an open-source, vendor-neutral Operating System (OS) platform. Oniro builds upon OpenHarmony, extending its capabilities to provide a versatile platform for smart devices across various industries.
+Welcome to the Oniro Project documentation repository. This repository hosts the documentation for the Oniro Project, an Eclipse Foundation initiative dedicated to developing an open-source, vendor-neutral operating system (OS) platform. Oniro builds on OpenHarmony and extends its capabilities to provide a versatile platform for smart devices across many industries.
 
 ## Documentation Structure
 
-This documentation is powered by [MkDocs](https://www.mkdocs.org) and uses the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. It is hosted on GitHub Pages and follows a structured approach to provide clear and accessible guidance for Oniro developers.
+This documentation uses [MkDocs](https://www.mkdocs.org) with the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. GitHub Pages hosts the generated site, which provides clear and accessible guidance for Oniro developers.
 
 
 ### View the Generated Documentation
@@ -14,7 +14,7 @@ The latest version of the Oniro Project documentation is available at: [docs.oni
 ## Building the Documentation Locally
 ### Prerequisites
 
-To build and preview the documentation on your local machine(We use Windows system here), ensure that `Python 3.12`(or higher version) and `pip` are installed, then follow these steps:
+To build and preview the documentation locally on Windows, ensure that Python 3.12 or later and `pip` are installed, then follow these steps:
 
 1. Clone this repository:
    ```sh
@@ -22,17 +22,17 @@ To build and preview the documentation on your local machine(We use Windows syst
    cd oniro-docs
    ```
 
-2. Install virtual environment:
+2. Create a virtual environment:
    ```python
    python -m venv venv
    ```
 
-3. Activate virtual environment:
+3. Activate the virtual environment:
    ```bash
    .\venv\Scripts\activate
    ```
 
-4. Install mkdocs-material:
+4. Install Material for MkDocs:
    ```sh
    pip install mkdocs-material
    ```
@@ -49,7 +49,7 @@ This repository is configured to use GitHub Actions for building and deploying d
 1. Push changes to the `main` branch.
 2. GitHub Actions will automatically build and deploy the documentation to GitHub Pages.
 
-## Using the MkDocs Material
+## Using Material for MkDocs
 
 This documentation is based on the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, which provides a minimal yet functional interface. The theme and its features are documented in the [MkDocs Material repository](https://github.com/squidfunk/mkdocs-material).
 

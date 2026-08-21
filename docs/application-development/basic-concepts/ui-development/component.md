@@ -1,8 +1,8 @@
-# List and Grid Component
+# List and Grid Components
 
 ## List Component
 
-In typical mobile applications, list is very common and basic component. For example, we can find list in settings page, contact book, and product catalogs.
+Lists are common components in mobile applications. Examples include settings pages, contact lists, and product catalogs.
 
 The **List** component supports the generation of child components in various rendering modes like conditional rendering and rendering of repeated content.
 
@@ -23,7 +23,7 @@ As shown in the following figure, in a vertical list, **ListItemGroup** or **Lis
 !!! note
     A **List** component can contain only **ListItemGroup** or **ListItem** as its child components. **ListItemGroup** and **ListItem** must be used together with **List**.
 
-### Display data in List  
+### Displaying Data in a List
 
 The list displays a collection of items horizontally or vertically and can scroll to reveal content off the screen. In the simplest case, a **List** component is statically made up of **ListItem** components.
 
@@ -65,7 +65,7 @@ Each **ListItem** component can contain only one root child component. Therefore
     <img src='../images/image3.png'>
 </div>
 
-As shown above, as a list item, each contact has a profile picture and a name. To present it, you can encapsulate **Image** and **Text** components into a **Row** container.
+As shown above, each contact appears as a list item with a profile picture and name. Place the `Image` and `Text` components in a `Row` container.
 
 
 ```ts
@@ -99,7 +99,7 @@ List() {
 ### Iterating List Content
 Compared with a static list, a dynamic list is more common in applications. You can use **ForEach** to obtain data from the data source and create components for each data item.
 
-For example, when creating a contacts list, you can store the contact name and profile picture data in a **Contact** class structure to the **contacts** array, and nest **ListItems** in **ForEach**, thereby reducing repeated code needed for tiling similar list items.
+For example, when creating a contact list, store each contact's name and profile-picture data in a `Contact` object in the `contacts` array. Nest `ListItem` components in `ForEach` to reduce repeated code.
 
 ```ts
 import util from '@ohos.util';
@@ -144,13 +144,13 @@ struct SimpleContacts {
 }
 ```
 
-You can get the icons used in above example here: [icon_user1](images/icon_user1.png), [icon_user2](images/icon_user2.png), download and put them into your project under the following path:
+Download the icons used in the example, [icon_user1](images/icon_user1.png) and [icon_user2](images/icon_user2.png), and place them in the following project directory:
 `Your project` -> `entry` -> `src` -> `main` -> `resources` -> `base` -> `media`.
 <div style="text-align:center">
     <img src='../images/image4.png'>
 </div>
 
-The effect is drawing as follows:
+The result is shown below:
 
 <div style="text-align:center">
     <img src='../images/image5.png'>
@@ -170,7 +170,7 @@ List({ space: 10 }) {
 #### Adding Dividers
 A divider separates UI items to make them easier to identify. 
 
-To add dividers between list items, you can use the **divider** attribute together with the following style attributes:<br> **strokeWidth** and **color**: stroke width and color of the diver, respectively.
+To add dividers between list items, use the **divider** attribute with the following style attributes:<br> **strokeWidth** and **color**: the width and color of the divider, respectively.
 
 **startMargin** and **endMargin**: distance between the divider and the start edge and end edge of the list, respectively.
 
@@ -214,7 +214,7 @@ struct EgDivider {
 }
 
 ```
-The effect is drawing as follows:
+The result is shown below:
 
   **Figure 4** Using dividers between the list items 
 
@@ -264,9 +264,9 @@ Each item in the **Grid** container corresponds to a **GridItem** component, as 
 !!! note
     The **Grid** component accepts only **GridItem** as its child.
 
-### Display data in Grid
+### Displaying Data in a Grid
 
-The grid layout organizes its internal elements in two-dimensional layout mode, as shown in the following figure.
+The grid layout organizes its elements in two dimensions, as shown in the following figure.
 
 **Figure 2** General office services 
 
@@ -357,4 +357,4 @@ Grid() {
     When **rowsTemplate** or **columnsTemplate** is set for the **Grid** component, its **layoutDirection**, **maxCount**, **minCount**, and **cellLength** attributes do not take effect.
 
 ## Additional Information
-For additional information please refer to [Creating a List](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-create-list.md) and [Creating a Grid](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-create-grid.md)
+For more information, see [Creating a List](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-create-list.md) and [Creating a Grid](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-create-grid.md).

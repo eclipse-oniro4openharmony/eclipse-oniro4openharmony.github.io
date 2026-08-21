@@ -142,4 +142,4 @@ if (AppStorage.get('aProp') > 50) {
 After reading the data stored in PersistentStorage, the sample code checks whether the value of **aProp** is greater than 50 and, if it is, sets **aProp** to **47** through an API in AppStorage.
 
 ### Additional Information
-For additional information please refer to the [ArkTS PersistStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-persiststorage.md)
+For more information, see [ArkTS PersistentStorage](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-persiststorage.md).

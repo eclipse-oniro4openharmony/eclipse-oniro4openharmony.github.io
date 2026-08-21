@@ -1,8 +1,8 @@
-You can achieve page navigation using the **page router**, which locates the target page based on its URL. To implement this, first import the router module and follow the steps below.  
+Use the **page router** to navigate to a target page based on its URL. First, import the router module and follow the steps below.
 
-To deliver better transition effects, use **Navigation**(Recommended).  
+For more advanced transition effects, use **Navigation** instead.
 
-### Redirection from the first page to the second page
+### Redirect from the First Page to the Second Page
 In the `Index.ets` file of the first page, bind the **onClick** event to the **Next** button, allowing users to navigate to the second page when clicked. The sample code in `Index.ets` is shown below:
 
 ```typescript
@@ -51,12 +51,12 @@ struct Index {
   }
 }
 ```
-Click the `Next` button now and page will redirect to the `SecondPage`. You can also observe the printed information in console as well.
+Click **Next** to navigate to `SecondPage`. The console displays the corresponding log messages.
 <div style="text-align:center">
     <img src='../images_mobile/image25.png'>
 </div> 
 
-### Redirection from the second page to the first page
+### Redirect from the Second Page to the First Page
 In the `SecondPage.ets` file of the second page, bind the **onClick** event to the **Back** button, enabling users to navigate back to the first page when clicked. The sample code in `SecondPage.ets` is shown below:  
 ```typescript
 // SecondPage.ets
@@ -106,8 +106,8 @@ struct SecondPage {
   }
 }
 ```
-Click the `Back` button on the page or the triangle icon on the Previewer, the page will redirect back to the `Index`. You can also observe the printed information in console as well.
+Click **Back** on the page or the triangle icon in the Previewer to return to `Index`. The console displays the corresponding log messages.
 <div style="text-align:center">
     <img src='../images_mobile/image26.png'>
     <img src='../images_mobile/image27.png'>
-</div> 
+</div>

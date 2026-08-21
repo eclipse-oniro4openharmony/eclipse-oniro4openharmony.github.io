@@ -1,17 +1,17 @@
 Commits **MUST** be submitted only with a sign-off by the submitter. A
-commit without a sign-off will be automatically rejected. You don't
-need be the author or the copyright holder of the contribution, but you
+commit without a sign-off will be automatically rejected. You do not
+need to be the author or copyright holder of the contribution, but you
 must make sure that you have the power to submit on behalf of those who
 are.
 
-To sign your work, just add a line like this at the end of your commit
+To sign your work, add a line like this at the end of your commit
 message:
 
 ```text
 Signed-off-by: Jane Doe <jane@example.com>
 ```
 
-This could be done automatically in the `git` submission:
+You can add the sign-off automatically when creating the Git commit:
 
 ```text
 git commit --signoff -m "comment"

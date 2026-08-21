@@ -2,7 +2,7 @@
 An intuitive app to track workouts, exercise duration, and calories for efficient health management.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-WorkoutLogbook)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-WorkoutLogbook).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version
@@ -28,7 +28,7 @@ You can find the repository under this [link](https://github.com/eclipse-oniro4o
 App that tracks your water intake, allowing the user to follow their hydration levels.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-WaterTracker)  
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-WaterTracker).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

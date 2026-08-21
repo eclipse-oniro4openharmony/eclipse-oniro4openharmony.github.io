@@ -1,7 +1,7 @@
 # Troubleshooting
 
 Application should compile and run without issues on the **HarmonyNEXT** system.
-However, when using the current **RNOH** version **0.72** in **Open Harmony**, problems may occur.
+The following problems may occur when using **RNOH 0.72** on **OpenHarmony**.
 
 The application was running on the [HiHope HH-SCDAYU200](../../../../device-development/developer-boards/hihope-hh-scdayu200.md) development board with **OpenHarmony 5.0**.
 
@@ -97,7 +97,7 @@ The ```libRNOHApp``` library actually corresponds to the dynamic library ```libr
 }
 ```
 
-- Check the **Hilog** to locate the fault. One possible cause is that ```libhermes.so``` is not packed into **YOURAPPNAME.hap**. (The **Hilog** reports ```can't find library libhermes.so in namespace: moduleNs_default```.)
+- Check **HiLog** to locate the fault. One possible cause is that `libhermes.so` is not packaged in `YOURAPPNAME.hap`. In this case, HiLog reports `can't find library libhermes.so in namespace: moduleNs_default`.
 
 - Alternatively, enable the error enhancement function of IDE, as shown in the following figure:
 
@@ -115,7 +115,7 @@ The ```libRNOHApp``` library actually corresponds to the dynamic library ```libr
 ```
 - To manually solve the problem, you can also copy the content in the ```oh_modules/@rnoh/react-native-openharmony/src/main/cpp/third-party/prebuilt``` directory of the RN source code to the ```oh_modules/@rnoh/react-native-openharmony/libs``` directory.
 
-- Check if your version of Open Harmony is 64-bit. If not, flash your device with the 64-bit
+- Check whether your version of OpenHarmony is 64-bit. If not, flash your device with the 64-bit
  OHOS image: https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/release-notes/OpenHarmony-v5.1.0-release.md
 
 

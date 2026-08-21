@@ -1,7 +1,7 @@
 # Contribution
 
-The contributing process and guidelines part of this document must be
-applied to any repository in the scope of the project. Each repository
+The contribution process and guidelines in this documentation apply to every
+repository in the project's scope. Each repository
 must include this information in its `CONTRIBUTING.md` file and
-optionally, complement the process and guidelines with
+may supplement the process and guidelines with
 repository-specific requirements.

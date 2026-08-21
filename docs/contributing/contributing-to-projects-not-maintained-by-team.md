@@ -1,54 +1,48 @@
 ## Overview {#sec_upstream_contrib_overview}
 
-In order to comply with "upstream first" rule and Open Source licenses
-requirements, developers collaborate with several upstream projects to
-submit fixes, improvements, bug reports, problem investigation results
-etc. Contribution must be made in accordance with upstream project
-policy using the tooling upstream project prefers such as mailing list,
-github/gitlab pull/merge requests, etc.
+To comply with the "upstream first" rule and open-source license
+requirements, developers collaborate with upstream projects to submit fixes,
+improvements, bug reports, investigation results, and other contributions.
+Contributions must follow each upstream project's policies and use its preferred
+tools, such as mailing lists or GitHub/GitLab pull or merge requests.
 
-## Signing-off Contribution {#sec_upstream_contrib_signoff}
+## Signing Off Contributions {#sec_upstream_contrib_signoff}
 
 All contributions must be signed off by the developer using their email
-account associated with the copyright owner of the work (in most cases
-it will be the corporate email address). This does not apply if the
-upstream project policy says otherwise or signing off of the
-contribution is not possible due to upstream project's limitation. It
-is recommended to use corporate email address as a sender address in
-case of email communication.
+account associated with the work's copyright owner, usually a corporate
+email address. This requirement does not apply if the upstream project's
+policy states otherwise or the project does not support sign-offs. Use a
+corporate sender address for email communication.
 
-In case the developer contributes code written by someone else (provided
-by partner, end user, third-party contributor etc) original author's
-copyright must be kept and entire contribution must be signed off with
-"Author:" tag unless the author explicitly asks otherwise. This could
-be done in the `git` submission:
+When a developer contributes code written by someone else, such as a partner,
+end user, or third-party contributor, retain the original author's copyright.
+Unless the author explicitly requests otherwise, sign off the entire contribution
+and add an `Author` field. Use the following Git command:
 
 ```text
 git commit --signoff --author="Foo Bar <foo.bar@example.com>" -m "comment"
 ```
 
-By doing this developer states that they agree to the terms of
-`DCO<docs_dco>`{.interpreted-text role="ref"}
+By doing this, the developer agrees to the terms of the
+[Developer Certificate of Origin](dco-signoff.md#docs_dco).
 
 The developer must make sure that they have rights to submit on behalf
 of the original author according to the license and/or author's
 permission.
 
-It is developer's responsibility to check license compatibility between
+The developer is responsible for checking license compatibility between
 the contribution and the upstream project.
 
 ## Contribution Agreement {#sec_upstream_contrib_cla}
 
-In case the upstream project requires signing of contribution agreement
-of any kind, the developer must review it carefully before submitting
-the contribution. In case of any doubt they must contact their manager
+If the upstream project requires a contribution agreement, the developer must
+review it before submitting the contribution. If in doubt, they must contact their manager
 or legal team for further guidance.
 
 ## Security-related Contribution and Sensitive Data {#sec_upstream_contrib_security}
 
-It is the developer's responsibility to verify the data they share with
-upstream counterpart to prevent leak of sensitive information. Special
-attention must be given in the case of security issues or issues which
-can be potentially rated as security-related in the future. Such cases
+The developer must verify the data shared with an upstream project to prevent
+the disclosure of sensitive information. Pay particular attention to security
+issues and issues that could later be classified as security-related. Such cases
 must be handled separately according to upstream policy (using private
 channels or directly with the Security Officer if upstream has one).

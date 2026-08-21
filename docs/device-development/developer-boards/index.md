@@ -6,12 +6,11 @@ nav_order: 2
 has_children: true
 ---
 
-# Developer Boards supported by Eclipse Oniro
+# Developer Boards Supported by Eclipse Oniro
 
-This section delves into the specifics of Eclipse Oniro's supported developer 
-boards. 'Supported' here means being in active use by its developers and being part of the 
-CI/CD pipeline that guards the development processes.
+This section describes the developer boards supported by Eclipse Oniro. A supported
+board is actively used by project developers and included in the CI/CD pipeline.
 
-Given Eclipse Oniro is based on OpenHarmony, a way broader set of hardware support
-is available in the codebase. The only reason the other devices are not listed
-here, is the missing active use and CI/CD testing.
+Because Eclipse Oniro builds on OpenHarmony, the codebase supports more hardware than
+this section lists. Boards that are not listed are not actively used or tested in the
+CI/CD pipeline.

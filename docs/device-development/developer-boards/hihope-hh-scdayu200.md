@@ -8,20 +8,18 @@ layout: default
 # HiHope HH-SCDAYU200 Development Kit
 
 ## Introduction
-Based on the Rockchip RK3568, this development kit integrates advanced features
-such as a dual-core architecture GPU and a high-performance NPU. Complemented by 
-an onboard quad-core 64-bit Cortex-A55 processor which has a frequency of up to 2.0GHz, 
-it ensures robust performance.
+Based on the Rockchip RK3568, this development kit includes a dual-core GPU and a
+high-performance NPU. Its onboard quad-core, 64-bit Cortex-A55 processor runs at
+up to 2.0 GHz.
 
 The rich set of peripherals ranges from Bluetooth and Wi-Fi to audio, video,
-camera and a variety of Bosch Sensortec sensors.
+camera, and several Bosch Sensortec sensors.
 
-The expansion board offers rich expansion interfaces, and supports a variety
-of video input and output interfaces suited for applications with rich user
-interface requirements.
+The expansion board provides several interfaces, including video input and output
+interfaces suitable for applications with sophisticated user interfaces.
 
-It is also equipped with dual Gigabit adaptive RJ45 Ethernet ports, which can
-meet the needs of NVR, industrial gateway and other multi-network port products.
+It also has two adaptive Gigabit RJ45 Ethernet ports suitable for NVRs, industrial
+gateways, and other products that require multiple network ports.
 
 ![HiHope HH-SCDAYU200 Development Kit](images/hihope-hh-scdayu200/hh-scdayu200.png)
 
@@ -70,11 +68,10 @@ meet the needs of NVR, industrial gateway and other multi-network port products.
 
 ## Building
 
-To build Eclipse Oniro for this board the normal [quick build](../building-oniro.md)
-procedure has to be used to fetch the needed source code and environment.
+To build Eclipse Oniro for this board, follow the standard [build procedure](../building-oniro.md)
+to obtain the required source code and prepare the environment.
 
-During the build step, inside the Docker instance, the target device for the
-build has to be set to **rk3568**.
+During the build step, set the target device to **rk3568** inside the Docker instance.
 
 ```bash
 ./build.sh --product-name rk3568 --ccache
@@ -84,7 +81,7 @@ build has to be set to **rk3568**.
 
 To begin, connect the board to your computer as outlined in [the HiHope DAYU200 documentation](https://gitee.com/hihope_iot/docs/blob/master/HiHope_DAYU200/docs/%E7%83%A7%E5%BD%95%E6%8C%87%E5%AF%BC%E6%96%87%E6%A1%A3.md). Use the USB-C and mini-USB cables included in the kit to connect to the USB 3.0 OTG port and the mini-USB DEBUG port, respectively.
 
-We have different steps for a standalone Linux system and for Windows systems with built-in WSL.
+Follow the appropriate procedure for either a standalone Linux system or a Windows system with built-in WSL.
 
 - [Standalone Linux System](#in-standalone-linux-system)  
 - [Windows System with built-in WSL](#windows-system-with-built-in-wsl)  
@@ -140,7 +137,7 @@ $ flash/flash.py -q
 loader
 ```
 
-Once the above steps are completed successfully, you can proceed to flash the board:
+After completing these steps, flash the board:
 
 ```bash
 flash/flash.py -a -i ./out/rk3568/packages/phone/images
@@ -154,16 +151,16 @@ To read the serial output, ensure the board is correctly connected and powered o
 minicom -D /dev/ttyUSB0 -b 1500000
 ```
 
-### Windows System with built-in WSL
-Power on the device by attaching the power cable. Upon successful connection, type `lsusb` on **WSL** your serial console will display output similar to:
+### Windows System with Built-in WSL
+Connect the power cable to turn on the device. Run `lsusb` in **WSL**. The console should display output similar to the following:
 
 ```bash
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 ```
-It's not connected yet, but don't worry.
+The device is not yet attached to WSL.
 
-Download the `flash.py` flashing tool from [Gitee](https://gitee.com/hihope_iot/docs/tree/master/HiHope_DAYU200/%E7%83%A7%E5%86%99%E5%B7%A5%E5%85%B7%E5%8F%8A%E6%8C%87%E5%8D%97/linux) using the following commands on your **WSL**:
+Download the `flash.py` flashing tool from [Gitee](https://gitee.com/hihope_iot/docs/tree/master/HiHope_DAYU200/%E7%83%A7%E5%86%99%E5%B7%A5%E5%85%B7%E5%8F%8A%E6%8C%87%E5%8D%97/linux) by running the following commands in **WSL**:
 
 ```bash
 git clone https://gitee.com/hihope_iot/docs.git hihope_iot_docs
@@ -182,8 +179,8 @@ Then, either reload udev rules or reboot your system:
 sudo udevadm control --reload-rules
 ```
 
-Then, we need to attach USB devices from Windows using **Windows PowerShell** to virtual Linux environment.
-Type `usbipd list` with output the following result, find **busid** for which device named "HDC Device".
+Next, use **Windows PowerShell** to attach the USB device to the WSL environment.
+Run `usbipd list` and find the **BUSID** of the device named **HDC Device**.
 
 ```bash
 Connected:
@@ -195,13 +192,13 @@ BUSID  VID:PID    DEVICE                                                        
 1-17   2207:5000  "HDC Device"                                                  Shared
 ```
 
-In our case, we need take **busid** `1-17`.
+In this example, the **BUSID** is `1-17`.
 !!! note
-    If the status of **HDC Device** is **Not shared**, type `usbpid bind --busid 1-17`, in above case the device **busid** is 1-17, change it to adjust your case if necessary.
+    If the status of **HDC Device** is **Not shared**, run `usbipd bind --busid 1-17`. Replace `1-17` with the BUSID shown on your system.
 
-    After re-running command `usbipd list`, you will find the device status changed into `Shared`.
+    Run `usbipd list` again and confirm that the device status is now **Shared**.
 
-Then we need to attach the device to wsl using command `usbipd attach --wsl --busid 1-17`, the output should be like the following, wait until attach process finishes:
+Attach the device to WSL by running `usbipd attach --wsl --busid 1-17`. Wait for the process to finish. The output should resemble the following:
 
 ```bash
 usbipd: info: Using WSL distribution 'Ubuntu' to attach; the device will be available in all WSL 2 distributions.
@@ -210,7 +207,7 @@ usbipd: info: Using IP address 172.24.144.1 to reach the host.
 ```
 
 !!! note
-    If you are not sure about if the device had been attached already, detach it first using command `usbipd detach --busid 1-17`
+    If you are unsure whether the device is already attached, first run `usbipd detach --busid 1-17`.
 
 
 After this setup, running `flash/flash.py -q` should produce the following output, indicating readiness:
@@ -220,9 +217,9 @@ maskrom
 ```
 
 !!! note
-    If the output is `none`, try to re-run **detach** and **attach** procedures above, you can also check your device connection details using `dmesg | tail -n 50` command on **WSL**.
+    If the output is `none`, repeat the **detach** and **attach** procedures above. You can also inspect the device connection by running `dmesg | tail -n 50` in **WSL**.
 
-    If still not working, try to change a cable, switch to connect another port on your PC or keep your board screen unlocked.
+    If the problem persists, try a different cable or USB port and keep the board's screen unlocked.
 
 
 
@@ -232,9 +229,9 @@ To enable *programming mode* on the device, perform the following steps:
  1. Press and hold `VOL/RECOVERY` then `RESET` buttons.
  2. Release `RESET` button.
 
-When your run `flash/flash.py -q` again, you will find the output is `none` again. 
+When you run `flash/flash.py -q` again, the output will be `none` because the device's USB identity has changed.
 
-Open **Windows PowerShell** again and type `usbipd list`, the output will be like the following:
+Open **Windows PowerShell** again and run `usbipd list`. The output should resemble the following:
 ```bash
 Connected:
 BUSID  VID:PID    DEVICE                                                        STATE
@@ -245,14 +242,14 @@ BUSID  VID:PID    DEVICE                                                        
 1-14   8087:0029  Intel(R) Wireless Bluetooth(R)                                Not shared
 ```
 
-Find the **busid** for device which named 'USB download gadget', in our case it is `1-2`.
-Bind it first `usbipd bind --busid 1-2`, it requires to run the `Windows PowerShell` as administrator.
+Find the **BUSID** of the device named **USB download gadget**. In this example, it is `1-2`.
+In a Windows PowerShell session running as administrator, bind the device with `usbipd bind --busid 1-2`.
 
-Then attach it to **WSL**, run `usbipd attach --wsl --busid 1-2`.
+Then attach it to **WSL** by running `usbipd attach --wsl --busid 1-2`.
 
-After that, switch to **WSL** and run `flash/flash.py -q` again you will find the output is `loader`, which means the device is under development mode now.
+Switch to **WSL** and run `flash/flash.py -q` again. An output of `loader` means that the device is now in programming mode.
 
-Once the above steps are completed successfully, you can proceed to flash the board:
+After completing these steps, flash the board:
 
 ```bash
 flash/flash.py -a -i ./out/rk3568/packages/phone/images
@@ -267,7 +264,7 @@ minicom -D /dev/ttyUSB0 -b 1500000
 ```
 
 ## Reference
-The original specification and some hardware description comes form the original
-(Chinese) HiHope documentation published on [Gitee](https://gitee.com/hihope_iot/docs/tree/master/HiHope_DAYU200).
+The original specifications and some hardware descriptions come from the Chinese
+HiHope documentation published on [Gitee](https://gitee.com/hihope_iot/docs/tree/master/HiHope_DAYU200).
 
-More details and purchase options can be found at the manufactures [product page](http://www.hihope.org/pro/pro1.aspx?mtt=54).
+For more details and purchasing options, see the manufacturer's [product page](http://www.hihope.org/pro/pro1.aspx?mtt=54).

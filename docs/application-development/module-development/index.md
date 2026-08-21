@@ -6,26 +6,26 @@ Make sure you have gone through the [Environment Setup Guide](../environment-set
 
 ### Why Module Development?
 
-When your project becomes bigger and bigger, putting all code into one module quickly causes problems:
+As a project grows, placing all code in one module causes problems:
 
-- Code becomes messy and difficult to maintain
-- Build times become slow
-- Changing one feature may affect others
-- Code and resources cannot be efficiently shared across multiple modules
+- Code becomes difficult to organize and maintain.
+- Build times increase.
+- Changes to one feature may affect others.
+- Code and resources cannot be shared efficiently across modules.
 
-Therefore we have the **shared package** solution to resolve the problems.
+Shared packages address these problems.
 
-### Shared Packages Solution(HAR and HSP)
+### Shared Packages: HAR and HSP
 
-A shared package is essentially the same as a **Library** in Android. Its purpose is to enable the sharing of code and resources.
+A shared package is similar to an Android **library**. It enables code and resource sharing.
 
-In **OpenHarmony**, developers are provided with two types of shared packages:
+**OpenHarmony** provides two types of shared package:
 
 - **HAR (Harmony Archive)** — a *static* shared package
 
 - **HSP (Harmony Shared Package)** — a *dynamic* shared package
 
-The difference between them is that **HAR**, as a static shared package, has its code and resources compiled together with the consuming module. If there are multiple consumers, multiple identical copies will exist in their respective build outputs.
+The code and resources in a **HAR**, a static shared package, are compiled with the consuming module. When several modules consume the package, each build output contains an identical copy.
 
 In contrast, **HSP**, as a dynamic shared package, can be compiled independently. At runtime, only a single copy of its code exists within a process, as illustrated in the figure below.
 
@@ -33,7 +33,7 @@ In contrast, **HSP**, as a dynamic shared package, can be compiled independently
     <img src='./images/image1.png'>
 </div> 
 
-The introduction of **HSP (dynamic shared packages)** mainly aims to address the following issues:
+**HSPs** (dynamic shared packages) address the following issues:
 
 1. When multiple HAPs reference the same HAR, the app package size increases due to duplicated copies.
 2. When multiple HAPs reference the same HAR, certain state variables inside the HAR cannot be shared.
@@ -41,9 +41,9 @@ The introduction of **HSP (dynamic shared packages)** mainly aims to address the
 In general, if the shared code and resources are used **within a single application**, it is recommended to use a **dynamic shared package (HSP)**.
 If the package is intended to be used as a **dependency by application modules**, a **static shared package (HAR)** can be chosen.
 
-In practice, developers should select the appropriate option based on actual business requirements.
+Select the appropriate package type based on the application's requirements.
 
-### HAR vs HSP Comparison
+### HAR and HSP Comparison
 
 | Feature | HAR (Static) | HSP (Dynamic) |
 |---------|-------------|--------------|

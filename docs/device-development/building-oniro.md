@@ -1,6 +1,6 @@
 # Building Oniro
 
-Before beginning, ensure that [`git-lfs`](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) and [`repo`](https://gerrit.googlesource.com/git-repo) are installed. It is recommended to have at least 100GB of free disk space available for the full build.
+Before beginning, install [`git-lfs`](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) and [`repo`](https://gerrit.googlesource.com/git-repo). A full build requires at least 100 GB of free disk space.
 
 ## Obtaining the Source Code
 
@@ -16,7 +16,7 @@ Other versions of Oniro are available in the [Oniro manifest repository](https:/
 
 ## Setting Up the Build Environment
 
-For building the project, using an isolated Docker container is recommended for a clean and controlled build environment. Run the following command to start the Docker container:
+Use an isolated Docker container to create a clean, controlled build environment. Run the following command to start the container:
 
 ```bash
 docker run -it -v $(pwd):/home/openharmony swr.cn-south-1.myhuaweicloud.com/openharmony-docker/docker_oh_standard:3.2
@@ -32,8 +32,8 @@ Once you have the source code, run the following script inside the Docker build 
 
 ## Configuring and Starting the Build
 
-Inside the Docker instance, set the target device for the build (e.g. rk3568)
-and use ccache to speed up subsequent builds:
+Inside the Docker instance, set the target device for the build (for example, `rk3568`)
+and use `ccache` to speed up subsequent builds:
 
 ```bash
 ./build.sh --product-name rk3568 --ccache
@@ -41,12 +41,12 @@ and use ccache to speed up subsequent builds:
 
 ## Flashing
 
-The flashing procedure is highly hardware specific and can be found in the
-[Developer Boards](developer-boards/index.md) section for each individual device.
+The flashing procedure is hardware-specific. See the documentation for each device in
+[Developer Boards](developer-boards/index.md).
 
 ## Additional Tips and Troubleshooting
 
-### No HDC available in the system
+### HDC Is Not Available on the System
 
 If the `hdc` tool is not available on your host system, build it using the `ohos-sdk`:
 
@@ -67,7 +67,7 @@ For sending commands to the device:
 hdc shell
 ```
 
-To read hilog output:
+To read HiLog output:
 
 ```bash
 hdc hilog
@@ -75,7 +75,7 @@ hdc hilog
 
 ### Speeding Up Build Times
 
-You can significantly reduce build times for subsequent builds by mounting directories for prebuilts and ccache when initiating the Docker container. This approach ensures that once the prebuilts are downloaded, they don't need to be fetched again, and the compilation cache is maintained across builds.
+Reduce subsequent build times by mounting directories for prebuilt tools and `ccache` when starting the Docker container. The downloaded tools and compilation cache then persist across builds.
 
 To apply this optimization, use the following command to start your Docker container:
 

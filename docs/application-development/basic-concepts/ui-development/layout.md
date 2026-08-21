@@ -1,6 +1,6 @@
 The declarative UI provides different common layouts like **Linear layout**, **Stack layout**, **Flex layout** and etc.
 
-In this chapter we will focus on **Linear Layout**, for additional information please refer to [layout overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-overview.md) documentation.
+This chapter focuses on **linear layouts**. For an introduction to other layout types, see the [layout overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-overview.md).
 
 **Linear layout** is the most frequently used layout in development, built with the **Row** and **Column** linear containers. The linear layout is the basis of other layouts. Its child elements are arranged in sequence linearly in the horizontal direction, as in a **Row** container, or vertical direction, as in a **Column** container.
 
@@ -465,7 +465,7 @@ The layout container also provides the **alignSelf** attribute to control the al
 </div>
 
 ## Adaptive Stretching
-In linear layout, adaptive stretching is achieved by using the <Blank> component, which automatically fills the empty spaces in the container – **<Row>** or **<Column>** – along the main axis. Just add the width and height as a percentage, and then adaptive scaling will take effect once the screen width and height change.
+In a linear layout, the `<Blank>` component provides adaptive stretching by filling empty space along the main axis of a `Row` or `Column` container. Specify the width and height as percentages to scale the layout when the screen dimensions change.
 
 
 ```ts
@@ -605,4 +605,4 @@ Adaptive scaling means that the size of a child element is automatically adjuste
 </div>
 
 ## Reference
-For additional information please refer to [Linear Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-linear.md)
+For more information, see [Linear Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/arkts-layout-development-linear.md).

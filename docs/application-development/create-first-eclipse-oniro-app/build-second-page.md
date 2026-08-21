@@ -1,17 +1,17 @@
 ### Create the Second Page
-1. Right click `entry > ets > pages` folder, select `New` and choose `Page`.
+1. Right-click the `entry > ets > pages` folder, select **New**, and choose **Page**.
 <div style="text-align:center">
     <img src='../images_common/image22.png'>
 </div> 
 
-2. Type 'SecondPage' as the new Page name. 
+2. Enter `SecondPage` as the new page name.
 <div style="text-align:center">
     <img src='../images_common/image23.png'>
 </div> 
 
-SecondPage created.
+DevEco Studio creates the `SecondPage` page.
 
-Navigate to `entry > resources > base > profile`, open `main_pages.json` you will find the page routes was configured automatically.
+Navigate to `entry > resources > base > profile` and open `main_pages.json`. The page route is configured automatically:
 ```typescript
 // main_pages.json
 {
@@ -23,10 +23,10 @@ Navigate to `entry > resources > base > profile`, open `main_pages.json` you wil
 ```
 
 !!! note
-    If you create the page in other methods, you have to manually configure the page routes in above path.
+    If you create the page by another method, configure its route manually in `entry > resources > base > profile > main_pages.json`.
 
 ### Add `Text` and `Button` Components
-Add **Text** and **Button** components with styled properties, using the first page as a reference. The sample code in `Second.ets` is shown below:
+Add `Text` and `Button` components with styled properties, using the first page as a reference. The following sample shows `SecondPage.ets`:
 ```typescript
 // SecondPage.ets
 @Entry
@@ -59,8 +59,8 @@ struct SecondPage {
   }
 }
 ```
-You can observe how the second page looks like in the `Previewer`
+The Previewer displays the second page as follows:
 <div style="text-align:center">
     <img src='../images_mobile/image24.png'>
     <img src='../images_wearable/image24.png' width='30%'>
-</div> 
+</div>

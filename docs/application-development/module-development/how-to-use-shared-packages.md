@@ -23,7 +23,7 @@ The following example demonstrates a very simple usage: a click event is added t
     <img src='../images/image15.png'>
 </div>  
 
-The effect of using **Previewer** is as following:  
+The **Previewer** displays the result as follows:
 <div style="text-align:center">
     <img src='../images/image16.png'>
 </div> 
@@ -166,13 +166,13 @@ The demonstration is divided into 3 steps.
 
 #### Step 1: Define shared resource
 
-First let's define a shared text resource in `shared_library` module as following: 
+First, define a shared text resource in the `shared_library` module:
 <div style="text-align:center">
     <img src='../images/image23.png'>
 </div> 
 
 #### Step 2: Define resource tool class  
-Define an intermediate class tool as following and expose the port in `Index.ets` page:
+Define the following intermediate utility class and expose the interface on the `Index.ets` page:
 
 ```bash
 export class ResourceTool {
@@ -193,4 +193,4 @@ export class ResourceTool {
 After importing the package, you can call it directly.
 <div style="text-align:center">
     <img src='../images/image25.png'>
-</div> 
+</div>

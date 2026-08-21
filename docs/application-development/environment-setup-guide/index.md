@@ -1,18 +1,18 @@
-# Enviorment Setup Guide Overview
+# Environment Setup Guide Overview
 
 ## DevEco Studio
 
-An IDE based on IntelliJ IDEA developed by Huawei, allows you to run apps on an advanced HarmonyOS emulator. Only available for Windows and macOS.
+DevEco Studio is a Huawei IDE based on IntelliJ IDEA. It supports application development with an advanced HarmonyOS emulator and is available for Windows and macOS.
 
 ## Oniro App Builder & IDE 
 
-These are two seperate but related tools:
+These are two separate but related tools:
 
-- Oniro App Builder is a command-line tool that does everything necesarry for Oniro development.
-- Oniro IDE is a Visual Studio Code extension based on the App Builder, allowing you to access it's functionality inside an IDE.
+- Oniro App Builder is a command-line tool that provides the functionality required for Oniro development.
+- Oniro IDE is a Visual Studio Code extension based on App Builder. It makes the same functionality available in an IDE.
 
-Because they are related, they will be discussed together. When working with these tools you'll be running your apps in the Oniro emulator, which has less features than the DevEco one. Available on Windows, Linux and MacOS.
+Because the tools are closely related, this guide discusses them together. They run applications in the Oniro emulator, which provides fewer features than the DevEco Studio emulator. Both tools are available for Windows, Linux, and macOS.
 
 ## Full SDK & Public SDK
 
-Information for people wanting to develop system apps.
+This section provides information for developers who want to create system applications.

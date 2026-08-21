@@ -3,7 +3,7 @@ This demo presents a lightweight wearable application for real-time voice intera
 Users can start speaking by tapping the Oniro icon, and the app will capture their speech, transcribe it into text, translate it into English, and forward it to a GPT model for response.
 
 #### Repository address
-You can find the repository under this [link](https://github.com/eclipse-oniro4openharmony/app-oniroGPT/tree/main/wearable) 
+See the [application repository](https://github.com/eclipse-oniro4openharmony/app-oniroGPT/tree/main/wearable).
 
 #### Software requirements
 - **DevEco Studio version**: DevEco Studio 5.1.0 Release or higher version

@@ -1,6 +1,6 @@
 # Workflow
 
-This page is about what and where everything is: the IDE's window layout, what DevEco Studio generates for a new project, the editor tooling that speeds up day-to-day coding, and the built-in Git integration.
+This page describes the IDE window layout, the files that DevEco Studio generates for a new project, editor tools that streamline daily development, and the built-in Git integration.
 
 ## Interface Tour
 
@@ -36,7 +36,7 @@ Once a project is open, the main window is split into the following regions:
 
 ### Key Tool Windows
 
-| Tool window | Default shortcut | What it's for |
+| Tool window | Default shortcut | Purpose |
 |---|---|---|
 | Project | `Alt+1` | Browse and manage project files |
 | Previewer | — (opens automatically for `.ets` pages) | Live rendering of the current ArkUI page |
@@ -58,17 +58,17 @@ Once a project is open, the main window is split into the following regions:
 |---|---|
 | Search everywhere (files, classes, actions, settings) | `Shift` `Shift` (double Shift) |
 | Go to file | `Ctrl+Shift+N` |
-| Go to declaration/definition | `Ctrl+B` or Ctrl+Click |
+| Go to declaration/definition | `Ctrl+B` or `Ctrl`+Click |
 | Find usages | `Alt+F7` |
 | Show recent files | `Ctrl+E` |
 | Reformat code | `Ctrl+Alt+L` |
 | Optimize imports | `Ctrl+Alt+O` |
 
-Getting comfortable with **Search Everywhere** (double `Shift`) is the single highest-leverage habit — it can open files, jump to a settings page, or run an IDE action without hunting through menus.
+**Search Everywhere** (double `Shift`) can open files, jump to a settings page, or run an IDE action without navigating through menus.
 
 ## Project Structure
 
-When DevEco Studio creates a new project from a template, it generates a fair number of files. Understanding what each one does will save you a lot of confusion later, especially when something needs to be configured by hand instead of through a wizard.
+When DevEco Studio creates a project from a template, it generates many files. Understanding their purposes makes manual configuration easier when a wizard is not available.
 
 ### Stage Model vs. FA Model
 
@@ -118,7 +118,7 @@ Settings that apply to the whole application, not just one module:
 
 #### entry Module
 
-`entry` is the default **module** created for you — most simple apps only ever need this one module. Larger apps can add further modules (feature modules, shared libraries) alongside it.
+`entry` is the default **module**. Most simple applications need only this module, while larger applications can add feature modules or shared libraries alongside it.
 
 | File/Folder | Purpose |
 |---|---|
@@ -179,7 +179,7 @@ As you type, DevEco Studio suggests:
 * Imports it can add automatically when you accept a suggestion from an unimported symbol.
 
 !!! tip "Smart completion"
-    `Ctrl+Shift+Space` narrows suggestions to what's actually valid at the cursor (e.g. only types assignable to the expected parameter), which is more useful than basic completion (`Ctrl+Space`) once a project grows.
+    `Ctrl+Shift+Space` narrows suggestions to those valid at the cursor, such as types assignable to the expected parameter. This is more useful than basic completion (`Ctrl+Space`) as a project grows.
 
 ### Navigating Code
 
@@ -201,7 +201,7 @@ Refactoring tools rewrite code across the whole project consistently, not just i
 * **Safe Delete** — checks for remaining usages before deleting a declaration, refusing (or warning) if something still depends on it.
 
 !!! warning "Review before committing a rename"
-    Renames across resource strings or files referenced by relative path aren't always fully tracked. After a large rename, run a project-wide search (`Ctrl+Shift+F`) for the old name before committing, just to be safe.
+    Renames across resource strings or files referenced by relative paths are not always fully tracked. After a large rename, run a project-wide search (`Ctrl+Shift+F`) for the old name before committing.
 
 ### Inspections and Quick Fixes
 
@@ -212,7 +212,7 @@ The editor continuously analyzes your code and underlines potential issues:
 
 Press `Alt+Enter` on a highlighted piece of code to see quick fixes — importing a missing symbol, adding a missing `@State`, or suppressing a specific inspection.
 
-The full, aggregated list of issues across the project is available in the **Problems** tool window, which is often faster than hunting file by file after a large change.
+The **Problems** tool window provides an aggregated list of issues across the project, which is faster than inspecting every file after a large change.
 
 ### Live Templates
 
@@ -246,7 +246,7 @@ Open it with `Alt+9` or **View → Tool Windows → Commit**. It shows:
 * A commit message box, plus **Commit** and **Commit and Push** buttons.
 
 !!! tip "Review before committing"
-    Click through each changed file's diff in the Commit window before committing — it's the same discipline as `git diff` before `git add`, just inline with the editor.
+    Review each changed file in the Commit window before committing. This is equivalent to reviewing `git diff` before `git add`, but the diff is displayed in the editor.
 
 ### Useful VCS Shortcuts
 
@@ -261,10 +261,10 @@ Open it with `Alt+9` or **View → Tool Windows → Commit**. It shows:
 
 ### Branch Management
 
-The branch indicator in the bottom-right status bar opens a menu to checkout, create, rename, or merge branches without a terminal. It also shows incoming/outgoing commit counts once you've fetched.
+The branch indicator in the lower-right status bar opens a menu for checking out, creating, renaming, or merging branches without a terminal. After you fetch, it also shows incoming and outgoing commit counts.
 
 !!! note "Fetch vs. Update"
-    **Update Project** (`Ctrl+T`) fetches and merges/rebases according to your configured settings in one step. If you only want to see what's changed remotely without touching your working tree yet, use **Git → Fetch** instead.
+    **Update Project** (`Ctrl+T`) fetches and merges or rebases according to your configured settings. To inspect remote changes without modifying the working tree, use **Git → Fetch** instead.
 
 ### Resolving Conflicts
 
@@ -297,7 +297,7 @@ local.properties
 ```
 
 !!! warning "Check history for secrets before pushing publicly"
-    If a keystore or credentials file was ever committed before adding it to `.gitignore`, adding the ignore rule alone does not remove it from history. You'd need to purge it from history (e.g. with `git filter-repo`) and rotate the exposed credentials — treat anything committed as compromised.
+    If a keystore or credentials file was committed before it was added to `.gitignore`, the ignore rule does not remove it from history. Purge it from history, for example with `git filter-repo`, and rotate the exposed credentials. Treat committed credentials as compromised.
 
 ### A Reasonable Day-to-Day Flow
 

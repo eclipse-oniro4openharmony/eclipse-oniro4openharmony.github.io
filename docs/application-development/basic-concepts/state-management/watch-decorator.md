@@ -1,7 +1,7 @@
 # @Watch Decorator
 
 
-@Watch is used to listen for state variables. If your application needs watch for value changes of a state variable, you can decorate the variable with @Watch.
+`@Watch` listens for changes to state variables. To monitor a state variable's value, decorate it with `@Watch`.
 
 
 !!! note
@@ -69,4 +69,4 @@ Processing steps:
 3. The **Text** component in the child component **TotalView** is re-rendered.
 
 ### Additional Information
-For additional information please refer to the [ArkTS Watch Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-watch.md)
+For more information, see the [ArkTS Watch Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/application-dev/ui/state-management/arkts-watch.md).

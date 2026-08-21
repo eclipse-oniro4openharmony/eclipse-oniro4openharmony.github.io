@@ -105,7 +105,7 @@ export default config;
 
 ## 6. Install Plugin Packages
 
-The Oniro project provides OpenHarmony-native implementations of the most common Capacitor plugins. Each plugin has two parts:
+The Oniro Project provides OpenHarmony-native implementations of common Capacitor plugins. Each plugin has two parts:
 
 - **`@capacitor/<name>`** — the standard Capacitor package, which provides the TypeScript interface and types used in your web code.
 - **`@oniroproject/capacitor-<name>`** — the OpenHarmony native implementation (ArkTS `.ets` source files) that is copied into the native project during `cap sync`.
@@ -376,7 +376,7 @@ OpenHarmony applications must be signed before they can run on a physical device
 
 #### Verify hdc and hvigorw are on your PATH
 
-If you installed the SDK and Command Line Tools via DevEco Studio or the Oniro IDE, add them to your shell profile. Ensure the SDK's `toolchains/` directory (for `hdc`) and the Command Line Tools `bin/` directory (for `hvigorw`) are on your `PATH`.
+If you installed the SDK and command-line tools through DevEco Studio or Oniro IDE, add them to your shell profile. Ensure that the SDK's `toolchains/` directory (for `hdc`) and the command-line tools' `bin/` directory (for `hvigorw`) are on your `PATH`.
 
 ```bash
 hdc version
