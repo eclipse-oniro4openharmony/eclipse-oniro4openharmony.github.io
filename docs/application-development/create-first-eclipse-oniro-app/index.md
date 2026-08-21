@@ -1,6 +1,6 @@
 ## Before You Begin  
 
-Make sure you have gone through the [Environment Setup Guide](../../environment-setup-config/index.md).  
+Make sure you have gone through the [Environment Setup Guide](../environment-setup-guide/index.md).  
 
 <!--  -->
 In this tutorial, you will create your first Eclipse Oniro application using the `OpenHarmony` template provided by `DevEco Studio`. 
