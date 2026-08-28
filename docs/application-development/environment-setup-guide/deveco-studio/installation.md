@@ -23,7 +23,7 @@ DevEco Studio is available for Windows and macOS. Your system should meet the fo
     | Resolution       | At least 1280 × 800 px                             |
 
     !!! warning "Warning"
-        DevEco Studio's emulator only runs on Apple Silicon (ARM) Macs. On an Intel-based Mac, use a [physical device](real-device.md) instead.
+        DevEco Studio's emulator isn't available on Intel-based Macs.
 
 ## Developer Account
 

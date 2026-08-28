@@ -42,7 +42,7 @@ The Previewer's **Interactive Preview** mode lets you click, tap, and scroll ins
 * The first time you download a virtual device image, DevEco Studio shows an additional **User Agreement** dialog for the HarmonyOS Software License and Service Agreement that you need to accept.
 
 !!! warning "Warning"
-    DevEco Studio's emulator only runs on Apple Silicon (ARM) Macs. On an Intel-based Mac, use a [physical device](real-device.md) instead.
+    DevEco Studio's emulator isn't available on Intel-based Macs.
 
 <img src='../images/emulator_user_agreement.png' alt="User Agreement dialog with the HarmonyOS Software License and Service Agreement checkbox">
 
