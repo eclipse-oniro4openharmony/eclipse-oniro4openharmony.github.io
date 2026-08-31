@@ -1,7 +1,15 @@
 # Connecting a Real Device
 
-!!! warning
-	Currently, Oniro App Builder and Oniro IDE don't support being connected to multiple devices at the same time. If you want to work with a real device, make sure the emulator is not running.
+!!! warning "Working with multiple devices"
+	If multiple devices are connected, such as a real device over USB and an emulator, pass `--device <serial>` to Oniro App Builder commands that target a device.
+
+    Run `oniro-app devices` to list the connected devices. Each output line contains three fields:
+
+    - device serial
+    - connection type
+    - status
+
+    Oniro IDE does not currently support multiple connected devices. To work with a real device, stop the emulator first.
 
 ## Connecting via USB
 
