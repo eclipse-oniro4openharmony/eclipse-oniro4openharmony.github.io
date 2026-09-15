@@ -11,7 +11,7 @@ OpenHarmony provides two types of SDK:
 
 #### Get the Full SDK
 
-1. This example obtains an OpenHarmony 5.1 Full SDK through the build links in the [OpenHarmony 5.1 release notes](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-5.1.0-Release/en/release-notes/OpenHarmony-v5.1.0-release.md). The linked pipelines build system images, SDKs, and other artifacts.
+1. This example obtains an OpenHarmony 5.1 Full SDK from the [OpenHarmony CI/CD daily build portal](https://dcp.openharmony.cn/workbench/cicd/dailybuild/dailylist), which provides system images, SDKs, and other build artifacts.
    
     Use the filters to select the `openharmony` project, the `OpenHarmony-5.1.0-Release` target branch, and a date or date range.
    
