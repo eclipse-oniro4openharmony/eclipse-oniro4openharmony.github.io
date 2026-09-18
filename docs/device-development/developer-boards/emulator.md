@@ -9,7 +9,7 @@ layout: default
 
 The Oniro Emulator provides an easy and accessible way to develop and test applications or system components without the need for physical hardware.  
 It is based on **QEMU**, a powerful open-source machine emulator and virtualizer.  
-The emulator uses the **x86_64 architecture**, which, when run on an x86 host PC, enables faster emulation by leveraging **KVM** on Linux and **Hyper-V** on Windows for hardware-assisted virtualization.
+The emulator uses the **x86_64 architecture**. On an x86 host, it runs with hardware acceleration: **KVM** on Linux, the **Windows Hypervisor Platform** on Windows and **HVF** on Intel-based Macs.
 
 This guide provides step-by-step instructions to **build and run the Oniro Emulator**.
 
@@ -28,22 +28,70 @@ This guide provides step-by-step instructions to **build and run the Oniro Emula
 
 ## Fetch and Build
 
-Before proceeding, ensure your build environment is ready and the Oniro source code is available by following the [Quick Build Setup](../building-oniro.md) guide (make sure you are using the `OpenHarmony-6.1-Release` branch). Proceed with the following steps for additional environment setup and build the system image for the emulator.
+You need a Linux host with [Docker](https://docs.docker.com/engine/install/) and about **150 GB** of free disk space. Also install [`git-lfs`](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) and [`repo`](https://gerrit.googlesource.com/git-repo). This guide uses the **`OpenHarmony-6.1-LTS`** branch. Build commands run inside the build container (the `docker exec` commands). Everything else runs on the host, from the root of the source tree.
+
+### Get the source code
+
+```bash
+repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git \
+     -b OpenHarmony-6.1-LTS -m oniro.xml --no-repo-verify
+repo sync -c
+repo forall -c 'git lfs pull'
+```
+
+### Set up the build container
+
+Oniro provides its own build image. It is the upstream OpenHarmony image plus a few tools that a clean build needs. Build it once, then start a container with the source tree mounted:
+
+```bash
+sudo docker build -t oniro-oh-standard:3.2 device/board/oniro/docker
+
+sudo docker run -d -it --name oniro-build \
+     -w /home/openharmony \
+     -v "$PWD":/home/openharmony/workdir \
+     -v "$HOME/.ccache":/root/.ccache \
+     -v "$(dirname "$PWD")/openharmony_prebuilts":/home/openharmony/openharmony_prebuilts \
+     oniro-oh-standard:3.2 /bin/bash
+```
+
+The ccache and prebuilts mounts are optional. They make rebuilds faster and let a new container reuse the toolchains you have already downloaded.
+
+!!! tip
+    To work interactively, open a shell in the container with `sudo docker exec -it oniro-build bash` and run the commands from `/home/openharmony/workdir`.
+
+### Download the prebuilt toolchains
+
+Run this once for each new source tree:
+
+```bash
+sudo docker exec -u root -w /home/openharmony/workdir oniro-build \
+     ./build/prebuilts_download.sh
+```
 
 ### Apply source patches
 
-Run the patching script:
+Run the patching script on the host:
 
 ```bash
-bash vendor/oniro/x86_general/hook/do_patch.sh
+bash device/board/oniro/system_patch/do_patch.sh
 ```
+
+!!! note
+    The script applies the patches with `git am`, so set your git identity first (`git config --global user.name` and `user.email`).
 
 ### Build the images
 
 Start the build with ccache enabled:
 
 ```bash
-./build.sh --product-name x86_general --ccache
+sudo docker exec -u root -w /home/openharmony/workdir oniro-build \
+     ./build.sh --product-name x86_general --ccache
+```
+
+The images and the `run.sh` / `run.bat` launch scripts are written to:
+
+```
+out/x86_general/packages/phone/images
 ```
 
 ### (Optional) Revert patches
@@ -51,80 +99,84 @@ Start the build with ccache enabled:
 If needed, you can undo the applied patches:
 
 ```bash
-bash vendor/oniro/x86_general/hook/undo_patch.sh
+bash device/board/oniro/system_patch/undo_patch.sh
 ```
 
 ## Alternative: Download Prebuilt Images
 
 Instead of building the images yourself, you can download the [prebuilt Oniro Emulator images](https://github.com/eclipse-oniro4openharmony/device_board_oniro/releases/latest/download/oniro_emulator.zip).
 
-After downloading, extract the archive and use the included run scripts as described in the next section.
+After downloading, extract the archive and use the included run scripts as described in the next sections.
 
 ## QEMU Installation
 
-The emulator requires **QEMU** to be installed on your system.
-
-- Download and install QEMU from the official website:  
-  [https://www.qemu.org/download/](https://www.qemu.org/download/)
+The emulator requires **QEMU**. See the [QEMU download page](https://www.qemu.org/download/) for all platforms.
 
 ### Linux
 
-- **On Debian-based Linux distributions:**  
-  Install QEMU using the following command:
+- **On Debian-based Linux distributions:**
   ```bash
   sudo apt install qemu-system-x86
+  ```
+- **On Fedora/RHEL:**
+  ```bash
+  sudo dnf install qemu-system-x86-core
+  ```
+- The emulator requires **KVM**. Add your user to the `kvm` group, then log out and back in:
+  ```bash
+  sudo usermod -aG kvm $USER
   ```
 
 ### Windows
 
-- Download and install QEMU from the official website.
-- After installing QEMU, add the QEMU installation directory (e.g., `C:\Program Files\qemu`) to your `PATH` environment variable to ensure the QEMU executables are accessible from the command line.
-- The emulator requires **Hyper-V** to be enabled on your system:
+- Install QEMU from the official website, and add its installation directory (e.g., `C:\Program Files\qemu`) to your `PATH`.
+- Install [Git for Windows](https://gitforwindows.org/) (Git Bash) or [MSYS2](https://www.msys2.org/). `run.bat` uses Git Bash or MSYS2 to run `run.sh`.
+- Enable **Windows Hypervisor Platform**: open **Turn Windows features on or off**, check **Windows Hypervisor Platform**, click **OK**, and restart.
 
-  1. Open **Start Menu** and search for “Turn Windows features on or off”.
-  2. In the Windows Features dialog, check the boxes for:
-     - **Hyper-V**
-     - **Hyper-V Management Tools**
-     - **Hyper-V Platform**
-  3. Click **OK** and wait for the changes to apply.
-  4. Restart your system after enabling Hyper-V.
+### macOS
 
-Refer to the platform-specific instructions on the QEMU website for further installation details.
+- Install QEMU with [Homebrew](https://brew.sh/): `brew install qemu`.
+- Intel Macs use hardware acceleration (HVF). Apple Silicon Macs emulate x86, which is much slower.
 
 ## Running the Emulator
 
-After building, you will find the emulator run scripts (`run.sh` for Linux, `run.bat` for Windows) in the output images directory:
+From the images directory, start the emulator with the script for your operating system:
 
-```
-out/std_emulator/packages/phone/images
-```
-
-These scripts launch QEMU with the correct parameters for the Oniro Emulator.
-
-To start the emulator, use the appropriate script for your operating system:
-
-- **Linux:**  
+- **Linux / macOS:**
   ```bash
-  sudo ./run.sh
+  ./run.sh
   ```
-  > If you encounter permission errors, ensure the script is executable:  
-  > `chmod +x run.sh`
 
-- **Windows:**  
+- **Windows:**
   ```powershell
   .\run.bat
   ```
-  > Run the script from a Command Prompt or PowerShell window with administrator rights if required.
+
+The script picks the right acceleration for your host. If no display is available (for example, over SSH), it switches to headless mode.
+
+Useful options:
+
+| Option | Description |
+|--------|-------------|
+| `--headless` | Run without a window. The screen is available over VNC on port 5900 and the serial console over telnet on port 4444 |
+| `-s N` | Number of virtual CPUs |
+| `-m SIZE` | RAM size |
+| `-r WxH` | Screen resolution |
+| `--help` | Show all options |
+
+!!! note
+    If you built the images in the container, they belong to `root`. If `run.sh` fails with `Could not reopen file: Permission denied`, take ownership of them first: `sudo chown "$USER" *.img bzImage`.
 
 ## Connecting to the Emulator with HDC
 
-Once the emulator is running, you can connect to it using **HDC** (the OpenHarmony Device Connector):
+Once the emulator is running, you can connect to it using **HDC** (the OpenHarmony Device Connector). QEMU forwards the emulator's HDC port to `127.0.0.1:55555` on the host:
 
 ```bash
 hdc tconn 127.0.0.1:55555
+hdc shell "uname -a"
 ```
 
-This command connects your host to the emulator instance for debugging and file transfer.
+Wait about a minute for the emulator to boot. The Oniro lock screen then appears in the emulator window, or over VNC in headless mode.
 
 !!! note
     `hdc` is included in the OpenHarmony SDK toolchain. Ensure it is in your `PATH`.

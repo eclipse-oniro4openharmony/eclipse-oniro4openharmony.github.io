@@ -26,11 +26,11 @@ OpenHarmony defines three system types: Mini, Small, and Standard.
 
 2. **Supported Hardware**  
    See [Developer Boards](developer-boards/index.md) for details on supported hardware.  
-   Currently, Oniro supports the **HiHope HH-SCDAYU200** and **Raspberry Pi 4 Model B**, with step-by-step build and flashing instructions.
+   Currently, Oniro supports the **HiHope HH-SCDAYU200**, the **Raspberry Pi 4 Model B**, the **Oniro Emulator** and the **Volla Phone X23 & Plinius**, with step-by-step build and flashing instructions.
 
 3. **Building and Flashing**  
       1. Use Docker for a clean build environment.  
-      2. Set the target device (e.g., `rk3568` for HiHope, `rpi4` for Raspberry Pi).  
+      2. Set the target device (e.g., `rk3568` for HiHope, `rpi4` for Raspberry Pi, `x86_general` for the emulator, `hybris_generic` for the Volla phones).  
       3. Flashing instructions are hardware-specific and provided in each board’s documentation.
 
 4. **Debugging and Tools**  

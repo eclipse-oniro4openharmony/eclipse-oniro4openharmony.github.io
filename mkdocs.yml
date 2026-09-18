@@ -155,6 +155,7 @@ nav:
           - HiHope HH-SCDAYU200: device-development/developer-boards/hihope-hh-scdayu200.md
           - Raspberry Pi 4 Model B: device-development/developer-boards/raspberry-pi-4model-b.md
           - Oniro Emulator: device-development/developer-boards/emulator.md
+          - Volla Phone X23 & Plinius: device-development/developer-boards/volla-phones.md
   - Contributing:
       - Overview: contributing/index.md
       - Quick Start Guide for New Developer: contributing/quick-start-guide-for-new-developers.md
