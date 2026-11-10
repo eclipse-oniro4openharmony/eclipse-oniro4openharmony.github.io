@@ -9,7 +9,7 @@ layout: default
 
 ## Introduction
 
-Oniro runs **natively** on two MediaTek-based Volla phones, the **Volla Phone X23** and the **Volla Phone Plinius** (including the **Plinius Plus**). The phone boots straight into Oniro, built from **OpenHarmony 7.0**.
+Oniro runs **natively** on two MediaTek-based Volla phones, the **Volla Phone X23** and the **Volla Phone Plinius**. The phone boots straight into Oniro.
 
 Both phones use the same build target, `hybris_generic`, and share one set of system images. Oniro detects the phone at boot, so there is no build-time switch between devices. Only the kernel and boot images are built per device.
 
@@ -24,35 +24,27 @@ Oniro reuses the phone's existing Android hardware drivers (Halium) through **li
 | **Halium / kernel** | Halium 12, 5.10 vendor kernel   | Halium 14, android14-6.1 GKI kernel   |
 | **Device name used by the scripts** | `x23`           | `ansuz`                               |
 
-The Plinius Plus is the Plinius with 12 GB of RAM, 256 GB of storage and a pogo connector on the back (a second USB port with charging). It uses the same `ansuz` image.
+The Plinius Plus (12 GB RAM, 256 GB storage, pogo connector) uses the same `ansuz` image.
 
 ## Feature Status
 
 | Feature                                                     | X23     | Plinius |
 |-------------------------------------------------------------|---------|---------|
 | Boot, USB `hdc`, display, touch, Wi-Fi, audio               | Yes     | Yes     |
-| Sensors, vibrator                                           | Yes     | Yes     |
-| Screen auto-rotation                                        | Not tested | Yes  |
-| Camera preview and photos                                   | Yes     | Yes     |
-| GNSS                                                        | Partial (no fix confirmed yet) | Yes |
+| Sensors, vibrator, camera                                   | Yes     | Yes     |
+| GNSS                                                        | No fix confirmed yet | Yes |
 | Hardware keys                                               | Not yet | Yes     |
-| Cellular (dual SIM, mobile data, SMS, voice calls, call settings) | Not yet | Yes |
-| Bluetooth (scan, pairing, A2DP audio)                       | Not yet | Yes     |
-| Wi-Fi hotspot, USB tethering                                | Not tested | Yes  |
-| Video recording (H.264, 1080p30) and hardware H.264 / HEVC playback | Not tested | Yes |
-| Ultra-wide and macro lenses, torch                          | Not yet | Yes     |
-| MTP / PTP file transfer over USB                            | Not yet | Yes     |
-| 120 Hz display, auto-brightness, charger type               | Not yet | Yes     |
+| Cellular (dual SIM, mobile data, SMS, voice calls)          | Not yet | Yes     |
+| Bluetooth (including A2DP audio)                            | Not yet | Yes     |
+| Wi-Fi hotspot, USB tethering, MTP file transfer             | Not yet | Yes     |
+| Video recording and hardware video playback                 | Not yet | Yes     |
 | NFC, fingerprint, VoLTE                                     | Not yet | Not yet |
 
-The image runs with seccomp and SELinux enabled (SELinux in permissive mode). Both have been verified on the Plinius so far. Most active development happens on the Plinius.
+Most active development happens on the Plinius.
 
 ## Prerequisites
 
-- A Volla Phone X23 or Plinius with an **unlocked bootloader**. To unlock a Plinius that runs VollaOS:
-    1. Enable **Settings > System > Developer options > OEM unlocking**. Without it, the bootloader answers `Prohibit unlock operation`.
-    2. Reboot to fastboot and run `fastboot flashing unlock`.
-    3. Press **Volume Up** on the phone within about 5 seconds. The prompt times out to "no", and `fastboot` still prints `OKAY`, so check the result with `fastboot getvar unlocked`.
+- A Volla Phone X23 or Plinius with an **unlocked bootloader**. On a Plinius running VollaOS, enable **OEM unlocking** in Developer options first, then run `fastboot flashing unlock` and press **Volume Up** on the phone within about 5 seconds.
 - A Linux host with [Docker](https://docs.docker.com/engine/install/) and about **180 GB** of free disk space.
 - [`git-lfs`](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) and [`repo`](https://gerrit.googlesource.com/git-repo) installed on the host.
 - `fastboot`, from [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools), on the host that the phone is plugged into.
@@ -115,7 +107,7 @@ sudo chown "$USER" out out/hybris_generic
 ```
 
 ??? tip "Optional: include the Oniro apps (app store, keyboard, camera)"
-    By default, the image contains the standard OpenHarmony apps. To add the Oniro distribution apps (the Oniro App Store, FlorisBoard, the Oniro camera and others), build them once on the host before Step 4:
+    By default, the image contains the standard OpenHarmony apps. To add the Oniro distribution apps, build them once on the host before Step 4:
 
     ```bash
     bash vendor/oniro/oniro-haps/build-oniro-haps.sh
@@ -123,7 +115,7 @@ sudo chown "$USER" out out/hybris_generic
 
     This step needs network access and the command-line tools (`hvigorw`, `ohpm`). See [Oniro IDE & App Builder setup](../../application-development/environment-setup-guide/oniro/setup.md) to install them with `oniro-app cmdtools install`.
 
-    The camera builds against API 26 and uses system APIs, so it needs the **full** API 26 SDK. The public SDK does not work. `prebuilts_download.sh` puts a full SDK in `prebuilts/ohos-sdk/linux/26.0.0`. The current command-line tools reject its `metaVersion`, so copy it and relabel the copy:
+    The camera needs the **full** API 26 SDK, which `prebuilts_download.sh` puts in `prebuilts/ohos-sdk/linux/26.0.0`. The current command-line tools reject its `metaVersion`, so copy it and relabel the copy:
 
     ```bash
     cp -a prebuilts/ohos-sdk/linux/26.0.0 ~/setup-ohos-sdk/linux/26
@@ -132,9 +124,7 @@ sudo chown "$USER" out out/hybris_generic
         ~/setup-ohos-sdk/linux/26/*/oh-uni-package.json
     ```
 
-    Then add `--gn-args "oniro_install_custom_haps=true"` to the `build.sh` command in Step 4. If you pass that option without building the apps first, the build fails with a missing input file. See the [`oniro-haps` README](https://github.com/eclipse-oniro4openharmony/vendor_oniro/tree/OpenHarmony-7.0-Release/oniro-haps) for details.
-
-    The apps carry their own licences (the app store is GPL-3.0-or-later), so when you include them, you distribute them under those licences.
+    Then add `--gn-args "oniro_install_custom_haps=true"` to the `build.sh` command in Step 4. See the [`oniro-haps` README](https://github.com/eclipse-oniro4openharmony/vendor_oniro/tree/OpenHarmony-7.0-Release/oniro-haps) for details.
 
 ### Step 5: Build the Device Images
 
@@ -176,9 +166,7 @@ These commands run on the host. They build the kernel and pack the `super` and b
     - `kernel/linux/volla-ansuz/out/boot.img`
 
     !!! note
-        `build_kernel.sh` checks out the kernel, the port repository and the Halium build tools at pinned commits, so trees synced weeks apart build the same kernel. After the build, a check compares the kernel with the stock MediaTek modules and stops if they are no longer compatible.
-
-        `pull-halium-blobs.sh` also downloads the Plinius firmware set (dtbo, LK, preloader and co-processor images) to `halium-blobs/ansuz/firmware/`. It comes from the same firmware release as the kernel modules in `super`, so flash it once per phone (see [Flashing](#flashing)).
+        `pull-halium-blobs.sh` also downloads the Plinius firmware set. Flash it once per phone (see [Flashing](#flashing)).
 
 ## Flashing
 
@@ -210,25 +198,15 @@ The script writes every partition to slot `_a` and reboots the phone. Run it wit
 bash device/board/oniro/hybris_generic/utils/host/flash-native.sh -d ansuz --firmware --wipe
 ```
 
-- `--firmware` flashes the firmware set that matches the kernel modules in `super`. You need it again only when the firmware version pinned in `pull-halium-blobs.sh` changes.
-- `--wipe` erases `/data`. Oniro cannot mount the other system's `/data`, and all data on the phone is lost.
-- A phone that comes straight from VollaOS first needs the `vbmeta` image from the Volla bootstrap zip, with verity off. The UBports installer does the same step: `fastboot --disable-verity flash vbmeta_a vbmeta.img`.
-
-Other useful options:
-
-| Option | Description |
-|--------|-------------|
-| `--remote [USER@]HOST` | Run `fastboot` on another host over SSH, for example a Raspberry Pi that the phone is plugged into |
-| `--only LIST` | Flash only some partitions, for example `--only boot_a,init_boot_a` after a kernel rebuild |
-| `--no-reboot` | Leave the phone in fastboot mode when done |
-| `-n` | Print the commands instead of running them |
+- `--firmware` flashes the firmware that matches the kernel modules in `super`. You need it again only when the pinned firmware changes.
+- `--wipe` erases `/data` (all data on the phone is lost), because Oniro cannot mount the other system's `/data`.
 
 !!! note
     Always flash the kernel together with the `vendor_boot` image from the same build, which `flash-native.sh` does for you. If they don't match, the vendor kernel modules fail to load.
 
 ## Connecting with HDC
 
-About 40–70 seconds after the reboot, the Oniro lock screen appears and the phone shows up over USB:
+About 60–70 seconds after the reboot, the Oniro lock screen appears and the phone shows up over USB:
 
 ```bash
 hdc list targets
