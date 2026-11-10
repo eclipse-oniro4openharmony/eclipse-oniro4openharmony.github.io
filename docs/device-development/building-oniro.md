@@ -7,12 +7,12 @@ Before beginning, ensure that [`git-lfs`](https://docs.github.com/en/repositorie
 To download the source code, execute the following commands in your terminal:
 
 ```bash
-repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-6.1-Release -m oniro.xml --no-repo-verify
+repo init -u https://github.com/eclipse-oniro4openharmony/manifest.git -b OpenHarmony-7.0-Release -m oniro.xml --no-repo-verify
 repo sync -c
 repo forall -c 'git lfs pull'
 ```
 
-Other versions of Oniro are available in the [Oniro manifest repository](https://github.com/eclipse-oniro4openharmony/manifest) by checking the available branches. Some boards may require a specific version, so consult the [Developer Boards](developer-boards/index.md) section to ensure compatibility.
+`OpenHarmony-7.0-Release` is the current branch, used by the Oniro Emulator and the Volla phones. Other versions of Oniro are available in the [Oniro manifest repository](https://github.com/eclipse-oniro4openharmony/manifest) by checking the available branches. Some boards still require an older version (for example, the HiHope HH-SCDAYU200 and the Raspberry Pi 4 are documented on `OpenHarmony-6.1-Release`), so consult the [Developer Boards](developer-boards/index.md) section to ensure compatibility.
 
 ## Setting Up the Build Environment
 
