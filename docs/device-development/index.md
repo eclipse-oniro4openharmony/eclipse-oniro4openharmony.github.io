@@ -30,7 +30,7 @@ OpenHarmony defines three system types: Mini, Small, and Standard.
 
 3. **Building and Flashing**  
       1. Use Docker for a clean build environment.  
-      2. Set the target device (e.g., `rk3568` for HiHope, `rpi4` for Raspberry Pi, `x86_general` for the emulator, `hybris_generic` for the Volla phones).  
+      2. Set the target device (e.g., `rk3568` for HiHope, `rpi4` for Raspberry Pi, `emulator_x86_64` or `emulator_arm64` for the emulator, `hybris_generic` for the Volla phones).  
       3. Flashing instructions are hardware-specific and provided in each board’s documentation.
 
 4. **Debugging and Tools**  
